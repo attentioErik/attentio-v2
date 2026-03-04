@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(cd \"/Users/erikjohnsen/Documents/Visual Studio Code/attentio v2\" && npx create-next-app@latest . --typescript --no-tailwind --app --no-src-dir --import-alias \"@/*\" --no-eslint --yes --skip-install 2>&1 | tail -20)"
+      "Bash(cd \"/Users/erikjohnsen/Documents/Visual Studio Code/attentio v2\" && npx create-next-app@latest . --typescript --no-tailwind --app --no-src-dir --import-alias \"@/*\" --no-eslint --yes --skip-install 2>&1 | tail -20)",
+      "Bash(cd \"/Users/erikjohnsen/Documents/Visual Studio Code/attentio v2\" && npm run build 2>&1)"
     ]
   }
 }

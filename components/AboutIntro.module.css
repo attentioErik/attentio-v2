@@ -1,0 +1,114 @@
+.section {
+  background-color: var(--color-ui-bg);
+  padding-top: var(--space-section-y);
+  padding-bottom: var(--space-section-y);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(3rem, 6vw, 6rem);
+  align-items: center;
+}
+
+/* Left copy */
+.copy h2 {
+  margin-bottom: 2rem;
+}
+
+.p {
+  font-size: var(--type-body);
+  color: var(--color-ui-text-2);
+  line-height: 1.8;
+  font-weight: 300;
+  margin-bottom: 1.25rem;
+}
+
+.p:last-child {
+  margin-bottom: 0;
+}
+
+/* Right visual */
+.visual {
+  position: relative;
+  border-radius: var(--radius-card-lg);
+  overflow: hidden;
+  border: var(--border-1) solid var(--color-ui-border-2);
+  /* Subtle glowing border */
+  box-shadow: 0 0 2.5rem rgba(119, 82, 233, 0.12), 0 0 0 var(--border-1) var(--color-ui-border);
+  aspect-ratio: 4 / 3;
+}
+
+.imageWrap {
+  position: absolute;
+  inset: 0;
+}
+
+.image {
+  object-fit: cover;
+  object-position: center top;
+  filter: saturate(0.85) brightness(0.75);
+}
+
+/* Dark gradient overlay — bottom heavy for metric row legibility */
+.imageOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(8, 8, 12, 0.15) 0%,
+    rgba(8, 8, 12, 0.1) 40%,
+    rgba(8, 8, 12, 0.72) 80%,
+    rgba(8, 8, 12, 0.88) 100%
+  );
+}
+
+/* Metric pills row pinned to bottom */
+.metricRow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1.25rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  gap: var(--gap-16);
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1875rem;
+}
+
+.metricNum {
+  font-family: var(--font-sans);
+  font-weight: 800;
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  color: var(--color-brand-purple-light);
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.metricLabel {
+  font-size: var(--type-small);
+  color: rgba(240, 238, 250, 0.65);
+  white-space: nowrap;
+}
+
+/* Responsive */
+@media (max-width: 60rem) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .visual {
+    aspect-ratio: 16 / 9;
+  }
+}

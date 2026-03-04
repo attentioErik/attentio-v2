@@ -1,0 +1,105 @@
+.hero {
+  min-height: 72vh;
+  display: flex;
+  align-items: flex-end;
+  padding-top: var(--space-hero-top);
+  padding-bottom: clamp(4rem, 6vw, 6rem);
+  position: relative;
+  overflow: hidden;
+}
+
+.mesh {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 65% at 60% 20%, rgba(119, 82, 233, 0.12) 0%, transparent 65%),
+    radial-gradient(ellipse 40% 50% at 10% 80%, rgba(0, 212, 200, 0.06) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 40% at 90% 70%, rgba(119, 82, 233, 0.05) 0%, transparent 70%);
+  animation: mesh-drift 14s ease-in-out infinite alternate;
+}
+
+.grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--color-ui-border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-ui-border) 1px, transparent 1px);
+  background-size: 4.5rem 4.5rem;
+  mask-image: radial-gradient(ellipse 85% 85% at 45% 50%, black 0%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 85% 85% at 45% 50%, black 0%, transparent 100%);
+}
+
+.inner {
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--space-container-x);
+  padding-right: var(--space-container-x);
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.headline {
+  max-width: 52rem;
+  margin-bottom: 1.75rem;
+}
+
+.intro {
+  font-size: var(--type-body);
+  font-weight: 300;
+  color: var(--color-ui-text-2);
+  max-width: 36rem;
+  line-height: 1.75;
+  margin-bottom: 2.5rem;
+}
+
+.actions {
+  display: flex;
+  gap: 0.875rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+/* Floating info badges */
+.badges {
+  display: flex;
+  gap: var(--gap-16);
+  flex-wrap: wrap;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4375rem;
+  background-color: var(--color-brand-purple-dim);
+  border: var(--border-1) solid var(--color-ui-border-2);
+  border-radius: var(--radius-pill);
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  padding-left: 0.75rem;
+  padding-right: 0.875rem;
+  font-size: var(--type-small);
+  color: var(--color-brand-purple-light);
+  letter-spacing: 0.04em;
+}
+
+.badgeDot {
+  width: 0.4375rem;
+  height: 0.4375rem;
+  background-color: var(--color-brand-teal);
+  border-radius: 50%;
+  animation: blink 2s infinite;
+}
+
+.badgeStar {
+  color: var(--color-brand-purple-light);
+  font-size: 0.75rem;
+}
+
+@media (max-width: 40rem) {
+  .hero {
+    min-height: auto;
+  }
+}
