@@ -1,0 +1,62 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5625rem;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-sans);
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition:
+    transform 0.25s,
+    box-shadow 0.25s,
+    opacity 0.2s,
+    background-color 0.2s,
+    border-color 0.2s;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+/* Variant: primary */
+.primary {
+  background-color: var(--color-brand-purple);
+  color: #fff;
+  box-shadow: 0 0 0 0 var(--color-brand-purple-glow);
+}
+
+.primary:hover {
+  transform: translateY(-0.1875rem);
+  box-shadow: 0 0.5rem 2.5rem var(--color-brand-purple-glow);
+  opacity: 0.92;
+}
+
+/* Variant: outline */
+.outline {
+  background-color: transparent;
+  color: var(--color-ui-text);
+  border: var(--border-1) solid var(--color-ui-border-2);
+}
+
+.outline:hover {
+  background-color: var(--color-brand-purple-dim);
+  border-color: var(--color-brand-purple);
+}
+
+/* Size: MD (default) */
+.sizeMD {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2.125rem;
+  padding-right: 2.125rem;
+  font-size: 0.9375rem;
+}
+
+/* Size: SM */
+.sizeSM {
+  padding-top: 0.5625rem;
+  padding-bottom: 0.5625rem;
+  padding-left: 1.375rem;
+  padding-right: 1.375rem;
+  font-size: 0.875rem;
+}

@@ -1,0 +1,57 @@
+.clients {
+  border-top: var(--border-1) solid var(--color-ui-border);
+  border-bottom: var(--border-1) solid var(--color-ui-border);
+  padding-top: 2.75rem;
+  padding-bottom: 2.75rem;
+  padding-left: var(--space-container-x);
+  padding-right: var(--space-container-x);
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.label {
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-ui-text-3);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.names {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  flex: 1;
+}
+
+.name {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-ui-text-3);
+  transition: color 0.3s;
+  white-space: nowrap;
+  cursor: default;
+}
+
+.name:hover {
+  color: var(--color-ui-text-2);
+}
+
+@media (max-width: 40rem) {
+  .clients {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .names {
+    gap: 1.25rem;
+  }
+}

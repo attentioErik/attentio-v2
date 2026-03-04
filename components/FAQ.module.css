@@ -1,0 +1,123 @@
+.section {
+  background-color: var(--color-ui-bg);
+  padding-top: var(--space-section-y);
+  padding-bottom: var(--space-section-y);
+}
+
+.header {
+  margin-bottom: 3.5rem;
+  max-width: 40rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  border: var(--border-1) solid var(--color-ui-border);
+  border-radius: var(--radius-card-lg);
+  overflow: hidden;
+}
+
+.item {
+  border-bottom: var(--border-1) solid var(--color-ui-border);
+  background-color: var(--color-ui-bg-2);
+  transition: background-color 0.3s;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.item.open {
+  background-color: var(--color-ui-bg-3);
+}
+
+.question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-ui-text);
+  transition: color 0.2s;
+}
+
+.question:hover {
+  color: var(--color-brand-purple-light);
+}
+
+.open .question {
+  color: var(--color-brand-purple-light);
+}
+
+.iconWrap {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: var(--border-1) solid var(--color-ui-border-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--color-brand-purple-light);
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.open .iconWrap {
+  background-color: var(--color-brand-purple-dim);
+}
+
+.chevron {
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+/* Animated answer */
+.answerWrap {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s ease;
+}
+
+.open .answerWrap {
+  grid-template-rows: 1fr;
+}
+
+.answer {
+  overflow: hidden;
+}
+
+.answer p {
+  padding-bottom: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 0.9375rem;
+  color: var(--color-ui-text-2);
+  line-height: 1.75;
+  font-weight: 300;
+}
+
+@media (max-width: 40rem) {
+  .question {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .answer p {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}

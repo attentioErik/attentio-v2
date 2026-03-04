@@ -1,0 +1,104 @@
+.section {
+  background-color: var(--color-ui-bg);
+  padding-top: var(--space-section-y);
+  padding-bottom: var(--space-section-y);
+}
+
+.steps {
+  margin-top: 4rem;
+  position: relative;
+}
+
+.steps::before {
+  content: '';
+  position: absolute;
+  left: 1.625rem;
+  top: 0;
+  bottom: 0;
+  width: var(--border-1);
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--color-ui-border-2) 15%,
+    var(--color-ui-border-2) 85%,
+    transparent
+  );
+}
+
+.step {
+  display: flex;
+  gap: 2.25rem;
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+  border-bottom: var(--border-1) solid var(--color-ui-border);
+}
+
+.step:last-child {
+  border-bottom: none;
+}
+
+.bubble {
+  width: 3.25rem;
+  height: 3.25rem;
+  border: var(--border-1) solid var(--color-ui-border-2);
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-ui-bg-2);
+  font-family: var(--font-mono);
+  font-size: 0.9375rem;
+  font-weight: 400;
+  color: var(--color-brand-purple-light);
+  position: relative;
+  z-index: 1;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.step:hover .bubble {
+  background-color: var(--color-brand-purple-dim);
+  border-color: var(--color-brand-purple);
+}
+
+.body {
+  padding-top: 0.25rem;
+}
+
+.title {
+  font-size: 1.1875rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+  color: var(--color-ui-text);
+}
+
+.text {
+  font-size: 0.9375rem;
+  color: var(--color-ui-text-2);
+  line-height: 1.7;
+  max-width: 37.5rem;
+  font-weight: 300;
+}
+
+.chip {
+  display: inline-block;
+  margin-top: 0.875rem;
+  font-size: 0.6875rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-brand-teal);
+  background-color: var(--color-brand-teal-dim);
+  border: var(--border-1) solid rgba(0, 212, 200, 0.15);
+  border-radius: var(--radius-pill);
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+@media (max-width: 40rem) {
+  .step {
+    gap: 1.25rem;
+  }
+}
