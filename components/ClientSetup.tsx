@@ -1,10 +1,17 @@
 'use client'
 
 import { useEffect } from 'react'
+import { usePathname } from 'next/navigation'
 
 export default function ClientSetup() {
+  const pathname = usePathname()
+
+  // Scroll reveal — reinitialize on every route change
   useEffect(() => {
-    // ── Scroll Reveal ──────────────────────────
+    document.querySelectorAll('.reveal.in').forEach((el) => {
+      el.classList.remove('in')
+    })
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((e) => {
@@ -15,8 +22,18 @@ export default function ClientSetup() {
       },
       { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
     )
-    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el))
 
+    const raf = requestAnimationFrame(() => {
+      document.querySelectorAll('.reveal').forEach((el) => observer.observe(el))
+    })
+
+    return () => {
+      cancelAnimationFrame(raf)
+      observer.disconnect()
+    }
+  }, [pathname])
+
+  useEffect(() => {
     // ── Custom Cursor ──────────────────────────
     const cr = document.getElementById('cursor-dot')
     const crr = document.getElementById('cursor-ring')
@@ -73,7 +90,6 @@ export default function ClientSetup() {
       document.removeEventListener('mousemove', onMove)
       cancelAnimationFrame(rafId)
       window.removeEventListener('scroll', onScroll)
-      observer.disconnect()
       hovEls.forEach((el) => {
         el.removeEventListener('mouseenter', addHov)
         el.removeEventListener('mouseleave', removeHov)
