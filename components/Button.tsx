@@ -9,6 +9,7 @@ type ButtonProps = {
   className?: string
   onClick?: () => void
   type?: 'button' | 'submit'
+  disabled?: boolean
 }
 
 export default function Button({
@@ -19,6 +20,7 @@ export default function Button({
   className = '',
   onClick,
   type = 'button',
+  disabled = false,
 }: ButtonProps) {
   const cls = [styles.btn, styles[variant], styles[`size${size.toUpperCase()}`], className]
     .filter(Boolean)
@@ -33,7 +35,7 @@ export default function Button({
   }
 
   return (
-    <button type={type} className={cls} onClick={onClick}>
+    <button type={type} className={cls} onClick={onClick} disabled={disabled}>
       {children}
     </button>
   )

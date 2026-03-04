@@ -147,7 +147,7 @@
 
 .msg {
   max-width: 82%;
-  opacity: 0;
+  opacity: 1;
 }
 
 .bot {
@@ -200,7 +200,6 @@
   border: var(--border-1) solid var(--color-ui-border);
   border-radius: 1rem;
   border-bottom-left-radius: 0.25rem;
-  opacity: 0;
   animation: msg-in 0.4s both 2s, fade-out 0.3s both 3.5s;
 }
 

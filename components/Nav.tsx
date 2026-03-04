@@ -12,7 +12,7 @@ const links = [
   { href: '#prosess', label: 'Prosess' },
   { href: '/prosjekter', label: 'Prosjekter' },
   { href: '/om-oss', label: 'Om oss' },
-  { href: '#kontakt', label: 'Kontakt' },
+  { href: '/kontakt', label: 'Kontakt' },
 ]
 
 export default function Nav() {
@@ -44,7 +44,7 @@ export default function Nav() {
 
         {/* Right side */}
         <div className={styles.right}>
-          <Button href="#kontakt" variant="primary" size="sm">
+          <Button href="/kontakt" variant="primary" size="sm">
             Book møte
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden="true">
               <path d="M5 12h14M12 5l7 7-7 7" />
@@ -77,7 +77,7 @@ export default function Nav() {
               </li>
             ))}
           </ul>
-          <Button href="#kontakt" variant="primary" onClick={() => setOpen(false)}>
+          <Button href="/kontakt" variant="primary" onClick={() => setOpen(false)}>
             Book gratis møte
           </Button>
         </div>

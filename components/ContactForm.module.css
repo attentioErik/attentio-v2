@@ -1,0 +1,135 @@
+.section {
+  background-color: var(--color-ui-bg);
+  padding-top: var(--space-section-y);
+  padding-bottom: var(--space-section-y);
+}
+
+.form {
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Success message */
+.successMessage {
+  background-color: rgba(0, 212, 200, 0.12);
+  border: var(--border-1) solid rgba(0, 212, 200, 0.3);
+  border-radius: var(--radius-card-md);
+  padding: 1.25rem 1.5rem;
+  color: var(--color-brand-teal);
+  font-size: var(--type-small);
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+/* Grid layout for 2-column fields */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--gap-24);
+  margin-bottom: 2rem;
+}
+
+/* Form field */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+/* Label */
+.label {
+  font-size: var(--type-small);
+  font-weight: 500;
+  color: var(--color-ui-text);
+  letter-spacing: 0.02em;
+}
+
+/* Input fields */
+.input,
+.select,
+.textarea {
+  background-color: var(--color-ui-bg-2);
+  border: var(--border-1) solid var(--color-ui-border-2);
+  border-radius: var(--radius-card-md);
+  padding: 1rem 1.25rem;
+  font-family: var(--font-sans);
+  font-size: var(--type-body);
+  color: var(--color-ui-text);
+  transition: 
+    border-color 0.2s,
+    background-color 0.2s,
+    box-shadow 0.2s;
+  line-height: 1.5;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: var(--color-ui-text-3);
+}
+
+/* Select styling */
+.select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%239b7ef5' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
+}
+
+/* Focus states */
+.input:focus,
+.select:focus,
+.textarea:focus {
+  outline: none;
+  border-color: var(--color-brand-purple);
+  background-color: var(--color-ui-bg-3);
+  box-shadow: 0 0 0 0.25rem rgba(119, 82, 233, 0.1);
+}
+
+/* Textarea */
+.textarea {
+  resize: vertical;
+  min-height: 10rem;
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+/* Privacy note */
+.privacyNote {
+  font-size: 0.75rem;
+  color: var(--color-ui-text-3);
+  line-height: 1.6;
+}
+
+.privacyNote a {
+  color: var(--color-brand-purple-light);
+  text-decoration: none;
+  border-bottom: var(--border-1) solid var(--color-brand-purple-light);
+  transition: opacity 0.2s;
+}
+
+.privacyNote a:hover {
+  opacity: 0.8;
+}
+
+/* Disabled button state */
+:global(button)[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 40rem) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: var(--gap-16);
+  }
+}
