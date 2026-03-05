@@ -36,7 +36,12 @@ const DOWNLOADS = path.join(process.env.HOME!, 'Downloads')
 function readCsv(filename: string): Record<string, string>[] {
   const filePath = path.join(DOWNLOADS, filename)
   const content = fs.readFileSync(filePath, 'utf-8')
-  return parse(content, { columns: true, skip_empty_lines: true })
+  return parse(content, {
+    columns: true,
+    skip_empty_lines: true,
+    relax_quotes: true,        // handle unescaped quotes inside HTML fields
+    relax_column_count: true,  // tolerate rows with extra commas in rich-text cells
+  })
 }
 
 function makeSlug(text: string): string {
@@ -143,6 +148,18 @@ async function importArticles() {
       ? new Date(row['Published On']).toISOString().split('T')[0]
       : undefined
 
+    // Webflow exports the rich-text body under different column names depending on
+    // how the CMS field was named. Try the most common Norwegian/English variants.
+    const bodyHtml =
+      row['Artikkelinnhold'] ||
+      row['Artikkel innhold'] ||
+      row['Article Body Content'] ||
+      row['Article Body'] ||
+      row['Body'] ||
+      row['Post Body'] ||
+      row['Innhold'] ||
+      ''
+
     const doc = {
       _id: `article-${row.Slug}`,
       _type: 'article',
@@ -150,9 +167,9 @@ async function importArticles() {
       slug: { _type: 'slug', current: row.Slug },
       title: row['h1-tittel']?.trim() || row.Name,
       excerpt: row['Post Summary'],
+      body: bodyHtml,
       author: authorRef,
       publishedAt,
-      // body is HTML from Webflow — stored as-is, convert to Portable Text blocks as needed
     }
 
     transaction.createOrReplace(doc)

@@ -65,6 +65,8 @@ export default function Nav() {
             <Image
               src="https://cdn.prod.website-files.com/649e80503f5e6f2180f7891e/667bf8f6e052ebdb5596b770_Logo-1.avif"
               alt="attentio"
+              width={120}
+              height={28}
               className={styles.logoImg}
               priority
               unoptimized
