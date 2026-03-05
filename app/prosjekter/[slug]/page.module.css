@@ -207,7 +207,7 @@
   aspect-ratio: 16 / 9;
   border-radius: var(--radius-card-lg);
   overflow: hidden;
-  border: var(--border-1) solid var(--color-ui-border);
+  box-shadow: 0 0.875rem 2.5rem rgba(0, 0, 0, 0.4);
 }
 
 .videoWrap iframe {
