@@ -22,13 +22,13 @@ export default function FAQ({ title, items }: FAQProps) {
           <h2>{title}</h2>
         </div>
 
-        <div className={styles.list}>
+        <div className={`${styles.list} reveal rd1`}>
           {items.map((item, i) => {
             const isOpen = openIndex === i
             return (
               <div
                 key={i}
-                className={`${styles.item} ${isOpen ? styles.open : ''} reveal rd${Math.min(i, 3)}`}
+                className={`${styles.item} ${isOpen ? styles.open : ''}`}
               >
                 <button
                   className={styles.question}
