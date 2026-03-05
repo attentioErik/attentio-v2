@@ -1,22 +1,27 @@
 import Button from './Button'
 import styles from './CTASection.module.css'
 
-export default function CTASection() {
+interface CTASectionProps {
+  titleHtml?: string
+  sub?: string
+}
+
+export default function CTASection({
+  titleHtml = 'Klar for å vokse<br />med <em>AI</em>?',
+  sub = 'Book et gratis 30-minutters møte. Vi analyserer situasjonen din og gir konkrete anbefalinger – uten forpliktelser.',
+}: CTASectionProps = {}) {
   return (
     <section className={styles.section} id="kontakt">
       {/* Radial glow */}
       <div className={styles.glow} aria-hidden="true" />
 
       <div className={`${styles.content} reveal`}>
-        <h2 className={styles.title}>
-          Klar for å vokse<br />
-          med <em>AI</em>?
-        </h2>
+        <h2
+          className={styles.title}
+          dangerouslySetInnerHTML={{ __html: titleHtml }}
+        />
 
-        <p className={styles.sub}>
-          Book et gratis 30-minutters møte. Vi analyserer situasjonen din og gir
-          konkrete anbefalinger – uten forpliktelser.
-        </p>
+        <p className={styles.sub}>{sub}</p>
 
         <div className={styles.row}>
           <Button href="mailto:post@attentio.no" variant="primary">

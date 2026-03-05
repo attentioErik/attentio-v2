@@ -2,11 +2,18 @@ import Link from 'next/link'
 import Button from './Button'
 import styles from './ServiceHero.module.css'
 
+interface CtaButton {
+  label: string
+  href: string
+}
+
 interface ServiceHeroProps {
   tag: string
   h1: string
   intro: string
   slug: string
+  ctaPrimary?: CtaButton
+  ctaSecondary?: CtaButton
 }
 
 const IconArrow = () => (
@@ -21,7 +28,9 @@ const IconLeft = () => (
   </svg>
 )
 
-export default function ServiceHero({ tag, h1, intro }: ServiceHeroProps) {
+export default function ServiceHero({ tag, h1, intro, ctaPrimary, ctaSecondary }: ServiceHeroProps) {
+  const primary = ctaPrimary ?? { label: 'Start et prosjekt', href: '#kontakt' }
+  const secondary = ctaSecondary ?? { label: 'Book gratis møte', href: '/#kontakt' }
   return (
     <section className={styles.hero}>
       {/* Background layers */}
@@ -49,12 +58,12 @@ export default function ServiceHero({ tag, h1, intro }: ServiceHeroProps) {
 
         {/* CTA */}
         <div className={styles.actions}>
-          <Button href="#kontakt" variant="primary">
-            Start et prosjekt
+          <Button href={primary.href} variant="primary">
+            {primary.label}
             <IconArrow />
           </Button>
-          <Button href="/#kontakt" variant="outline">
-            Book gratis møte
+          <Button href={secondary.href} variant="outline">
+            {secondary.label}
           </Button>
         </div>
       </div>
