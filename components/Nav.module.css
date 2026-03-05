@@ -35,8 +35,24 @@
   filter: brightness(0) invert(1);
 }
 
+/* ensure logo image keeps its natural ratio */
+.logoImg {
+  display: block;
+  height: auto;
+  width: auto;
+  max-height: 2rem;
+}
+
 .logo:hover {
   opacity: 0.65;
+}
+
+/* ensure logo image keeps its natural ratio */
+.logoImg {
+  display: block;
+  height: auto;
+  width: auto;
+  max-height: 2rem;
 }
 
 :global([data-theme="light"]) .logo {
