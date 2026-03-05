@@ -150,15 +150,7 @@ async function importArticles() {
 
     // Webflow exports the rich-text body under different column names depending on
     // how the CMS field was named. Try the most common Norwegian/English variants.
-    const bodyHtml =
-      row['Artikkelinnhold'] ||
-      row['Artikkel innhold'] ||
-      row['Article Body Content'] ||
-      row['Article Body'] ||
-      row['Body'] ||
-      row['Post Body'] ||
-      row['Innhold'] ||
-      ''
+    const bodyHtml = row['Post Body'] || ''
 
     const doc = {
       _id: `article-${row.Slug}`,
