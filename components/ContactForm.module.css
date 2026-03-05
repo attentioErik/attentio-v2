@@ -28,7 +28,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--gap-24);
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 /* Form field */
@@ -36,6 +36,12 @@
   display: flex;
   flex-direction: column;
   gap: 0.625rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Ignore bottom margin for fields inside grid */
+.grid .field {
+  margin-bottom: 0;
 }
 
 /* Label */
@@ -99,7 +105,16 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  margin-top: 2.5rem;
+  margin-top: 3rem;
+}
+
+/* Full-width submit button */
+.actions :global(button) {
+  width: 100%;
+  padding-top: 1.125rem !important;
+  padding-bottom: 1.125rem !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
 }
 
 /* Privacy note */
