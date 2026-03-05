@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import AboutHero from '@/components/AboutHero'
+import PromoVideoSection from '@/components/PromoVideoSection'
 import AboutIntro from '@/components/AboutIntro'
 import TeamGrid from '@/components/TeamGrid'
 import WhyAttentio from '@/components/WhyAttentio'
@@ -30,6 +31,7 @@ export default function AboutPage() {
   return (
     <>
       <AboutHero />
+      <PromoVideoSection />
       <AboutIntro />
       <TeamGrid />
       <WhyAttentio />
