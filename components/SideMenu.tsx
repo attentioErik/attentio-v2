@@ -5,13 +5,21 @@ import Link from 'next/link'
 import Button from './Button'
 import styles from './SideMenu.module.css'
 
+const pages = [
+  { href: '/tjenester',  label: 'Tjenester',  icon: '🧩' },
+  { href: '/om-oss',     label: 'Om oss',      icon: '👋' },
+  { href: '/prosjekter', label: 'Prosjekter',  icon: '💼' },
+  { href: '/artikler',   label: 'Blogg',        icon: '✍️' },
+  { href: '/galleri',    label: 'Galleri',      icon: '🖼️' },
+]
+
 const services = [
-  { href: '/ai-chatbot',              label: 'AI Chatbot',       icon: '🤖' },
-  { href: '/ai-automation',           label: 'AI Automatisering', icon: '⚡' },
-  { href: '/services/web-development',label: 'Nettsider',         icon: '🌐' },
-  { href: '/services/digital-marketing', label: 'Markedsføring',  icon: '📣' },
-  { href: '/services/video-photo',    label: 'Video & Foto',      icon: '🎬' },
-  { href: '/services/3d-scanning',    label: '3D-scanning',       icon: '📐' },
+  { href: '/ai-chatbot',                  label: 'AI Chatbot',        icon: '🤖' },
+  { href: '/ai-automation',               label: 'AI Automatisering', icon: '⚡' },
+  { href: '/services/web-development',    label: 'Nettsider',         icon: '🌐' },
+  { href: '/services/digital-marketing',  label: 'Markedsføring',     icon: '📣' },
+  { href: '/services/video-photo',        label: 'Video & Foto',      icon: '🎬' },
+  { href: '/services/3d-scanning',        label: '3D-scanning',       icon: '📐' },
 ]
 
 interface Props {
@@ -20,7 +28,6 @@ interface Props {
 }
 
 export default function SideMenu({ open, onClose }: Props) {
-  // Keyboard + scroll lock
   useEffect(() => {
     if (!open) return
     const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') onClose() }
@@ -62,9 +69,25 @@ export default function SideMenu({ open, onClose }: Props) {
           </button>
         </div>
 
-        {/* Services */}
         <nav className={styles.nav}>
-          <p className={styles.groupLabel}>Tjenester</p>
+          {/* Primary pages */}
+          <p className={styles.groupLabel}>Sider</p>
+          <ul className={styles.list}>
+            {pages.map(({ href, label, icon }) => (
+              <li key={href}>
+                <Link href={href} className={styles.link} onClick={onClose}>
+                  <span className={styles.linkIcon}>{icon}</span>
+                  <span>{label}</span>
+                  <svg className={styles.linkArrow} width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </li>
+            ))}
+          </ul>
+
+          {/* Services */}
+          <p className={`${styles.groupLabel} ${styles.groupLabelTop}`}>Tjenester</p>
           <ul className={styles.list}>
             {services.map(({ href, label, icon }) => (
               <li key={href}>

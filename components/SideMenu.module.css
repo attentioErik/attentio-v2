@@ -94,6 +94,12 @@
   margin-bottom: 0.875rem;
 }
 
+.groupLabelTop {
+  margin-top: 1.75rem;
+  padding-top: 1.5rem;
+  border-top: var(--border-1) solid var(--color-ui-border);
+}
+
 .list {
   list-style: none;
   display: flex;

@@ -1,0 +1,44 @@
+.grid {
+  columns: 3;
+  column-gap: 0.75rem;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0 var(--space-container-x) var(--space-section-y);
+}
+
+.item {
+  break-inside: avoid;
+  margin-bottom: 0.75rem;
+  border-radius: var(--radius-card-sm);
+  overflow: hidden;
+  background: var(--color-ui-bg-2);
+}
+
+.image {
+  width: 100% !important;
+  height: auto !important;
+  display: block;
+  transition: transform 0.5s ease, opacity 0.3s;
+}
+
+.item:hover .image {
+  transform: scale(1.025);
+  opacity: 0.88;
+}
+
+@media (max-width: 56rem) {
+  .grid {
+    columns: 2;
+  }
+}
+
+@media (max-width: 32rem) {
+  .grid {
+    columns: 2;
+    column-gap: 0.5rem;
+  }
+
+  .item {
+    margin-bottom: 0.5rem;
+  }
+}

@@ -85,7 +85,7 @@ export default function Nav() {
           {/* Right side */}
           <div className={styles.right}>
             {/* CTA */}
-            <Button href="/kontakt" variant="primary" size="sm">
+            <Button href="/kontakt" variant="primary" size="sm" className={styles.ctaBtn}>
               Book møte
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden="true">
                 <path d="M5 12h14M12 5l7 7-7 7" />
