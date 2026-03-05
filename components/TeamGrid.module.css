@@ -114,11 +114,15 @@
   color: var(--color-brand-purple-light);
 }
 
-.bio {
+.contact {
   font-size: 0.875rem;
   color: var(--color-ui-text-2);
-  line-height: 1.65;
-  font-weight: 300;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact:hover {
+  color: var(--color-brand-purple-light);
 }
 
 /* Responsive */

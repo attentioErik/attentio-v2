@@ -2,6 +2,17 @@ import type { TeamMember } from '../types'
 
 export const teamData: TeamMember[] = [
   {
+    name: 'Erik Johnsen',
+    slug: 'erik-johnsen',
+    role: 'UI/UX Designer',
+    image: 'https://ucarecdn.com/0efad71e-6908-4c01-b5f7-6165e686fb88/imagegen3.png',
+    altText: 'Bilde av ansatt Erik Johnsen, UI/UX Designer',
+    email: 'erik@attentio.no',
+    phone: '48194007',
+    linkedin: 'https://www.linkedin.com/in/erik-attentio/',
+    sortering: 1,
+  },
+  {
     name: 'Ellinor Holm',
     slug: 'ellinor-holm',
     role: 'Head of Marketing',
@@ -9,7 +20,7 @@ export const teamData: TeamMember[] = [
     altText: 'Bilde av ansatt Ellinor Holm, Head of Marketing',
     email: 'ellinor@attentio.no',
     linkedin: 'https://www.linkedin.com/in/ellinor-holm-bernhardsen-608985259/',
-    sortering: 1,
+    sortering: 2,
   },
   {
     name: 'Kai Bertelsen',
@@ -19,16 +30,6 @@ export const teamData: TeamMember[] = [
     altText: 'Bilde av ansatt Kai Bertelsen, Technical Director',
     email: 'kai@attentio.no',
     linkedin: 'https://www.linkedin.com/in/kai-bertelsen-817bb742/',
-    sortering: 2,
-  },
-  {
-    name: 'Julie Bernhardsen',
-    slug: 'julie-bernhardsen',
-    role: 'Marketing',
-    image: 'https://cdn.prod.website-files.com/64a6c5ab340eb423a04de8c6/689d961deeff4f3120f11e79_attentio-team-43.avif',
-    altText: 'Bilde av ansatt Julie Bernhardsen, Marketing',
-    email: 'julie@attentio.no',
-    linkedin: 'https://www.linkedin.com/in/julie-bernhardsen-57268521a/',
     sortering: 3,
   },
   {
@@ -42,13 +43,13 @@ export const teamData: TeamMember[] = [
     sortering: 4,
   },
   {
-    name: 'Erik Johnsen',
-    slug: 'erik-johnsen',
-    role: 'UI/UX Designer',
-    image: 'https://ucarecdn.com/0efad71e-6908-4c01-b5f7-6165e686fb88/imagegen3.png',
-    altText: 'Bilde av ansatt Erik Johnsen, UI/UX Designer',
-    email: 'erik@attentio.no',
-    linkedin: 'https://www.linkedin.com/in/erik-attentio/',
+    name: 'Julie Bernhardsen',
+    slug: 'julie-bernhardsen',
+    role: 'Marketing',
+    image: 'https://cdn.prod.website-files.com/64a6c5ab340eb423a04de8c6/689d961deeff4f3120f11e79_attentio-team-43.avif',
+    altText: 'Bilde av ansatt Julie Bernhardsen, Marketing',
+    email: 'julie@attentio.no',
+    linkedin: 'https://www.linkedin.com/in/julie-bernhardsen-57268521a/',
     sortering: 5,
   },
 ]

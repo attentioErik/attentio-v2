@@ -43,6 +43,11 @@ export default function TeamGrid() {
               {/* Info */}
               <div className={styles.info}>
                 <h3 className={styles.name}>{member.name}</h3>
+                {member.phone && (
+                  <a href={`tel:${member.phone}`} className={styles.contact}>
+                    {member.phone}
+                  </a>
+                )}
               </div>
             </div>
           ))}

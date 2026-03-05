@@ -20,6 +20,7 @@ export interface TeamMember {
   image: string
   altText: string
   email: string
+  phone?: string
   linkedin: string
   sortering: number
 }
