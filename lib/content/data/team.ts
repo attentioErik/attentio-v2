@@ -45,7 +45,7 @@ export const teamData: TeamMember[] = [
     name: 'Erik Johnsen',
     slug: 'erik-johnsen',
     role: 'UI/UX Designer',
-    image: 'https://cdn.prod.website-files.com/64a6c5ab340eb423a04de8c6/689da699f9cfd4d1bb726746_attentio-team-44.avif',
+    image: 'https://ucarecdn.com/0efad71e-6908-4c01-b5f7-6165e686fb88/imagegen3.png',
     altText: 'Bilde av ansatt Erik Johnsen, UI/UX Designer',
     email: 'erik@attentio.no',
     linkedin: 'https://www.linkedin.com/in/erik-attentio/',
