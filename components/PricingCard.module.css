@@ -1,0 +1,191 @@
+.card {
+  position: relative;
+  background: var(--color-ui-bg-3);
+  border: var(--border-1) solid var(--color-ui-border-2);
+  border-radius: var(--radius-card-lg);
+  padding: 2.5rem;
+  box-shadow: 0 8px 48px rgba(119, 82, 233, 0.14);
+  overflow: hidden;
+}
+
+.topAccent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0.1875rem;
+  background: linear-gradient(90deg, var(--color-brand-purple), var(--color-brand-teal));
+  border-radius: var(--radius-card-lg) var(--radius-card-lg) 0 0;
+}
+
+/* ── Header ─────────────────────────────────────── */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+}
+
+.title {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--color-ui-text);
+  letter-spacing: -0.01em;
+}
+
+.discountBadge {
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: rgba(0, 212, 200, 0.1);
+  color: var(--color-brand-teal);
+  border: var(--border-1) solid rgba(0, 212, 200, 0.25);
+  white-space: nowrap;
+}
+
+/* ── Price ──────────────────────────────────────── */
+
+.priceRow {
+  display: flex;
+  align-items: baseline;
+  gap: 0.375rem;
+  margin-bottom: 0.375rem;
+}
+
+.currency {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-ui-text-2);
+  align-self: flex-start;
+  margin-top: 0.625rem;
+}
+
+.price {
+  font-size: clamp(3rem, 6vw, 3.75rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: var(--color-ui-text);
+  line-height: 1;
+}
+
+.per {
+  font-size: 1rem;
+  color: var(--color-ui-text-2);
+  font-weight: 400;
+}
+
+.priceNote {
+  font-size: 0.8125rem;
+  color: var(--color-brand-teal);
+  margin-bottom: 1.75rem;
+  min-height: 1.25rem;
+  font-weight: 500;
+}
+
+/* ── Meta ───────────────────────────────────────── */
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  font-size: 0.875rem;
+  color: var(--color-ui-text-2);
+  padding: 0.6875rem 1rem;
+  background: var(--color-brand-purple-dim);
+  border-radius: var(--radius-card-sm);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.metaDot {
+  width: 0.25rem;
+  height: 0.25rem;
+  border-radius: 50%;
+  background: var(--color-ui-text-3);
+  flex-shrink: 0;
+}
+
+/* ── Feature list ───────────────────────────────── */
+
+.featureList {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  font-size: 0.9375rem;
+  color: var(--color-ui-text);
+  font-weight: 400;
+}
+
+.checkIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.375rem;
+  height: 1.375rem;
+  border-radius: 50%;
+  background: var(--color-brand-purple-dim);
+  color: var(--color-brand-purple);
+  flex-shrink: 0;
+}
+
+/* ── Setup row ──────────────────────────────────── */
+
+.setupRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 0;
+  border-top: var(--border-1) solid var(--color-ui-border);
+  border-bottom: var(--border-1) solid var(--color-ui-border);
+  margin-bottom: 1.75rem;
+}
+
+.setupLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.setupLabel {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-ui-text);
+}
+
+.setupNote {
+  font-size: 0.8125rem;
+  color: var(--color-ui-text-3);
+  line-height: 1.5;
+  max-width: 17rem;
+  font-weight: 300;
+}
+
+.setupPrice {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-ui-text);
+  white-space: nowrap;
+  flex-shrink: 0;
+  padding-top: 0.125rem;
+}
+
+/* ── CTAs ───────────────────────────────────────── */
+
+.ctaRow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}

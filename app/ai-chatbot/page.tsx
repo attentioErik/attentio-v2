@@ -1,6 +1,11 @@
 import type { Metadata } from 'next'
-import type { ServiceData } from '@/lib/services-data'
-import ServicePage from '@/components/ServicePage'
+import ServiceHero from '@/components/ServiceHero'
+import FeatureGrid from '@/components/FeatureGrid'
+import ServiceProcess from '@/components/ServiceProcess'
+import FAQ from '@/components/FAQ'
+import CTASection from '@/components/CTASection'
+import AIChatbotPositioning from '@/components/AIChatbotPositioning'
+import PricingSection from '@/components/PricingSection'
 
 export const metadata: Metadata = {
   title: 'AI-chatbot som svarer kundene dine – 24/7 | attentio',
@@ -8,139 +13,132 @@ export const metadata: Metadata = {
     'Automatiser kundedialog, kvalifiser leads og book møter automatisk med en skreddersydd AI-chatbot fra attentio. Bergen-basert AI-byrå.',
 }
 
-const data: ServiceData = {
-  slug: 'ai-chatbot',
-  emoji: '🤖',
-  meta: {
-    title: 'AI-chatbot som svarer kundene dine – 24/7 | attentio',
-    description:
-      'Automatiser kundedialog, kvalifiser leads og book møter automatisk med en skreddersydd AI-chatbot fra attentio.',
-  },
-  hero: {
-    tag: 'AI-chatbot',
-    h1: 'AI-chatbot som svarer kundene dine – <em>24/7</em>',
-    intro:
-      'Automatiser kundedialog, kvalifiser leads og book møter automatisk. En AI-assistent som aldri sover, aldri tar ferie og svarer på sekunder – på nettside, Instagram og WhatsApp.',
-  },
-  features: {
-    tag: 'Hva vi leverer',
-    title: 'Alt du trenger for <em>AI-drevet vekst</em>',
-    items: [
-      {
-        icon: '🎯',
-        title: 'Automatisk leadgenerering',
-        text: 'Fang opp potensielle kunder 24/7, kvalifiser dem automatisk og send dem direkte inn i ditt CRM – uten manuell oppfølging.',
-      },
-      {
-        icon: '🤖',
-        title: 'Kundeservice-bot',
-        text: 'Svar på de 80 % vanligste henvendelsene uten menneskelig inngripen. Frigjør teamet ditt til å fokusere på det som virkelig betyr noe.',
-      },
-      {
-        icon: '🔗',
-        title: 'CRM-integrasjon',
-        text: 'Sømløs kobling til HubSpot, Salesforce, Pipedrive og andre systemer. Alle data strukturert og tilgjengelig der du jobber.',
-      },
-      {
-        icon: '📱',
-        title: 'Flerkanal-AI',
-        text: 'Én bot – alle kanaler. Nettside, Facebook Messenger, Instagram DM og WhatsApp. Konsistent opplevelse uansett plattform.',
-      },
-      {
-        icon: '🧠',
-        title: 'Trent på din bedrift',
-        text: 'AI-en lærer din tone of voice, produkter og FAQ. Svarene er merkevareriktige og autentiske – ikke generiske malbotsvarer.',
-      },
-      {
-        icon: '📊',
-        title: 'Analytics & innsikt',
-        text: 'Se nøyaktig hva kundene spør om, hvilke leads som konverterer og hvordan boten presterer. Optimaliser løpende med data.',
-      },
-    ],
-  },
-  process: {
-    tag: 'Slik gjør vi det',
-    title: 'Fra idé til aktiv AI-chatbot – <em>på rekordtid</em>',
-    steps: [
-      {
-        num: '01',
-        title: 'Workshop & datainnsamling',
-        text: 'Vi kartlegger dine vanligste kundehenvendelser, samler treningsdata og definerer hvilke oppgaver chatboten skal håndtere.',
-        chip: 'Gratis innledende møte',
-      },
-      {
-        num: '02',
-        title: 'Bygging & trening',
-        text: 'Chatboten bygges, trenes på dine data og testes grundig for å sikre presise og merkevareriktige svar.',
-        chip: '2–4 uker',
-      },
-      {
-        num: '03',
-        title: 'Integrasjon & kanaler',
-        text: 'Vi kobler chatboten til dine systemer og kommunikasjonskanaler. Alt testes i produksjonsmiljø før lansering.',
-        chip: '1–2 uker',
-      },
-      {
-        num: '04',
-        title: 'Lansering & videreutvikling',
-        text: 'Etter lansering overvåker vi ytelse, tilpasser basert på faktisk bruk og videreutvikler chatboten løpende.',
-        chip: 'Løpende samarbeid',
-      },
-    ],
-  },
-  benefits: {
-    tag: 'Hva du får igjen',
-    title: 'Konkrete resultater – ikke bare teknologi',
-    items: [
-      {
-        icon: '⏰',
-        title: 'Spar 30–50 timer i måneden',
-        text: 'Reduser tid brukt på repetitive kundeservicespørsmål dramatisk. La teamet ditt fokusere på verdiskapende arbeid.',
-      },
-      {
-        icon: '💰',
-        title: '24/7 uten ekstra lønnskostnader',
-        text: 'Full tilgjengelighet utenfor arbeidstid – uten overtid, vikarer eller nattevakter. Chatboten er alltid klar.',
-      },
-      {
-        icon: '📈',
-        title: 'Flere konverterte leads',
-        text: 'Fang opp og kvalifiser besøkende som ellers ville forlatt siden uten kontakt. Konverter interesse til booking.',
-      },
-      {
-        icon: '🚀',
-        title: 'Ubegrenset skalerbarhet',
-        text: 'Håndter 1 eller 10 000 samtaler simultant uten ekstra kostnad. Chatboten skalerer automatisk med veksten din.',
-      },
-    ],
-  },
-  faq: {
-    title: 'Vanlige spørsmål om AI-chatbot',
-    items: [
-      {
-        q: 'Hvor lang tid tar det å bygge en AI-chatbot?',
-        a: 'En standard chatbot er klar på 2–4 uker. Komplekse AI-agenter med CRM-integrasjon og flerkanal-oppsett tar vanligvis 4–8 uker fra oppstart til lansering.',
-      },
-      {
-        q: 'Hvilke plattformer og kanaler støttes?',
-        a: 'Vi integrerer med nettsider (alle plattformer), Facebook Messenger, Instagram DM, WhatsApp Business og SMS. Vi kan også bygge inn i apper og intranett.',
-      },
-      {
-        q: 'Kan chatboten svare på norsk?',
-        a: 'Ja, vi trener alltid boten primært på norsk. Vi kan støtte alle språk og kan bygge flerspråklige løsninger for bedrifter som opererer internasjonalt.',
-      },
-      {
-        q: 'Hva koster en AI-chatbot?',
-        a: 'Prisen avhenger av kompleksitet, antall integrasjoner og kanaler. Vi tilbyr både engangsbyggoppsett og månedlige abonnementer med videreutvikling. Kontakt oss for et uforpliktende tilbud.',
-      },
-      {
-        q: 'Hva skjer hvis boten ikke kan svare på et spørsmål?',
-        a: 'Vi setter opp intelligente eskaleringsregler. Hvis boten er usikker, sendes henvendelsen videre til et menneske – via e-post, CRM eller live chat – uten at kunden merker overgangen.',
-      },
-    ],
-  },
+const features = {
+  tag: 'Hva du får',
+  title: 'Alt du trenger for <em>AI-drevet salg</em>',
+  items: [
+    {
+      icon: '🎯',
+      title: 'Lead-fangst og kvalifisering',
+      text: 'Samler navn, e-post og telefon automatisk – og kvalifiserer leads basert på din definerte flyt.',
+    },
+    {
+      icon: '💬',
+      title: 'Naturlig samtale',
+      text: 'Agenten forstår kontekst og oppfølgingsspørsmål. Svarene føles naturlige, ikke robotaktige.',
+    },
+    {
+      icon: '📊',
+      title: 'Full oversikt over samtaler',
+      text: 'Alle dialoger lagres i dashboard – du ser nøyaktig hva kundene spør om og hvilke leads som er varme.',
+    },
+    {
+      icon: '⚡',
+      title: 'Settes opp på noen timer',
+      text: 'Vi trener agenten på din nettside og dine tjenester. Fra avtale til live på bare noen timer.',
+    },
+    {
+      icon: '🔔',
+      title: 'Pushvarsel til mobil',
+      text: 'Dersom besøkende ønsker å snakke med et menneske, får du pushvarsel direkte på mobilen.',
+    },
+    {
+      icon: '🧠',
+      title: 'Trent på din bedrift',
+      text: 'Agenten lærer produktene dine, prisene dine og hvordan dere selger. Dermed kan den svare kunder riktig – og guide dem videre mot kjøp.',
+    },
+  ],
+}
+
+const process = {
+  tag: 'Slik gjør vi det',
+  title: 'Fra avtale til aktiv salgsagent – <em>på rekordtid</em>',
+  steps: [
+    {
+      num: '01',
+      title: 'Kartlegging',
+      text: 'Vi går gjennom nettsiden din, tjenestene dine og hva du ønsker at agenten skal gjøre.',
+      chip: 'Gratis innledende møte',
+    },
+    {
+      num: '02',
+      title: 'Trening av AI-agent',
+      text: 'Agenten trenes på innholdet ditt og settes opp med ønsket flyt og tone of voice.',
+      chip: 'Noen timer',
+    },
+    {
+      num: '03',
+      title: 'Integrasjon på nettside',
+      text: 'Vi integrerer agenten på nettsiden din. Fungerer på alle plattformer.',
+      chip: '1–2 dager',
+    },
+    {
+      num: '04',
+      title: 'Oppfølging og optimalisering',
+      text: 'Vi overvåker samtaler, justerer flyten og forbedrer agenten basert på faktisk bruk.',
+      chip: 'Løpende samarbeid',
+    },
+  ],
+}
+
+const faq = {
+  title: 'Vanlige spørsmål om AI-chatbot',
+  items: [
+    {
+      q: 'Hvor lang tid tar det å komme i gang?',
+      a: 'Du kan ha agenten live på nettsiden din innen én arbeidsdag. Vi trener AI-en på ditt innhold og integrerer den direkte på nettsiden.',
+    },
+    {
+      q: 'Hva koster det per måned?',
+      a: '800 kr/mnd (månedlig) eller 600 kr/mnd ved årlig abonnement. I tillegg kommer en etableringsavgift på 10 000 kr som dekker oppsett, trening og integrasjon.',
+    },
+    {
+      q: 'Kan agenten snakke norsk?',
+      a: 'Ja, agenten trenes primært på norsk og tilpasses din bedrifts tone of voice. Vi kan støtte alle språk.',
+    },
+    {
+      q: 'Hva skjer når agenten ikke kan svare?',
+      a: 'Du får et pushvarsel på mobilen og kan ta over samtalen selv. Agenten håndterer overgangen sømløst.',
+    },
+    {
+      q: 'Kan agenten booke møter direkte?',
+      a: 'Ja, vi kan integrere med Calendly, HubSpot, og andre booking-verktøy slik at agenten booker møter direkte i samtalen.',
+    },
+  ],
 }
 
 export default function AIChatbotPage() {
-  return <ServicePage data={data} />
+  return (
+    <>
+      <ServiceHero
+        tag="AI-chatbot"
+        h1="AI-chatbot som svarer kundene dine – <em>24/7</em>"
+        intro="Automatiser kundedialog, kvalifiser leads og book møter automatisk. En AI-salgsagent fra attentio – satt opp på noen timer."
+        slug="ai-chatbot"
+      />
+
+      <AIChatbotPositioning />
+
+      <FeatureGrid
+        tag={features.tag}
+        title={features.title}
+        items={features.items}
+      />
+
+      <ServiceProcess
+        tag={process.tag}
+        title={process.title}
+        steps={process.steps}
+      />
+
+      <PricingSection />
+
+      <FAQ title={faq.title} items={faq.items} />
+
+      <CTASection
+        titleHtml="Klar for å sette opp<br />din <em>salgsagent</em>?"
+        sub="Book et gratis møte. Vi setter opp en demo-agent basert på din nettside – uten forpliktelser."
+      />
+    </>
+  )
 }

@@ -1,0 +1,176 @@
+.section {
+  background: var(--color-ui-bg);
+  padding-top: var(--space-section-y);
+  padding-bottom: var(--space-section-y);
+}
+
+/* ── Header ─────────────────────────────────────── */
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+/* ── Toggle row ─────────────────────────────────── */
+
+.toggleRow {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+/* ── Card wrap ──────────────────────────────────── */
+
+.cardWrap {
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+}
+
+/* ── Enterprise block ───────────────────────────── */
+
+.enterprise {
+  position: relative;
+  overflow: hidden;
+  border: var(--border-1) solid var(--color-ui-border-2);
+  border-radius: var(--radius-card-lg);
+  background: var(--color-ui-bg-2);
+  padding: 2.5rem;
+  box-shadow: 0 4px 24px rgba(119, 82, 233, 0.08);
+}
+
+.topAccent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0.125rem;
+  background: linear-gradient(90deg, var(--color-brand-purple), var(--color-brand-teal));
+}
+
+.enterpriseInner {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 3rem;
+  align-items: center;
+}
+
+/* ── Enterprise content ─────────────────────────── */
+
+.enterpriseTitle {
+  font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--color-ui-text);
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.enterpriseIntro {
+  font-size: 0.9375rem;
+  color: var(--color-ui-text-2);
+  line-height: 1.7;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  max-width: 44rem;
+}
+
+.enterpriseLists {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.enterpriseSubhead {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-ui-text);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.enterpriseBullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.enterpriseBullets li {
+  font-size: 0.875rem;
+  color: var(--color-ui-text-2);
+  font-weight: 300;
+  padding-left: 1.25rem;
+  position: relative;
+  line-height: 1.5;
+}
+
+.enterpriseBullets li::before {
+  content: '·';
+  position: absolute;
+  left: 0.375rem;
+  color: var(--color-brand-purple);
+  font-weight: 700;
+  font-size: 1rem;
+  top: -0.125rem;
+}
+
+/* ── Enterprise CTAs ────────────────────────────── */
+
+.enterpriseCtas {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.enterpriseLink {
+  font-size: 0.875rem;
+  color: var(--color-ui-text-2);
+  text-decoration: none;
+  border-bottom: var(--border-1) solid var(--color-ui-border-2);
+  padding-bottom: 0.125rem;
+  transition: color 0.2s, border-color 0.2s;
+  white-space: nowrap;
+}
+
+.enterpriseLink:hover {
+  color: var(--color-brand-purple);
+  border-color: var(--color-brand-purple);
+}
+
+/* ── Responsive ─────────────────────────────────── */
+
+@media (max-width: 64rem) {
+  .enterpriseInner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .enterpriseCtas {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 40rem) {
+  .enterpriseLists {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .enterprise {
+    padding: 1.75rem 1.5rem;
+  }
+}

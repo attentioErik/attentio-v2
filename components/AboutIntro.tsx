@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from './AboutIntro.module.css'
 
-const TEAM_IMAGE = 'https://ucarecdn.com/1ace1b8a-6d49-44ee-ad31-919e5875db5c/attentioteam04.avif'
+const TEAM_IMAGE = 'https://ucarecdn.com/d82a0722-e9d3-431b-8937-cd9bddbfbff7/attentioteam10.avif'
 
 const metrics = [
   { num: '50+', label: 'Fornøyde kunder' },

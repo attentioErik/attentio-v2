@@ -1,0 +1,50 @@
+.toggle {
+  display: inline-flex;
+  background: var(--color-ui-bg-3);
+  border: var(--border-1) solid var(--color-ui-border);
+  border-radius: var(--radius-pill);
+  padding: 0.25rem;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  border-radius: var(--radius-pill);
+  padding: 0.5rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  background: transparent;
+  color: var(--color-ui-text-2);
+  transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+  font-family: inherit;
+}
+
+.btn:hover:not(.active) {
+  color: var(--color-ui-text);
+}
+
+.active {
+  background: var(--color-brand-purple);
+  color: #fff;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.125rem 0.5rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  background: var(--color-brand-purple-dim);
+  color: var(--color-brand-purple);
+  letter-spacing: 0.01em;
+  transition: background 0.2s, color 0.2s;
+}
+
+.active .badge {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}

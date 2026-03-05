@@ -1,0 +1,92 @@
+.section {
+  background: var(--color-ui-bg);
+  padding-top: var(--space-section-y);
+  padding-bottom: var(--space-section-y);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: clamp(3rem, 6vw, 6rem);
+  align-items: center;
+}
+
+/* ── Left ───────────────────────────────────────── */
+
+.left {
+  max-width: 38rem;
+}
+
+.h2 {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+.lead {
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  color: var(--color-ui-text-2);
+  line-height: 1.7;
+  font-weight: 300;
+  margin-bottom: 0.75rem;
+}
+
+.body {
+  font-size: 1rem;
+  color: var(--color-ui-text-2);
+  font-weight: 400;
+}
+
+/* ── Right: capabilities ────────────────────────── */
+
+.capList {
+  list-style: none;
+  padding: 1.75rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: var(--color-ui-bg-2);
+  border: var(--border-1) solid var(--color-ui-border-2);
+  border-radius: var(--radius-card-lg);
+}
+
+.capItem {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  font-weight: 500;
+  color: var(--color-ui-text);
+  padding: 1rem 0;
+  border-bottom: var(--border-1) solid var(--color-ui-border);
+}
+
+.capItem:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.capItem:first-child {
+  padding-top: 0;
+}
+
+.capIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--color-brand-purple-dim);
+  color: var(--color-brand-purple);
+  flex-shrink: 0;
+}
+
+/* ── Responsive ─────────────────────────────────── */
+
+@media (max-width: 52rem) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
