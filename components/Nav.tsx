@@ -9,8 +9,8 @@ import styles from './Nav.module.css'
 const links = [
   { href: '#tjenester', label: 'Tjenester' },
   { href: '#ai', label: 'AI & Chatbot' },
-  { href: '#prosess', label: 'Prosess' },
   { href: '/prosjekter', label: 'Prosjekter' },
+  { href: '/artikler', label: 'Blogg' },
   { href: '/om-oss', label: 'Om oss' },
   { href: '/kontakt', label: 'Kontakt' },
 ]
