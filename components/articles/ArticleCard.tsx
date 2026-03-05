@@ -3,6 +3,10 @@ import Image from 'next/image'
 import type { Article } from '@/lib/content/types'
 import styles from './ArticleCard.module.css'
 
+function stripHtml(html: string): string {
+  return html.replace(/<[^>]+>/g, '')
+}
+
 interface Props {
   article: Article
   index?: number
@@ -69,7 +73,12 @@ export default function ArticleCard({ article, index = 0 }: Props) {
         </div>
 
         <h3 className={styles.title}>{article.title}</h3>
-        <p className={styles.excerpt}>{article.excerpt}</p>
+        <p className={styles.excerpt}>
+          {article.excerpt ||
+            (article.body
+              ? stripHtml(article.body).slice(0, 180).trim() + '…'
+              : '')}
+        </p>
 
         <span className={styles.readMore}>
           Les artikkelen

@@ -4,10 +4,21 @@ import type { Article } from './types'
 // When Sanity is configured, replace these with GROQ queries.
 // Currently returns static CSV-sourced data.
 
+function stripHtml(html: string): string {
+  return html.replace(/<[^>]+>/g, '')
+}
+
 export function getArticles(): Article[] {
-  return [...articlesData].sort(
-    (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
-  )
+  return [...articlesData]
+    .map((a) => ({
+      ...a,
+      excerpt:
+        a.excerpt ||
+        (a.body ? stripHtml(a.body).slice(0, 180).trim() + '…' : ''),
+    }))
+    .sort(
+      (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
+    )
 }
 
 export function getArticle(slug: string): Article | undefined {
