@@ -17,6 +17,8 @@ export default function ClientSetup() {
         entries.forEach((e) => {
           if (e.isIntersecting) {
             e.target.classList.add('in')
+          } else {
+            e.target.classList.remove('in')
           }
         })
       },
@@ -24,7 +26,15 @@ export default function ClientSetup() {
     )
 
     const raf = requestAnimationFrame(() => {
-      document.querySelectorAll('.reveal').forEach((el) => observer.observe(el))
+      const reveals = document.querySelectorAll('.reveal')
+      reveals.forEach((el) => {
+        observer.observe(el)
+        // Immediately check if element is in viewport
+        const rect = el.getBoundingClientRect()
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          el.classList.add('in')
+        }
+      })
     })
 
     return () => {

@@ -41,9 +41,10 @@
 
 /* Breadcrumb */
 .back {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 0.4375rem;
+  width: fit-content;
   font-size: var(--type-small);
   color: var(--color-ui-text-3);
   text-decoration: none;

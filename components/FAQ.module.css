@@ -98,9 +98,11 @@
 
 .answer {
   overflow: hidden;
+  min-height: 0;
 }
 
 .answer p {
+  padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
