@@ -77,6 +77,42 @@ html {
   --border-1-5: 0.09375rem;
 }
 
+/* ── Light Mode ─────────────────────────── */
+[data-theme="light"] {
+  --color-brand-purple:       #7752e9;
+  --color-brand-purple-light: #6340d4;
+  --color-brand-purple-dim:   rgba(119, 82, 233, 0.10);
+  --color-brand-purple-glow:  rgba(119, 82, 233, 0.18);
+  --color-brand-teal:         #00b5aa;
+  --color-brand-teal-dim:     rgba(0, 181, 170, 0.12);
+
+  --color-ui-bg:       #f5f3fc;
+  --color-ui-bg-2:     #ede9f8;
+  --color-ui-bg-3:     #e6e1f5;
+  --color-ui-surface:  #ddd6f3;
+  --color-ui-text:     #1a1040;
+  --color-ui-text-2:   rgba(26, 16, 64, 0.60);
+  --color-ui-text-3:   rgba(26, 16, 64, 0.35);
+  --color-ui-border:   rgba(119, 82, 233, 0.12);
+  --color-ui-border-2: rgba(119, 82, 233, 0.25);
+
+  --color-glass-bg:     rgba(237, 233, 248, 0.80);
+  --color-glass-border: rgba(119, 82, 233, 0.20);
+  --color-card-hover:   rgba(119, 82, 233, 0.07);
+  --color-shadow:       0 0 5rem rgba(119, 82, 233, 0.10);
+}
+
+/* ── Theme transition (applied only during toggle) ── */
+.theme-transitioning *,
+.theme-transitioning *::before,
+.theme-transitioning *::after {
+  transition:
+    color 0.25s ease,
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease !important;
+}
+
 /* ── Base ───────────────────────────────── */
 body {
   background-color: var(--color-ui-bg);

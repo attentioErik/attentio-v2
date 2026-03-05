@@ -42,9 +42,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="no"
+      suppressHydrationWarning
       className={`${bricolage.variable} ${instrumentSerif.variable} ${dmMono.variable}`}
     >
       <body>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var s=localStorage.getItem('attentio-theme');if(s==='light'||s==='dark'){document.documentElement.setAttribute('data-theme',s);}else{document.documentElement.setAttribute('data-theme',window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');}}catch(e){}})();`,
+          }}
+        />
         <ClientSetup />
         {children}
       </body>

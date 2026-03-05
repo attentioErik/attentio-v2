@@ -97,3 +97,7 @@
     grid-column: auto;
   }
 }
+
+:global([data-theme="light"]) .logo {
+  filter: none;
+}

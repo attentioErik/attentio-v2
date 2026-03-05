@@ -32,7 +32,8 @@ function SunIcon() {
 
 const links = [
   { href: '/tjenester', label: 'Tjenester' },
-  { href: '/services/ai-automation', label: 'AI & Chatbot' },
+  { href: '/ai-chatbot', label: 'AI & Chatbot' },
+  { href: '/ai-automation', label: 'AI-automatisering' },
   { href: '/prosjekter', label: 'Prosjekter' },
   { href: '/artikler', label: 'Blogg' },
   { href: '/om-oss', label: 'Om oss' },

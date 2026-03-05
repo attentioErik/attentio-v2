@@ -6,6 +6,7 @@ import Services from '@/components/Services'
 import StatsBar from '@/components/StatsBar'
 import Process from '@/components/Process'
 import Testimonials from '@/components/Testimonials'
+import TestimonialsVideo from '@/components/TestimonialsVideo'
 import CTASection from '@/components/CTASection'
 import Footer from '@/components/Footer'
 
@@ -21,6 +22,7 @@ export default function Home() {
         <StatsBar />
         <Process />
         <Testimonials />
+        <TestimonialsVideo />
         <CTASection />
       </main>
       <Footer />

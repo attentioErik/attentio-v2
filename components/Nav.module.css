@@ -135,6 +135,32 @@
   color: var(--color-ui-text);
 }
 
+/* Theme toggle */
+.themeToggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background: none;
+  border: var(--border-1) solid var(--color-ui-border-2);
+  cursor: pointer;
+  color: var(--color-ui-text-2);
+  flex-shrink: 0;
+  transition: border-color 0.25s, color 0.25s, background-color 0.25s;
+}
+
+.themeToggle:hover {
+  color: var(--color-ui-text);
+  border-color: var(--color-brand-purple);
+  background-color: var(--color-brand-purple-dim);
+}
+
+:global([data-theme="light"]) .logo {
+  filter: none;
+}
+
 /* Responsive */
 @media (max-width: 60rem) {
   .links {
