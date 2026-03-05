@@ -12,17 +12,19 @@ interface FAQProps {
 export default function FAQ({ title, items }: FAQProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
 
-  const toggle = (i: number) => setOpenIndex(openIndex === i ? null : i)
+  // use functional updater to avoid stale state when toggling quickly
+  const toggle = (i: number) =>
+    setOpenIndex((prev) => (prev === i ? null : i))
 
   return (
     <section className={styles.section}>
       <div className="container">
-        <div className={`${styles.header} reveal`}>
+        <div className={styles.header}>
           <div className="tag">FAQ</div>
           <h2>{title}</h2>
         </div>
 
-        <div className={`${styles.list} reveal rd1`}>
+        <div className={styles.list}>
           {items.map((item, i) => {
             const isOpen = openIndex === i
             return (
@@ -31,6 +33,7 @@ export default function FAQ({ title, items }: FAQProps) {
                 className={`${styles.item} ${isOpen ? styles.open : ''}`}
               >
                 <button
+                  type="button"
                   className={styles.question}
                   onClick={() => toggle(i)}
                   aria-expanded={isOpen}
