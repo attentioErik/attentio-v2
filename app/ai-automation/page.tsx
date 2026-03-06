@@ -5,37 +5,37 @@ import CTASection from '@/components/CTASection'
 import styles from './page.module.css'
 
 export const metadata: Metadata = {
-  title: 'AI og automatisering for moderne bedrifter | attentio',
+  title: 'AI & Automatisering | Effektiviser bedriften din | attentio',
   description:
-    'Attentio bygger AI-chatbots, salgsagenter, workflow-automatisering og AI-integrasjoner som lar bedrifter vokse raskere med mindre manuelt arbeid.',
+    'Vi hjelper bedrifter med å ta i bruk AI og automatisering – fra prosesskartlegging til implementering. Finn flaskehalsene, fjern det manuelle, og jobb smartere.',
 }
 
 const aiServices = [
   {
+    icon: '🔍',
+    title: 'Prosesskartlegging',
+    desc: 'Vi kartlegger arbeidsflyten din, identifiserer flaskehalser og finner ut hvor tid og ressurser forsvinner.',
+    href: '/kontakt',
+    linkLabel: 'Book kartlegging',
+  },
+  {
+    icon: '⚡',
+    title: 'Automatisering av arbeidsflyt',
+    desc: 'Vi fjerner det manuelle – kobler systemer, automatiserer oppgaver og lar verktøyene dine snakke sammen.',
+    href: '/kontakt',
+    linkLabel: 'Kom i gang',
+  },
+  {
     icon: '🤖',
     title: 'AI-chatbot',
-    desc: 'Automatiser kundedialog, svar på henvendelser 24/7 og kvalifiser leads uten manuelt arbeid.',
+    desc: 'En skreddersydd chatbot som svarer kunder, kvalifiserer leads og jobber for deg 24/7.',
     href: '/ai-chatbot',
     linkLabel: 'Les mer om AI-chatbot',
   },
   {
-    icon: '⚡',
-    title: 'AI-automatisering',
-    desc: 'Koble systemer, automatiser arbeidsflyter og eliminer repetitive oppgaver på tvers av verktøyene dine.',
-    href: '/kontakt',
-    linkLabel: 'Kom i gang',
-  },
-  {
-    icon: '🎯',
-    title: 'AI-salgsagent',
-    desc: 'En AI-agent som finner potensielle kunder, sender personlige meldinger og boker møter automatisk.',
-    href: '/kontakt',
-    linkLabel: 'Kom i gang',
-  },
-  {
     icon: '🔗',
-    title: 'Integrasjoner',
-    desc: 'Sømløs kobling mellom AI og dine eksisterende systemer – CRM, ERP, markedsføring og mer.',
+    title: 'AI-integrasjoner',
+    desc: 'Vi kobler AI til dine eksisterende systemer – CRM, ERP, e-post og mer – slik at alt flyter sømløst.',
     href: '/kontakt',
     linkLabel: 'Kom i gang',
   },
@@ -43,47 +43,47 @@ const aiServices = [
 
 const useCases = [
   {
+    icon: '📋',
+    title: 'Tunge manuelle prosesser',
+    text: 'Bruker teamet timer på å flytte data mellom systemer, fylle ut skjemaer manuelt eller generere rapporter? Vi automatiserer det.',
+  },
+  {
     icon: '💬',
-    title: 'Kundesupport',
-    text: 'Svar automatisk på de 80 % vanligste henvendelsene. Frigjør teamet til å jobbe med komplekse saker og verdiskapende arbeid.',
+    title: 'Repetitiv kundedialog',
+    text: 'De samme spørsmålene gang etter gang? En AI-chatbot håndterer de vanligste henvendelsene – og frigir teamet ditt til viktigere arbeid.',
   },
   {
-    icon: '🎯',
-    title: 'Leadgenerering',
-    text: 'Fang opp og kvalifiser besøkende som ellers ville forlatt siden. Konverter interesse til bookede møter – automatisk.',
-  },
-  {
-    icon: '📅',
-    title: 'Booking og møteplanlegging',
-    text: 'La AI-en ta seg av møtebooking, påminnelser og oppfølging. Kundene booker når det passer dem – du trenger ikke løfte en finger.',
+    icon: '🔄',
+    title: 'Usammenhengende verktøy',
+    text: 'Når CRM, e-post, prosjektstyring og regnskap ikke snakker sammen, skapes det friksjoner. Vi kobler alt sømløst.',
   },
   {
     icon: '⚙️',
-    title: 'Intern automatisering',
-    text: 'Automatiser rapporter, datahåndtering og interne prosesser. Mer tid til det som faktisk skaper verdi for bedriften.',
+    title: 'Skalering uten ekstra folk',
+    text: 'Vekst trenger ikke bety flere ansatte. Med riktig automatisering håndterer du mer uten å øke lønnskostnadene.',
   },
 ]
 
 const benefits = [
   {
-    num: '24/7',
-    title: 'Alltid tilgjengelig',
-    text: 'AI-løsningene dine jobber døgnet rundt, også når teamet ditt er logget av.',
-  },
-  {
     num: '80%',
-    title: 'Redusert manuelt arbeid',
-    text: 'Automatiser de mest repetitive oppgavene og la folk jobbe med det som krever menneskelig vurdering.',
+    title: 'Mindre manuelt arbeid',
+    text: 'Fjern de mest tidkrevende oppgavene og la teamet fokusere på det som krever menneskelig vurdering.',
   },
   {
-    num: '<2s',
-    title: 'Raskere responstid',
-    text: 'Kunder får svar på sekunder – ikke timer. Økt tilfredshet og bedre konvertering.',
+    num: '24/7',
+    title: 'Alltid i drift',
+    text: 'Automatiserte prosesser og AI-agenter jobber døgnet rundt – uten overtid eller fravær.',
   },
   {
     num: '3×',
-    title: 'Flere kvalifiserte leads',
-    text: 'AI-agenter som aktivt engasjerer besøkende gir markant flere kvalifiserte leads enn passivt kontaktskjema.',
+    title: 'Raskere gjennomløp',
+    text: 'Oppgaver som tok timer gjøres på sekunder. Fra rapportering til kundeoppfølging – alt går raskere.',
+  },
+  {
+    num: '↓',
+    title: 'Lavere feilrate',
+    text: 'Automatiserte prosesser eliminerer menneskelige feil i dataregistrering, overføring og rapportering.',
   },
 ]
 
@@ -104,12 +104,13 @@ export default function AIAutomationPage() {
           <div className={`${styles.heroText} reveal`}>
             <div className="tag">AI &amp; Automatisering</div>
             <h1>
-              AI og automatisering<br />
-              for <em>moderne bedrifter</em>
+              Vi hjelper deg å jobbe<br />
+              <em>smartere</em> – ikke hardere
             </h1>
             <p className={styles.heroIntro}>
-              Attentio bygger AI-chatbots, salgsagenter, workflow-automatisering og
-              integrasjoner som lar bedrifter vokse raskere – med mindre manuelt arbeid.
+              Vi kartlegger bedriften din, finner flaskehalsene og implementerer AI og
+              automatisering som faktisk gjør hverdagen enklere. Fra tunge manuelle prosesser
+              til smarte, automatiserte arbeidsflyter.
             </p>
           </div>
           <div className={`${styles.heroActions} reveal`}>
@@ -128,10 +129,10 @@ export default function AIAutomationPage() {
       <section className={styles.servicesSection} id="ai-losninger">
         <div className="container">
           <div className={`${styles.sectionHeader} reveal`}>
-            <div className="tag">Våre AI-løsninger</div>
+            <div className="tag">Hva vi gjør</div>
             <h2>
-              Fire måter vi bruker<br />
-              <em>AI for bedriften din</em>
+              Fra kartlegging til<br />
+              <em>ferdig implementering</em>
             </h2>
           </div>
 
@@ -155,9 +156,9 @@ export default function AIAutomationPage() {
       <section className={styles.useCasesSection}>
         <div className="container">
           <div className={`${styles.sectionHeaderLeft} reveal`}>
-            <div className="tag">Bruksområder</div>
+            <div className="tag">Kjenner du deg igjen?</div>
             <h2>
-              Vanlige problemer AI<br />
+              Typiske utfordringer vi<br />
               <em>løser for bedrifter</em>
             </h2>
           </div>
@@ -180,10 +181,10 @@ export default function AIAutomationPage() {
       <section className={styles.benefitsSection}>
         <div className="container">
           <div className={`${styles.sectionHeader} reveal`}>
-            <div className="tag">Hvorfor AI?</div>
+            <div className="tag">Resultater</div>
             <h2>
-              Hva AI faktisk<br />
-              <em>gjør for bedriften din</em>
+              Hva automatisering<br />
+              <em>gjør for bunnlinjen</em>
             </h2>
           </div>
 
@@ -199,8 +200,33 @@ export default function AIAutomationPage() {
         </div>
       </section>
 
+      {/* ── Chatbot CTA ────────────────────────── */}
+      <section className={styles.chatbotCta}>
+        <div className="container">
+          <div className={`${styles.chatbotCtaInner} reveal`}>
+            <div>
+              <div className="tag">AI-chatbot</div>
+              <h2>
+                Trenger du en chatbot<br />
+                som <em>jobber for deg</em>?
+              </h2>
+              <p className={styles.chatbotCtaText}>
+                Vi har en dedikert løsning for bedrifter som ønsker en AI-chatbot på nettsiden – klar på noen timer.
+              </p>
+            </div>
+            <Button href="/ai-chatbot" variant="primary">
+              Les mer om AI-chatbot
+              <IconArrow />
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* ── CTA ───────────────────────────────── */}
-      <CTASection />
+      <CTASection
+        titleHtml="Klar for å jobbe<br /><em>smartere</em>?"
+        sub="Book et gratis møte. Vi kartlegger mulighetene dine og viser hva som kan automatiseres – uten forpliktelser."
+      />
     </>
   )
 }

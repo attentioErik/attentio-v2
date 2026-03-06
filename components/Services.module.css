@@ -71,6 +71,10 @@
   background-color: rgba(119, 82, 233, 0.18);
 }
 
+:global([data-theme="light"]) .heroCard:hover {
+  background-color: rgba(107, 70, 214, 0.10);
+}
+
 /* AI badge */
 .aiBadge {
   position: absolute;
@@ -138,6 +142,15 @@
 .card:hover .arrow {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Light mode */
+:global([data-theme="light"]) .card {
+  background-color: #fff;
+}
+
+:global([data-theme="light"]) .card:hover {
+  background-color: var(--color-ui-bg-2);
 }
 
 /* Responsive */

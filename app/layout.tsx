@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     'Attentio er Bergens ledende AI-byrå. Vi bygger chatbots, nettsider, markedsføring og video – alt drevet av kunstig intelligens.',
   openGraph: {
     title: 'attentio | AI-drevet Digitalbyrå i Bergen',
-    description: 'Chatbots, nettsider, markedsføring og video – alt drevet av AI.',
+    description: 'Chatbots, nettsider, markedsføring og video. Tech-byrået som faktisk leverer vekst.',
     locale: 'nb_NO',
     type: 'website',
   },

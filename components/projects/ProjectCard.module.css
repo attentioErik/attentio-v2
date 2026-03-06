@@ -55,7 +55,7 @@
 
 .tag {
   background-color: rgba(20, 20, 32, 0.85);
-  border: var(--border-1) solid var(--color-ui-border-2);
+  border: var(--border-1) solid rgba(119, 82, 233, 0.18);
   backdrop-filter: blur(0.5rem);
   -webkit-backdrop-filter: blur(0.5rem);
   border-radius: var(--radius-pill);
@@ -63,7 +63,7 @@
   font-size: 0.625rem;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  color: var(--color-brand-purple-light);
+  color: #9b7ef5;
   font-family: var(--font-mono);
   white-space: nowrap;
 }

@@ -11,7 +11,7 @@ export default function ChatbotDemoSection() {
             Slik ser din <em>AI-salgsagent</em> ut
           </h2>
           <p className={styles.headerSub}>
-            Under ser du et eksempel på en samtale – slik chatboten din vil engasjere besøkende, kvalifisere leads og skaffe deg bookede møter.
+            Under ser du et eksempel på en samtale – slik chatboten din vil engasjere besøkende, kvalifisere leads og levere varme kontakter direkte til deg.
           </p>
         </div>
 
@@ -42,8 +42,8 @@ export default function ChatbotDemoSection() {
               {[
                 'Svarer på produktspørsmål og priser',
                 'Samler inn navn, e-post og behov',
-                'Booker møter direkte i kalenderen din',
-                'Eskalerer til menneske ved behov',
+                'Manuell overtakelse av varme samtaler',
+                'Pushvarsel når en lead er klar',
               ].map((item) => (
                 <li key={item} className={styles.checkItem}>
                   <span className={styles.checkIcon} aria-hidden="true">✓</span>

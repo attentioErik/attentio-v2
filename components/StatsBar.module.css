@@ -37,6 +37,21 @@
   color: var(--color-ui-text-2);
 }
 
+.sub {
+  font-size: 0.75rem;
+  color: var(--color-ui-text-3);
+  margin-top: 0.375rem;
+  line-height: 1.4;
+}
+
+:global([data-theme="light"]) .block {
+  background-color: #fff;
+}
+
+:global([data-theme="light"]) .block:hover {
+  background-color: var(--color-ui-bg-2);
+}
+
 @media (max-width: 60rem) {
   .bar {
     grid-template-columns: repeat(2, 1fr);

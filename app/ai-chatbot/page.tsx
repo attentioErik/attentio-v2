@@ -10,7 +10,7 @@ import PricingSection from '@/components/PricingSection'
 export const metadata: Metadata = {
   title: 'AI-chatbot som svarer kundene dine – 24/7 | attentio',
   description:
-    'Automatiser kundedialog, kvalifiser leads og book møter automatisk med en skreddersydd AI-chatbot fra attentio. Bergen-basert AI-byrå.',
+    'Automatiser kundedialog og kvalifiser leads med en skreddersydd AI-chatbot fra attentio. Ta over varme samtaler når det teller. Bergen-basert AI-byrå.',
 }
 
 const features = {
@@ -101,8 +101,8 @@ const faq = {
       a: 'Du får et pushvarsel på mobilen og kan ta over samtalen selv. Agenten håndterer overgangen sømløst.',
     },
     {
-      q: 'Kan agenten booke møter direkte?',
-      a: 'Ja, vi kan integrere med Calendly, HubSpot, og andre booking-verktøy slik at agenten booker møter direkte i samtalen.',
+      q: 'Kan vi ta over samtalen manuelt?',
+      a: 'Ja. Når agenten identifiserer en varm lead, får du pushvarsel. Du kan ta over samtalen direkte og fortsette dialogen selv – sømløst og uten at kunden merker overgangen.',
     },
   ],
 }
@@ -113,7 +113,7 @@ export default function AIChatbotPage() {
       <ServiceHero
         tag="AI-chatbot"
         h1="AI-chatbot som svarer kundene dine – <em>24/7</em>"
-        intro="Automatiser kundedialog, kvalifiser leads og book møter automatisk. En AI-salgsagent fra attentio – satt opp på noen timer."
+        intro="Automatiser kundedialog og kvalifiser leads – med mulighet for manuell overtakelse når en samtale er varm. En AI-salgsagent fra attentio, satt opp på noen timer."
         slug="ai-chatbot"
       />
 

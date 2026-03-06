@@ -79,27 +79,32 @@ html {
 
 /* ── Light Mode ─────────────────────────── */
 [data-theme="light"] {
-  --color-brand-purple:       #7752e9;
-  --color-brand-purple-light: #6340d4;
-  --color-brand-purple-dim:   rgba(119, 82, 233, 0.10);
-  --color-brand-purple-glow:  rgba(119, 82, 233, 0.18);
-  --color-brand-teal:         #00b5aa;
-  --color-brand-teal-dim:     rgba(0, 181, 170, 0.12);
+  --color-brand-purple:       #6b46d6;
+  --color-brand-purple-light: #5a38c0;
+  --color-brand-purple-dim:   rgba(107, 70, 214, 0.08);
+  --color-brand-purple-glow:  rgba(107, 70, 214, 0.15);
+  --color-brand-teal:         #009e95;
+  --color-brand-teal-dim:     rgba(0, 158, 149, 0.08);
 
-  --color-ui-bg:       #f5f3fc;
-  --color-ui-bg-2:     #ede9f8;
-  --color-ui-bg-3:     #e6e1f5;
-  --color-ui-surface:  #ddd6f3;
+  --color-ui-bg:       #faf9fe;
+  --color-ui-bg-2:     #f3f1fa;
+  --color-ui-bg-3:     #eceaf6;
+  --color-ui-surface:  #e5e2f2;
   --color-ui-text:     #1a1040;
-  --color-ui-text-2:   rgba(26, 16, 64, 0.60);
-  --color-ui-text-3:   rgba(26, 16, 64, 0.35);
-  --color-ui-border:   rgba(119, 82, 233, 0.12);
-  --color-ui-border-2: rgba(119, 82, 233, 0.25);
+  --color-ui-text-2:   rgba(26, 16, 64, 0.64);
+  --color-ui-text-3:   rgba(26, 16, 64, 0.42);
+  --color-ui-border:   rgba(26, 16, 64, 0.10);
+  --color-ui-border-2: rgba(107, 70, 214, 0.22);
 
-  --color-glass-bg:     rgba(237, 233, 248, 0.80);
-  --color-glass-border: rgba(119, 82, 233, 0.20);
-  --color-card-hover:   rgba(119, 82, 233, 0.07);
-  --color-shadow:       0 0 5rem rgba(119, 82, 233, 0.10);
+  --color-glass-bg:     rgba(250, 249, 254, 0.85);
+  --color-glass-border: rgba(107, 70, 214, 0.16);
+  --color-card-hover:   rgba(107, 70, 214, 0.05);
+  --color-shadow:       0 0.25rem 2rem rgba(26, 16, 64, 0.06);
+}
+
+/* ── Light Mode: component overrides ───── */
+[data-theme="light"] body::after {
+  opacity: 0.15;
 }
 
 /* ── Theme transition (applied only during toggle) ── */

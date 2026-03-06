@@ -21,8 +21,8 @@ export default function Home() {
         <Services />
         <StatsBar />
         <Process />
-        <Testimonials />
         <TestimonialsVideo />
+        <Testimonials />
         <CTASection />
       </main>
       <Footer />

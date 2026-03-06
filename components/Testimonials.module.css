@@ -72,6 +72,16 @@
   margin-top: 0.125rem;
 }
 
+:global([data-theme="light"]) .card {
+  background-color: #fff;
+  border-color: rgba(26, 16, 64, 0.08);
+}
+
+:global([data-theme="light"]) .card:hover {
+  border-color: rgba(107, 70, 214, 0.20);
+  background-color: #fff;
+}
+
 @media (max-width: 60rem) {
   .grid {
     grid-template-columns: 1fr;

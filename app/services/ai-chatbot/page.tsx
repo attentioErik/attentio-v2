@@ -10,11 +10,11 @@ import ChatbotDemoSection from '@/components/ChatbotDemoSection'
 export const metadata: Metadata = {
   title: 'AI Chatbot & Salgsagent | Automatisk leadgenerering 24/7 | attentio',
   description:
-    'En AI-chatbot som svarer kunder, kvalifiserer leads og booker møter automatisk – 24/7. Skreddersydd for din bedrift. Bergen-basert AI-byrå.',
+    'En AI-chatbot som svarer kunder og kvalifiserer leads – 24/7. Ta over varme samtaler manuelt når det teller. Bergen-basert AI-byrå.',
   openGraph: {
     title: 'AI Chatbot & Salgsagent | Automatisk leadgenerering 24/7 | attentio',
     description:
-      'En AI-chatbot som svarer kunder, kvalifiserer leads og booker møter automatisk – 24/7.',
+      'En AI-chatbot som svarer kunder og kvalifiserer leads – 24/7. Manuell overtakelse når det teller.',
     locale: 'nb_NO',
     type: 'website',
   },
@@ -84,8 +84,8 @@ const steps = [
   },
   {
     num: '04',
-    title: 'Du mottar varme leads eller bookede møter',
-    text: 'Ferdig kvalifiserte leads eller direkte bookede møter leveres til innboksen din eller CRM – klare for oppfølging.',
+    title: 'Du mottar varme leads – klar til oppfølging',
+    text: 'Ferdig kvalifiserte leads leveres til innboksen din eller CRM. Når en samtale er varm, kan du ta over manuelt og lukke salget selv.',
     chip: 'Løpende resultater',
   },
 ]
@@ -116,15 +116,15 @@ const benefits = [
 const faqItems = [
   {
     q: 'Hva er en AI-chatbot?',
-    a: 'En AI-chatbot er et system som kommuniserer med besøkende på nettsiden din i sanntid via tekst. Den er trent på din bedrift og kan svare på spørsmål, samle leads og booke møter automatisk – uten at du trenger å involvere deg.',
+    a: 'En AI-chatbot er et system som kommuniserer med besøkende på nettsiden din i sanntid via tekst. Den er trent på din bedrift og kan svare på spørsmål og samle leads automatisk. Når en samtale er varm, kan du enkelt ta over selv.',
   },
   {
     q: 'Hvor lang tid tar det å sette opp chatboten?',
     a: 'En standard chatbot er klar innen 1–2 uker. Vi gjennomfører et oppstartsmøte, trener chatboten på dine data og integrerer den på nettsiden. Du er live raskt og får resultater fra dag én.',
   },
   {
-    q: 'Kan chatboten booke møter direkte?',
-    a: 'Ja! Vi kan koble chatboten til Google Calendar, Calendly eller andre bookingsystemer slik at kunder booker møter direkte i samtalen – uten at du trenger å involvere deg manuelt.',
+    q: 'Kan vi ta over en samtale manuelt?',
+    a: 'Ja. Når chatboten identifiserer en varm lead, får du pushvarsel på mobilen. Du kan ta over samtalen direkte og fortsette dialogen selv – sømløst og uten at kunden merker overgangen.',
   },
   {
     q: 'Integrerer chatboten med CRM-systemet vårt?',
@@ -148,7 +148,7 @@ export default function AiChatbotPage() {
       <ServiceHero
         tag="AI Chatbot & Salgsagent"
         h1="En AI-chatbot som <em>selger for deg</em> – 24/7"
-        intro="Chatboten svarer på spørsmål, kvalifiserer leads og booker møter automatisk – slik at du aldri mister en potensiell kunde igjen."
+        intro="Chatboten svarer på spørsmål og kvalifiserer leads automatisk. Når en samtale er varm, kan du ta over selv – slik at du aldri mister en potensiell kunde."
         slug="ai-chatbot"
         ctaPrimary={{ label: 'Book demo', href: 'mailto:post@attentio.no' }}
         ctaSecondary={{ label: 'Se hvordan det fungerer', href: '#demo' }}

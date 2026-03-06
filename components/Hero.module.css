@@ -174,6 +174,14 @@
   background: linear-gradient(to right, transparent, var(--color-ui-text-3));
 }
 
+/* Light mode adjustments */
+:global([data-theme="light"]) .mesh {
+  background:
+    radial-gradient(ellipse 60% 55% at 75% 30%, rgba(107, 70, 214, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 40% at 20% 70%, rgba(0, 158, 149, 0.06) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 60% at 50% 50%, rgba(107, 70, 214, 0.03) 0%, transparent 80%);
+}
+
 /* Responsive */
 @media (max-width: 60rem) {
   .stats {

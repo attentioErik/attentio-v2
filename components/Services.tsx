@@ -7,7 +7,7 @@ const services = [
     emoji: '🤖',
     slug: 'ai-automation',
     title: 'AI & Automatisering',
-    text: 'Chatbots, AI-agenter og arbeidsflytautomatisering som frigjør tid og øker konverteringer.',
+    text: 'Prosesskartlegging, automatisering og AI-løsninger som frigjør tid og fjerner manuelt arbeid.',
     hero: true,
   },
   {

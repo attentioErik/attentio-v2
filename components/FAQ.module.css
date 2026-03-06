@@ -112,6 +112,14 @@
   font-weight: 300;
 }
 
+:global([data-theme="light"]) .item {
+  background-color: #fff;
+}
+
+:global([data-theme="light"]) .item.open {
+  background-color: var(--color-ui-bg-2);
+}
+
 @media (max-width: 40rem) {
   .question {
     padding-left: 1.25rem;

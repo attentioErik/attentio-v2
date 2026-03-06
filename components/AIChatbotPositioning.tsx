@@ -4,7 +4,7 @@ const capabilities = [
   'svare kunder',
   'kvalifisere leads',
   'samle kontaktinformasjon',
-  'booke møter',
+  'varsle deg ved varme samtaler',
 ]
 
 function ArrowIcon() {

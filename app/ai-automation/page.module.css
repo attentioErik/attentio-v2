@@ -252,6 +252,31 @@
   text-align: left;
 }
 
+/* ── Chatbot CTA banner ──────────────────── */
+.chatbotCta {
+  padding-top: var(--space-section-y);
+  padding-bottom: var(--space-section-y);
+}
+
+.chatbotCtaInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap-48);
+  background-color: var(--color-ui-bg-2);
+  border: var(--border-1) solid var(--color-ui-border);
+  border-radius: var(--radius-card-lg);
+  padding: clamp(2rem, 3vw, 3rem);
+}
+
+.chatbotCtaText {
+  font-size: var(--type-body);
+  color: var(--color-ui-text-2);
+  line-height: 1.7;
+  margin-top: 1.25rem;
+  max-width: 32rem;
+}
+
 /* ── Responsive ──────────────────────────── */
 @media (max-width: 64rem) {
   .servicesGrid {
@@ -269,6 +294,13 @@
 
   .benefitsGrid {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 60rem) {
+  .chatbotCtaInner {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 

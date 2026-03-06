@@ -36,7 +36,7 @@ export default function Hero() {
 
       {/* Sub */}
       <p className={styles.sub}>
-        Chatbots, nettsider, markedsføring og video – alt drevet av AI.
+        Chatbots, nettsider, markedsføring og video.
         Vi er tech-byrået som faktisk leverer vekst.
       </p>
 
