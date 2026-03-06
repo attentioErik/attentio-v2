@@ -76,7 +76,7 @@ export default function Services() {
           {services.map((s) => (
             <a
               key={s.slug}
-              href={`/services/${s.slug}`}
+              href={`/tjenester/${s.slug}`}
               className={`${styles.card} ${s.hero ? styles.heroCard : ''}`}
               data-cursor="hover"
             >

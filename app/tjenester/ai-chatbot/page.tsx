@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     description: 'En AI-chatbot som selger for deg – 24/7.',
   },
   alternates: {
-    canonical: '/services/ai-chatbot',
+    canonical: '/tjenester/ai-chatbot',
   },
 }
 

@@ -18,6 +18,10 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // Old /services/ → /tjenester/ redirects
+      { source: '/services', destination: '/tjenester', permanent: true },
+      { source: '/services/:path*', destination: '/tjenester/:path*', permanent: true },
+
       // AI Automatisering sub-service redirects
       { source: '/ai-markedsforing', destination: '/ai-automatisering', permanent: true },
       { source: '/automatisering', destination: '/ai-automatisering', permanent: true },

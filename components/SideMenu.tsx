@@ -16,10 +16,10 @@ const pages = [
 const services = [
   { href: '/ai-chatbot',                  label: 'AI Chatbot',        icon: '🤖' },
   { href: '/ai-automation',               label: 'AI Automatisering', icon: '⚡' },
-  { href: '/services/web-development',    label: 'Nettsider',         icon: '🌐' },
-  { href: '/services/digital-marketing',  label: 'Markedsføring',     icon: '📣' },
-  { href: '/services/video-photo',        label: 'Video & Foto',      icon: '🎬' },
-  { href: '/services/3d-scanning',        label: '3D-scanning',       icon: '📐' },
+  { href: '/tjenester/web-app-nettsid',    label: 'Nettsider',         icon: '🌐' },
+  { href: '/tjenester/digital-markedsforing', label: 'Markedsføring',  icon: '📣' },
+  { href: '/tjenester/video-foto',        label: 'Video & Foto',      icon: '🎬' },
+  { href: '/tjenester/3d-scanning',       label: '3D-scanning',       icon: '📐' },
 ]
 
 interface Props {

@@ -64,7 +64,7 @@ export interface ServiceData {
 const services: ServiceData[] = [
   // ── 1. AI & Automatisering ──────────────────
   {
-    slug: 'ai-automation',
+    slug: 'ai-automatisering',
     emoji: '🤖',
     meta: {
       title: 'AI & Automatisering | Effektiviser bedriften | attentio',
@@ -198,7 +198,7 @@ const services: ServiceData[] = [
 
   // ── 2. Web & App ────────────────────────────
   {
-    slug: 'web-development',
+    slug: 'web-app-nettsid',
     emoji: '🌐',
     meta: {
       title: 'Web & App | Konverteringsdrevne nettsider | attentio',
@@ -332,7 +332,7 @@ const services: ServiceData[] = [
 
   // ── 3. Digital markedsføring ────────────────
   {
-    slug: 'digital-marketing',
+    slug: 'digital-markedsforing',
     emoji: '📈',
     meta: {
       title: 'Digital markedsføring | SEO, Google Ads & Meta Ads | attentio',
@@ -466,7 +466,7 @@ const services: ServiceData[] = [
 
   // ── 4. Video & Foto ─────────────────────────
   {
-    slug: 'video-photo',
+    slug: 'video-foto',
     emoji: '🎬',
     meta: {
       title: 'Video & Foto | Promo, Reels & Dronefilm | attentio',
