@@ -5,7 +5,7 @@ const services = [
   {
     num: '01',
     emoji: '🤖',
-    slug: 'ai-automation',
+    slug: 'ai-automatisering',
     title: 'AI & Automatisering',
     text: 'Prosesskartlegging, automatisering og AI-løsninger som frigjør tid og fjerner manuelt arbeid.',
     hero: true,
@@ -13,21 +13,21 @@ const services = [
   {
     num: '02',
     emoji: '🌐',
-    slug: 'web-development',
+    slug: 'web-app-nettsid',
     title: 'Web & App',
     text: 'Raske, konverteringsdrevne nettsider og skreddersydde apper – bygget for å vokse.',
   },
   {
     num: '03',
     emoji: '📈',
-    slug: 'digital-marketing',
+    slug: 'digital-markedsforing',
     title: 'Digital markedsføring',
     text: 'SEO, Google Ads og Meta – med målbare resultater og tydelig ROI for din bransje.',
   },
   {
     num: '04',
     emoji: '🎬',
-    slug: 'video-photo',
+    slug: 'video-foto',
     title: 'Video & Foto',
     text: 'Promo, reels, dronefilm og produktfoto som stopper scrollingen og bygger tilliten.',
   },
