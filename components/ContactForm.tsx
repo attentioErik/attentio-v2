@@ -1,10 +1,13 @@
 'use client'
 
-import { useState, FormEvent } from 'react'
+import { useState, useEffect, FormEvent } from 'react'
+import { useSearchParams } from 'next/navigation'
 import Button from './Button'
 import styles from './ContactForm.module.css'
 
 export default function ContactForm() {
+  const searchParams = useSearchParams()
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -15,6 +18,13 @@ export default function ContactForm() {
   })
   const [loading, setLoading] = useState(false)
   const [success, setSuccess] = useState(false)
+
+  useEffect(() => {
+    const service = searchParams.get('service')
+    if (service) {
+      setFormData((prev) => ({ ...prev, service }))
+    }
+  }, [searchParams])
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target
@@ -140,6 +150,7 @@ export default function ContactForm() {
               className={styles.select}
             >
               <option value="">Velg en tjeneste...</option>
+              <option value="meeting">Ønsker møte</option>
               <option value="ai-automation">AI & Automatisering</option>
               <option value="web-development">Web & App</option>
               <option value="digital-marketing">Digital markedsføring</option>
@@ -173,7 +184,7 @@ export default function ContactForm() {
               {loading ? 'Sender...' : 'Send melding'}
             </Button>
             <p className={styles.privacyNote}>
-              Vi behandler dine data i henhold til GDPR. Se vår <a href="/privacy">personvernerklæring</a>.
+              Vi behandler dine data i henhold til GDPR. Se vår <a href="/personvern">personvernerklæring</a>.
             </p>
           </div>
         </form>

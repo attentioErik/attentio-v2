@@ -9,8 +9,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
     { url: baseUrl, lastModified: new Date(), changeFrequency: 'weekly', priority: 1.0 },
     { url: `${baseUrl}/tjenester`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
-    { url: `${baseUrl}/ai-chatbot`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
-    { url: `${baseUrl}/ai-automation`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${baseUrl}/tjenester/ai-chatbot`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${baseUrl}/tjenester/ai-automation`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${baseUrl}/om-oss`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/kontakt`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/artikler`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 },
@@ -35,7 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '3d-visualisering', 'digital-twin', 'eiendom-3d', 'bygg-anlegg-3d',
   ]
   const subServicePages: MetadataRoute.Sitemap = subServiceSlugs.map((slug) => ({
-    url: `${baseUrl}/${slug}`,
+    url: `${baseUrl}/tjenester/${slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: 0.6,

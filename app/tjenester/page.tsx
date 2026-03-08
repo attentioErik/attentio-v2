@@ -1,21 +1,20 @@
 import type { Metadata } from 'next'
-import Services from '@/components/Services'
-import CTASection from '@/components/CTASection'
+import TjenesterClient from './TjenesterClient'
 
 export const metadata: Metadata = {
-  title: 'Tjenester | attentio – AI-drevet digitalbyrå i Bergen',
+  title: 'Alle tjenester | attentio – AI-drevet digitalbyrå i Bergen',
   description:
-    'Utforsker alle tjenestene attentio leverer: AI & automatisering, web, digital markedsføring, video & foto, design og 3D-scanning.',
+    'Komplett oversikt over alle tjenestene attentio leverer: AI-chatbot, automatisering, web, markedsføring, video, foto, design og 3D-scanning.',
   openGraph: {
-    title: 'Tjenester | attentio',
-    description: 'AI & automatisering, web, digital markedsføring, video, design og 3D-scanning – alt du trenger under ett tak.',
+    title: 'Alle tjenester | attentio',
+    description: 'AI, web, markedsføring, video, design og 3D-scanning – alt du trenger under ett tak.',
     locale: 'nb_NO',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Tjenester | attentio',
-    description: 'AI & automatisering, web, digital markedsføring, video, design og 3D-scanning – alt du trenger under ett tak.',
+    title: 'Alle tjenester | attentio',
+    description: 'AI, web, markedsføring, video, design og 3D-scanning – alt du trenger under ett tak.',
   },
   alternates: {
     canonical: '/tjenester',
@@ -23,10 +22,5 @@ export const metadata: Metadata = {
 }
 
 export default function TjenesterPage() {
-  return (
-    <>
-      <Services />
-      <CTASection />
-    </>
-  )
+  return <TjenesterClient />
 }

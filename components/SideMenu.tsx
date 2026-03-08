@@ -14,8 +14,8 @@ const pages = [
 ]
 
 const services = [
-  { href: '/ai-chatbot',                  label: 'AI Chatbot',        icon: '🤖' },
-  { href: '/ai-automation',               label: 'AI Automatisering', icon: '⚡' },
+  { href: '/tjenester/ai-chatbot',         label: 'AI Chatbot',        icon: '🤖' },
+  { href: '/tjenester/ai-automation',     label: 'AI Automatisering', icon: '⚡' },
   { href: '/tjenester/web-app-nettsid',    label: 'Nettsider',         icon: '🌐' },
   { href: '/tjenester/digital-markedsforing', label: 'Markedsføring',  icon: '📣' },
   { href: '/tjenester/video-foto',        label: 'Video & Foto',      icon: '🎬' },

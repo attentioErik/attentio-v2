@@ -1,3 +1,4 @@
+import { Suspense } from 'react'
 import type { Metadata } from 'next'
 import Nav from '@/components/Nav'
 import ContactHero from '@/components/ContactHero'
@@ -28,7 +29,9 @@ export default function KontaktPage() {
     <>
       <Nav />
       <ContactHero />
-      <ContactForm />
+      <Suspense>
+        <ContactForm />
+      </Suspense>
       <Footer />
     </>
   )

@@ -66,7 +66,7 @@ export default function Services() {
               <em>Under ett tak.</em>
             </h2>
           </div>
-          <Button href="#kontakt" variant="outline">
+          <Button href="/tjenester" variant="outline">
             Se alle tjenester →
           </Button>
         </div>

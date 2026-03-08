@@ -15,8 +15,13 @@ const features = [
   },
   {
     icon: '🔗',
-    title: 'Integrasjon overalt',
-    text: 'Nettside, Instagram, Facebook, WhatsApp – én chatbot som fungerer på alle kanaler.',
+    title: 'Sømløs integrasjon',
+    text: 'Kobles til ditt CRM og de plattformene du allerede bruker – alt på ett sted.',
+  },
+  {
+    icon: '🇳🇴',
+    title: 'Laget i Norge',
+    text: 'Utviklet og driftet i Norge, med norsk språkforståelse og lokal support.',
   },
 ]
 
