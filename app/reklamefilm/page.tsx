@@ -6,6 +6,22 @@ export const metadata: Metadata = {
   title: 'Reklamefilm | Profesjonell filmproduksjon | attentio',
   description:
     'Vi produserer reklamefilm som selger. Fra konsept til ferdig film – tilpasset TV, nett og sosiale medier. attentio i Bergen.',
+  openGraph: {
+    title: 'Reklamefilm | Profesjonell filmproduksjon | attentio',
+    description:
+      'Vi produserer reklamefilm som selger. Fra konsept til ferdig film – tilpasset TV, nett og sosiale medier. attentio i Bergen.',
+    locale: 'nb_NO',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Reklamefilm | Profesjonell filmproduksjon | attentio',
+    description:
+      'Vi produserer reklamefilm som selger. Fra konsept til ferdig film – tilpasset TV, nett og sosiale medier. attentio i Bergen.',
+  },
+  alternates: {
+    canonical: '/reklamefilm',
+  },
 }
 
 const bullets = [

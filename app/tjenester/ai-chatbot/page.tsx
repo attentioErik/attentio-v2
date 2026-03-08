@@ -6,6 +6,7 @@ import BenefitsList from '@/components/BenefitsList'
 import FAQ from '@/components/FAQ'
 import CTASection from '@/components/CTASection'
 import ChatbotDemoSection from '@/components/ChatbotDemoSection'
+import SchemaMarkup from '@/components/SchemaMarkup'
 
 export const metadata: Metadata = {
   title: 'AI Chatbot & Salgsagent | Automatisk leadgenerering 24/7 | attentio',
@@ -142,9 +143,20 @@ const faqItems = [
 
 // ── Page ─────────────────────────────────────────────────
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqItems.map((item) => ({
+    '@type': 'Question',
+    name: item.q,
+    acceptedAnswer: { '@type': 'Answer', text: item.a },
+  })),
+}
+
 export default function AiChatbotPage() {
   return (
     <>
+      <SchemaMarkup schema={faqSchema} />
       <ServiceHero
         tag="AI Chatbot & Salgsagent"
         h1="En AI-chatbot som <em>selger for deg</em> – 24/7"

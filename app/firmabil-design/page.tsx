@@ -6,6 +6,22 @@ export const metadata: Metadata = {
   title: 'Firmabil-design | Bildekor og foliering | attentio',
   description:
     'Vi designer firmabildekor som gjør deg synlig. Helfoliering, delvis dekor og bilflåtedesign. Kontakt attentio for et designforslag.',
+  openGraph: {
+    title: 'Firmabil-design | Bildekor og foliering | attentio',
+    description:
+      'Vi designer firmabildekor som gjør deg synlig. Helfoliering, delvis dekor og bilflåtedesign. Kontakt attentio for et designforslag.',
+    locale: 'nb_NO',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Firmabil-design | Bildekor og foliering | attentio',
+    description:
+      'Vi designer firmabildekor som gjør deg synlig. Helfoliering, delvis dekor og bilflåtedesign. Kontakt attentio for et designforslag.',
+  },
+  alternates: {
+    canonical: '/firmabil-design',
+  },
 }
 
 const bullets = [

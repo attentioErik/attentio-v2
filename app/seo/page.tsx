@@ -6,6 +6,22 @@ export const metadata: Metadata = {
   title: 'SEO | Søkemotoroptimalisering | attentio',
   description:
     'Profesjonell SEO som gir resultater. Teknisk optimalisering, innholdsstrategi og linkbygging. Vi hjelper deg til toppen av Google.',
+  openGraph: {
+    title: 'SEO | Søkemotoroptimalisering | attentio',
+    description:
+      'Profesjonell SEO som gir resultater. Teknisk optimalisering, innholdsstrategi og linkbygging. Vi hjelper deg til toppen av Google.',
+    locale: 'nb_NO',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'SEO | Søkemotoroptimalisering | attentio',
+    description:
+      'Profesjonell SEO som gir resultater. Teknisk optimalisering, innholdsstrategi og linkbygging. Vi hjelper deg til toppen av Google.',
+  },
+  alternates: {
+    canonical: '/seo',
+  },
 }
 
 const bullets = [

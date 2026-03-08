@@ -8,6 +8,20 @@ export const metadata: Metadata = {
   title: 'AI & Automatisering | Effektiviser bedriften din | attentio',
   description:
     'Vi hjelper bedrifter med å ta i bruk AI og automatisering – fra prosesskartlegging til implementering. Finn flaskehalsene, fjern det manuelle, og jobb smartere.',
+  openGraph: {
+    title: 'AI & Automatisering | attentio',
+    description: 'Vi hjelper bedrifter med å ta i bruk AI og automatisering – fra prosesskartlegging til implementering.',
+    locale: 'nb_NO',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AI & Automatisering | attentio',
+    description: 'Vi hjelper bedrifter med å ta i bruk AI og automatisering – fra prosesskartlegging til implementering.',
+  },
+  alternates: {
+    canonical: '/ai-automation',
+  },
 }
 
 const aiServices = [

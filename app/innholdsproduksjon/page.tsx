@@ -6,6 +6,22 @@ export const metadata: Metadata = {
   title: 'Innholdsproduksjon | Tekst, video og foto | attentio',
   description:
     'Vi produserer innhold som engasjerer og konverterer. Blogg, video, foto og sosiale medier-innhold. attentio – digitalbyrå i Bergen.',
+  openGraph: {
+    title: 'Innholdsproduksjon | Tekst, video og foto | attentio',
+    description:
+      'Vi produserer innhold som engasjerer og konverterer. Blogg, video, foto og sosiale medier-innhold. attentio – digitalbyrå i Bergen.',
+    locale: 'nb_NO',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Innholdsproduksjon | Tekst, video og foto | attentio',
+    description:
+      'Vi produserer innhold som engasjerer og konverterer. Blogg, video, foto og sosiale medier-innhold. attentio – digitalbyrå i Bergen.',
+  },
+  alternates: {
+    canonical: '/innholdsproduksjon',
+  },
 }
 
 const bullets = [

@@ -6,6 +6,22 @@ export const metadata: Metadata = {
   title: 'Apputvikling | iOS & Android apper | attentio',
   description:
     'Vi utvikler skreddersydde apper for iOS og Android. Fra idé til lansering med moderne teknologi. Bergen-basert tech-byrå.',
+  openGraph: {
+    title: 'Apputvikling | iOS & Android apper | attentio',
+    description:
+      'Vi utvikler skreddersydde apper for iOS og Android. Fra idé til lansering med moderne teknologi. Bergen-basert tech-byrå.',
+    locale: 'nb_NO',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Apputvikling | iOS & Android apper | attentio',
+    description:
+      'Vi utvikler skreddersydde apper for iOS og Android. Fra idé til lansering med moderne teknologi. Bergen-basert tech-byrå.',
+  },
+  alternates: {
+    canonical: '/apputvikling',
+  },
 }
 
 export default function ApputviklingPage() {

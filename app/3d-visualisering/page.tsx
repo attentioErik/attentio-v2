@@ -6,6 +6,22 @@ export const metadata: Metadata = {
   title: '3D-visualisering | Fotorealistisk rendering | attentio',
   description:
     'Vi lager fotorealistiske 3D-visualiseringer for arkitektur, eiendom og industri. Animasjoner, stillbilder og interaktive modeller.',
+  openGraph: {
+    title: '3D-visualisering | Fotorealistisk rendering | attentio',
+    description:
+      'Vi lager fotorealistiske 3D-visualiseringer for arkitektur, eiendom og industri. Animasjoner, stillbilder og interaktive modeller.',
+    locale: 'nb_NO',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: '3D-visualisering | Fotorealistisk rendering | attentio',
+    description:
+      'Vi lager fotorealistiske 3D-visualiseringer for arkitektur, eiendom og industri. Animasjoner, stillbilder og interaktive modeller.',
+  },
+  alternates: {
+    canonical: '/3d-visualisering',
+  },
 }
 
 const bullets = [

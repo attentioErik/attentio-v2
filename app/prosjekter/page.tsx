@@ -13,6 +13,11 @@ export const metadata: Metadata = {
     locale: 'nb_NO',
     type: 'website',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Prosjekter | attentio',
+    description: 'Nettside, markedsføring, medieproduksjon og AI – se hva vi har levert.',
+  },
   alternates: {
     canonical: '/prosjekter',
   },

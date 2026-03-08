@@ -6,6 +6,22 @@ export const metadata: Metadata = {
   title: 'Sosiale medier | Strategi og annonsering | attentio',
   description:
     'Profesjonell håndtering av sosiale medier. Strategi, innhold og betalt annonsering på Facebook, Instagram og LinkedIn. attentio i Bergen.',
+  openGraph: {
+    title: 'Sosiale medier | Strategi og annonsering | attentio',
+    description:
+      'Profesjonell håndtering av sosiale medier. Strategi, innhold og betalt annonsering på Facebook, Instagram og LinkedIn. attentio i Bergen.',
+    locale: 'nb_NO',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Sosiale medier | Strategi og annonsering | attentio',
+    description:
+      'Profesjonell håndtering av sosiale medier. Strategi, innhold og betalt annonsering på Facebook, Instagram og LinkedIn. attentio i Bergen.',
+  },
+  alternates: {
+    canonical: '/sosiale-medier',
+  },
 }
 
 const bullets = [

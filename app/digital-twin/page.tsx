@@ -6,6 +6,22 @@ export const metadata: Metadata = {
   title: 'Digital tvilling | 3D-modell av eiendom | attentio',
   description:
     'Vi skaper digitale tvillinger – nøyaktige 3D-kopier av fysiske rom og bygg. Perfekt for eiendom, fasilitetsstyring og dokumentasjon.',
+  openGraph: {
+    title: 'Digital tvilling | 3D-modell av eiendom | attentio',
+    description:
+      'Vi skaper digitale tvillinger – nøyaktige 3D-kopier av fysiske rom og bygg. Perfekt for eiendom, fasilitetsstyring og dokumentasjon.',
+    locale: 'nb_NO',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Digital tvilling | 3D-modell av eiendom | attentio',
+    description:
+      'Vi skaper digitale tvillinger – nøyaktige 3D-kopier av fysiske rom og bygg. Perfekt for eiendom, fasilitetsstyring og dokumentasjon.',
+  },
+  alternates: {
+    canonical: '/digital-twin',
+  },
 }
 
 const bullets = [

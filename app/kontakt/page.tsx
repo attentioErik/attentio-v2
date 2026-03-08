@@ -7,6 +7,20 @@ import Footer from '@/components/Footer'
 export const metadata: Metadata = {
   title: 'Kontakt oss | attentio - AI-drevet Digitalbyrå i Bergen',
   description: 'Ta kontakt med attentio for å diskutere ditt neste prosjekt. Vi svarer på alle henvendelser.',
+  openGraph: {
+    title: 'Kontakt oss | attentio',
+    description: 'Ta kontakt med attentio for å diskutere ditt neste prosjekt. Vi svarer på alle henvendelser.',
+    locale: 'nb_NO',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Kontakt oss | attentio',
+    description: 'Ta kontakt med attentio for å diskutere ditt neste prosjekt.',
+  },
+  alternates: {
+    canonical: '/kontakt',
+  },
 }
 
 export default function KontaktPage() {

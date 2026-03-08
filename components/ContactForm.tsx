@@ -27,18 +27,19 @@ export default function ContactForm() {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setLoading(true)
-    
+
     try {
-      // For now, just log the data. In production, send to API endpoint
-      console.log('Form submitted:', formData)
-      
-      // Simulate submission delay
-      await new Promise((resolve) => setTimeout(resolve, 1000))
-      
+      const res = await fetch('https://usebasin.com/f/4ace1dfa61f1', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(formData),
+      })
+
+      if (!res.ok) throw new Error('Form submission failed')
+
       setSuccess(true)
       setFormData({ name: '', email: '', phone: '', company: '', service: '', message: '' })
-      
-      // Reset success message after 5 seconds
+
       setTimeout(() => setSuccess(false), 5000)
     } catch (error) {
       console.error('Error submitting form:', error)

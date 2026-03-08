@@ -6,6 +6,22 @@ export const metadata: Metadata = {
   title: 'UI/UX-design | Brukeropplevelser som konverterer | attentio',
   description:
     'Vi designer digitale brukeropplevelser som engasjerer og konverterer. UX-research, prototyping og UI-design. Bergen-basert designbyrå.',
+  openGraph: {
+    title: 'UI/UX-design | Brukeropplevelser som konverterer | attentio',
+    description:
+      'Vi designer digitale brukeropplevelser som engasjerer og konverterer. UX-research, prototyping og UI-design. Bergen-basert designbyrå.',
+    locale: 'nb_NO',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'UI/UX-design | Brukeropplevelser som konverterer | attentio',
+    description:
+      'Vi designer digitale brukeropplevelser som engasjerer og konverterer. UX-research, prototyping og UI-design. Bergen-basert designbyrå.',
+  },
+  alternates: {
+    canonical: '/ui-ux-design',
+  },
 }
 
 export default function UiUxDesignPage() {

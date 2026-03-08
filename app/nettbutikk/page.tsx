@@ -6,6 +6,22 @@ export const metadata: Metadata = {
   title: 'Nettbutikk | E-handel som selger | attentio',
   description:
     'Vi bygger nettbutikker som konverterer. Shopify, WooCommerce eller egenutviklet. Komplett oppsett med betaling, frakt og SEO.',
+  openGraph: {
+    title: 'Nettbutikk | E-handel som selger | attentio',
+    description:
+      'Vi bygger nettbutikker som konverterer. Shopify, WooCommerce eller egenutviklet. Komplett oppsett med betaling, frakt og SEO.',
+    locale: 'nb_NO',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Nettbutikk | E-handel som selger | attentio',
+    description:
+      'Vi bygger nettbutikker som konverterer. Shopify, WooCommerce eller egenutviklet. Komplett oppsett med betaling, frakt og SEO.',
+  },
+  alternates: {
+    canonical: '/nettbutikk',
+  },
 }
 
 export default function NettbutikkPage() {

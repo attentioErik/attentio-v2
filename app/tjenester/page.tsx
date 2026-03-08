@@ -12,6 +12,11 @@ export const metadata: Metadata = {
     locale: 'nb_NO',
     type: 'website',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Tjenester | attentio',
+    description: 'AI & automatisering, web, digital markedsføring, video, design og 3D-scanning – alt du trenger under ett tak.',
+  },
   alternates: {
     canonical: '/tjenester',
   },

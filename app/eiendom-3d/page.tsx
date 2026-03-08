@@ -6,6 +6,22 @@ export const metadata: Metadata = {
   title: 'Eiendom 3D | Matterport og virtuelle visninger | attentio',
   description:
     '3D-scanning og virtuelle visninger for eiendom. Matterport, digitale plantegninger og 360-foto. attentio – 3D-partner i Bergen.',
+  openGraph: {
+    title: 'Eiendom 3D | Matterport og virtuelle visninger | attentio',
+    description:
+      '3D-scanning og virtuelle visninger for eiendom. Matterport, digitale plantegninger og 360-foto. attentio – 3D-partner i Bergen.',
+    locale: 'nb_NO',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Eiendom 3D | Matterport og virtuelle visninger | attentio',
+    description:
+      '3D-scanning og virtuelle visninger for eiendom. Matterport, digitale plantegninger og 360-foto. attentio – 3D-partner i Bergen.',
+  },
+  alternates: {
+    canonical: '/eiendom-3d',
+  },
 }
 
 const bullets = [

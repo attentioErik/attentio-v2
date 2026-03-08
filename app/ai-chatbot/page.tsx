@@ -6,11 +6,26 @@ import FAQ from '@/components/FAQ'
 import CTASection from '@/components/CTASection'
 import AIChatbotPositioning from '@/components/AIChatbotPositioning'
 import PricingSection from '@/components/PricingSection'
+import SchemaMarkup from '@/components/SchemaMarkup'
 
 export const metadata: Metadata = {
   title: 'AI-chatbot som svarer kundene dine – 24/7 | attentio',
   description:
     'Automatiser kundedialog og kvalifiser leads med en skreddersydd AI-chatbot fra attentio. Ta over varme samtaler når det teller. Bergen-basert AI-byrå.',
+  openGraph: {
+    title: 'AI-chatbot som svarer kundene dine – 24/7 | attentio',
+    description: 'Automatiser kundedialog og kvalifiser leads med en skreddersydd AI-chatbot fra attentio.',
+    locale: 'nb_NO',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AI-chatbot – 24/7 | attentio',
+    description: 'Automatiser kundedialog og kvalifiser leads med en skreddersydd AI-chatbot fra attentio.',
+  },
+  alternates: {
+    canonical: '/ai-chatbot',
+  },
 }
 
 const features = {
@@ -107,9 +122,31 @@ const faq = {
   ],
 }
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faq.items.map((item) => ({
+    '@type': 'Question',
+    name: item.q,
+    acceptedAnswer: { '@type': 'Answer', text: item.a },
+  })),
+}
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'AI-chatbot og salgsagent',
+  provider: { '@type': 'Organization', name: 'attentio', url: 'https://attentio.no' },
+  description: 'Automatiser kundedialog og kvalifiser leads med en skreddersydd AI-chatbot. Ta over varme samtaler manuelt.',
+  url: 'https://attentio.no/ai-chatbot',
+  areaServed: { '@type': 'Country', name: 'Norway' },
+}
+
 export default function AIChatbotPage() {
   return (
     <>
+      <SchemaMarkup schema={faqSchema} />
+      <SchemaMarkup schema={serviceSchema} />
       <ServiceHero
         tag="AI-chatbot"
         h1="AI-chatbot som svarer kundene dine – <em>24/7</em>"

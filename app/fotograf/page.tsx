@@ -6,6 +6,22 @@ export const metadata: Metadata = {
   title: 'Fotograf i Bergen | Bedriftsfoto og produktfoto | attentio',
   description:
     'Profesjonell fotograf for bedrifter i Bergen. Produkt-, bedrifts- og eventfotografering. Bilder som styrker merkevaren din.',
+  openGraph: {
+    title: 'Fotograf i Bergen | Bedriftsfoto og produktfoto | attentio',
+    description:
+      'Profesjonell fotograf for bedrifter i Bergen. Produkt-, bedrifts- og eventfotografering. Bilder som styrker merkevaren din.',
+    locale: 'nb_NO',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Fotograf i Bergen | Bedriftsfoto og produktfoto | attentio',
+    description:
+      'Profesjonell fotograf for bedrifter i Bergen. Produkt-, bedrifts- og eventfotografering. Bilder som styrker merkevaren din.',
+  },
+  alternates: {
+    canonical: '/fotograf',
+  },
 }
 
 const bullets = [

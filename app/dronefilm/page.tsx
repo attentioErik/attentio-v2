@@ -6,6 +6,22 @@ export const metadata: Metadata = {
   title: 'Dronefilm | Luftfoto og dronefotografering | attentio',
   description:
     'Profesjonell dronefilm og luftfoto i Bergen. 4K droneopptak, byggedokumentasjon og eiendomsfoto. Sertifiserte dronepiloter.',
+  openGraph: {
+    title: 'Dronefilm | Luftfoto og dronefotografering | attentio',
+    description:
+      'Profesjonell dronefilm og luftfoto i Bergen. 4K droneopptak, byggedokumentasjon og eiendomsfoto. Sertifiserte dronepiloter.',
+    locale: 'nb_NO',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Dronefilm | Luftfoto og dronefotografering | attentio',
+    description:
+      'Profesjonell dronefilm og luftfoto i Bergen. 4K droneopptak, byggedokumentasjon og eiendomsfoto. Sertifiserte dronepiloter.',
+  },
+  alternates: {
+    canonical: '/dronefilm',
+  },
 }
 
 const bullets = [

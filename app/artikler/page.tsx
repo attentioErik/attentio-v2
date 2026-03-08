@@ -13,6 +13,11 @@ export const metadata: Metadata = {
     locale: 'nb_NO',
     type: 'website',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Blogg | attentio',
+    description: 'Innsikt og kunnskap om digital markedsføring, SEO og AI.',
+  },
   alternates: {
     canonical: '/artikler',
   },

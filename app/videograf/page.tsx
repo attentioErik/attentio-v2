@@ -6,6 +6,22 @@ export const metadata: Metadata = {
   title: 'Videograf i Bergen | Profesjonell videoproduksjon | attentio',
   description:
     'Profesjonell videograf i Bergen. Bedriftsvideo, reklamfilm og SoMe-innhold. Fra konsept til ferdig produksjon. Kontakt attentio.',
+  openGraph: {
+    title: 'Videograf i Bergen | Profesjonell videoproduksjon | attentio',
+    description:
+      'Profesjonell videograf i Bergen. Bedriftsvideo, reklamfilm og SoMe-innhold. Fra konsept til ferdig produksjon. Kontakt attentio.',
+    locale: 'nb_NO',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Videograf i Bergen | Profesjonell videoproduksjon | attentio',
+    description:
+      'Profesjonell videograf i Bergen. Bedriftsvideo, reklamfilm og SoMe-innhold. Fra konsept til ferdig produksjon. Kontakt attentio.',
+  },
+  alternates: {
+    canonical: '/videograf',
+  },
 }
 
 const bullets = [

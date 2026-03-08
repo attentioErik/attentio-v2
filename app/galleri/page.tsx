@@ -7,6 +7,17 @@ export const metadata: Metadata = {
   title: 'Galleri | attentio',
   description:
     'Se bilder fra attentio – kreativt innhold, foto, dronebilder og prosjekter fra Bergen.',
+  openGraph: {
+    title: 'Galleri | attentio',
+    description: 'Se bilder fra attentio – kreativt innhold, foto, dronebilder og prosjekter fra Bergen.',
+    locale: 'nb_NO',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Galleri | attentio',
+    description: 'Se bilder fra attentio – kreativt innhold, foto, dronebilder og prosjekter fra Bergen.',
+  },
   alternates: { canonical: '/galleri' },
 }
 

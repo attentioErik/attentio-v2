@@ -6,6 +6,22 @@ export const metadata: Metadata = {
   title: 'Grafisk design | Visuell kommunikasjon | attentio',
   description:
     'Profesjonelt grafisk design for bedrifter. Visuell identitet, trykksaker, digitalt design og emballasje. attentio – designbyrå i Bergen.',
+  openGraph: {
+    title: 'Grafisk design | Visuell kommunikasjon | attentio',
+    description:
+      'Profesjonelt grafisk design for bedrifter. Visuell identitet, trykksaker, digitalt design og emballasje. attentio – designbyrå i Bergen.',
+    locale: 'nb_NO',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Grafisk design | Visuell kommunikasjon | attentio',
+    description:
+      'Profesjonelt grafisk design for bedrifter. Visuell identitet, trykksaker, digitalt design og emballasje. attentio – designbyrå i Bergen.',
+  },
+  alternates: {
+    canonical: '/grafisk-design',
+  },
 }
 
 const bullets = [

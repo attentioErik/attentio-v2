@@ -6,6 +6,22 @@ export const metadata: Metadata = {
   title: 'Google Ads | Betalt søk som gir resultater | attentio',
   description:
     'Vi setter opp og optimaliserer Google Ads-kampanjer. Søkeannonser, Shopping og Display – med fokus på avkastning. Bergen-basert byrå.',
+  openGraph: {
+    title: 'Google Ads | Betalt søk som gir resultater | attentio',
+    description:
+      'Vi setter opp og optimaliserer Google Ads-kampanjer. Søkeannonser, Shopping og Display – med fokus på avkastning. Bergen-basert byrå.',
+    locale: 'nb_NO',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Google Ads | Betalt søk som gir resultater | attentio',
+    description:
+      'Vi setter opp og optimaliserer Google Ads-kampanjer. Søkeannonser, Shopping og Display – med fokus på avkastning. Bergen-basert byrå.',
+  },
+  alternates: {
+    canonical: '/google-ads',
+  },
 }
 
 const bullets = [

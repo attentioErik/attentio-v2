@@ -6,6 +6,22 @@ export const metadata: Metadata = {
   title: 'Branding & logodesign | Merkevarebygging | attentio',
   description:
     'Vi designer logoer og bygger merkevarer som skiller seg ut. Visuell profil, brandbook og rebrand. attentio – designbyrå i Bergen.',
+  openGraph: {
+    title: 'Branding & logodesign | Merkevarebygging | attentio',
+    description:
+      'Vi designer logoer og bygger merkevarer som skiller seg ut. Visuell profil, brandbook og rebrand. attentio – designbyrå i Bergen.',
+    locale: 'nb_NO',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Branding & logodesign | Merkevarebygging | attentio',
+    description:
+      'Vi designer logoer og bygger merkevarer som skiller seg ut. Visuell profil, brandbook og rebrand. attentio – designbyrå i Bergen.',
+  },
+  alternates: {
+    canonical: '/branding-logodesign',
+  },
 }
 
 const bullets = [
