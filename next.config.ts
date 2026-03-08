@@ -58,6 +58,9 @@ const nextConfig: NextConfig = {
       { source: '/design', destination: '/tjenester/branding-design', permanent: true },
       { source: '/3d-scanning', destination: '/tjenester/3d-scanning', permanent: true },
 
+      // Other redirects
+      { source: '/om-attentio', destination: '/om-oss', permanent: true },
+
       // Legacy Attentio Explore 3D scanning redirects
       { source: '/attentioexplore-3dscanning', destination: '/tjenester/3d-scanning', permanent: true },
       { source: '/attentioexplore-3dscanning/:path*', destination: '/tjenester/3d-scanning', permanent: true },
