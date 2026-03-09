@@ -60,12 +60,6 @@ export default function ContactForm() {
     <section className={styles.section}>
       <div className="container">
         <form onSubmit={handleSubmit} className={styles.form}>
-          {success && (
-            <div className={styles.successMessage}>
-              ✓ Takk for meldingen! Vi kontakter deg snarest.
-            </div>
-          )}
-
           <div className={styles.grid}>
             {/* Name */}
             <div className={styles.field}>
@@ -181,6 +175,11 @@ export default function ContactForm() {
             <Button type="submit" variant="primary" disabled={loading}>
               {loading ? 'Sender...' : 'Send melding'}
             </Button>
+            {success && (
+              <div className={styles.successMessage}>
+                Takk for din henvendelse! Vi tar kontakt snarest.
+              </div>
+            )}
             <p className={styles.privacyNote}>
               Vi behandler dine data i henhold til GDPR. Se vår <a href="/personvern">personvernerklæring</a>.
             </p>

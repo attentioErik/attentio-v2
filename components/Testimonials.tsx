@@ -6,21 +6,21 @@ const testimonials = [
     name: 'Daniel Opitz',
     role: 'Tannlege, Opitz Tannhelsesenter',
     quote:
-      '"attentio har revolusjonert måten vi håndterer kundekommunikasjon på. Chatboten svarer på spørsmål vi ikke engang visste vi hadde – døgnet rundt."',
+      '"attentio har revolusjonert måten vi håndterer logistikken på. De bygget et skreddersydd Call-system som har effektivisert pasientkommunikasjonen og redusert administrativt arbeid betydelig."',
   },
   {
-    initials: 'CH',
-    name: 'Craft Holding',
-    role: 'Entreprenørvirksomhet, Bergen',
+    initials: 'SR',
+    name: 'Straume Rør',
+    role: 'Rørleggerbedrift, Bergen',
     quote:
-      '"Vi fikk en nettside som faktisk konverterer besøkende til kunder – kombinert med en markedsføringsstrategi som treffer målgruppen presist."',
+      '"Den nye nettsiden og annonsekampanjene har gitt oss en ROI vi ikke hadde forventet. Vi ser konkrete resultater – flere henvendelser, bedre kvalitet på leadene, og en betydelig økning i omsetningen. Det er en investering som virkelig har lønt seg."',
   },
   {
-    initials: 'PH',
-    name: 'Panorama Hotel & Resort',
-    role: 'Hotell, Øygarden',
+    initials: 'NSK',
+    name: 'Norsk Skadekontroll',
+    role: 'Partiell utbedring',
     quote:
-      '"3D-scanningene løftet presentasjonene av hotellet til et helt nytt nivå. Gjestene er imponert allerede før de ankommer."',
+      '"Vi trengte en komplett digital løsning, og de leverte langt over forventningene. Nettsiden er profesjonell, brukervennlig og chatboten har redusert kundeforespørsler drastisk. Nå kan vi fokusere på det vi gjør best – partiell utbedring av våtrom."',
   },
 ]
 

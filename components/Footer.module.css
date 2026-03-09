@@ -22,6 +22,9 @@
   filter: brightness(0) invert(1);
   margin-bottom: 1.125rem;
   opacity: 0.9;
+  width: 2.5rem;
+  height: auto;
+  object-fit: contain;
 }
 
 .tagline {
