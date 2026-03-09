@@ -5,6 +5,7 @@ import ServiceProcess from '@/components/ServiceProcess'
 import BenefitsList from '@/components/BenefitsList'
 import FAQ from '@/components/FAQ'
 import CTASection from '@/components/CTASection'
+import PricingSection from '@/components/PricingSection'
 import ChatbotDemoSection from '@/components/ChatbotDemoSection'
 import SchemaMarkup from '@/components/SchemaMarkup'
 
@@ -60,7 +61,7 @@ const features = [
   {
     icon: '📱',
     title: 'Fungerer overalt',
-    text: 'Nettside, kampanjesider, Facebook Messenger, Instagram og WhatsApp – én chatbot som dekker alle kanalene dine.',
+    text: 'Den fungerer på alle nettsider, kampanjesider, portal og nettbutikker.',
   },
 ]
 
@@ -183,6 +184,8 @@ export default function AiChatbotPage() {
         title="Konkrete resultater fra dag én"
         items={benefits}
       />
+
+      <PricingSection />
 
       <ChatbotDemoSection />
 
