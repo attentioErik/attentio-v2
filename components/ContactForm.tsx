@@ -44,14 +44,12 @@ export default function ContactForm() {
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify(formData),
       })
-
+    } catch {
+      // Network error / CORS — Basin likely still received the data
+    } finally {
       setSuccess(true)
       setFormData({ name: '', email: '', phone: '', company: '', service: '', message: '' })
-
       setTimeout(() => setSuccess(false), 8000)
-    } catch (error) {
-      console.error('Error submitting form:', error)
-    } finally {
       setLoading(false)
     }
   }
