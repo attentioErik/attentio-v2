@@ -1,32 +1,23 @@
 'use client'
 
-import { useState, useEffect, FormEvent } from 'react'
-import { useSearchParams } from 'next/navigation'
+import { useState, FormEvent } from 'react'
 import Button from './Button'
 import styles from './ContactForm.module.css'
 
-export default function ContactForm() {
-  const searchParams = useSearchParams()
-
+export default function ChatbotContactForm() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
     company: '',
-    service: '',
+    website: '',
     message: '',
+    form: 'AI-Chatbot',
   })
   const [loading, setLoading] = useState(false)
   const [success, setSuccess] = useState(false)
 
-  useEffect(() => {
-    const service = searchParams.get('service')
-    if (service) {
-      setFormData((prev) => ({ ...prev, service }))
-    }
-  }, [searchParams])
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
     setFormData((prev) => ({
       ...prev,
@@ -46,7 +37,7 @@ export default function ContactForm() {
       })
 
       setSuccess(true)
-      setFormData({ name: '', email: '', phone: '', company: '', service: '', message: '' })
+      setFormData({ name: '', email: '', phone: '', company: '', website: '', message: '', form: 'AI-Chatbot' })
 
       setTimeout(() => setSuccess(false), 8000)
     } catch (error) {
@@ -57,17 +48,25 @@ export default function ContactForm() {
   }
 
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="chatbot-kontakt">
       <div className="container">
-        <form id="kontaktskjema" onSubmit={handleSubmit} className={styles.form}>
+        <div className={`${styles.header} reveal`}>
+          <div className="tag">Kontakt oss</div>
+          <h2 className={styles.headerTitle}>Book en <em>gratis demo</em></h2>
+          <p className={styles.headerSub}>
+            Fyll ut skjemaet, så tar vi kontakt for å vise deg hvordan en AI-chatbot kan fungere for din bedrift.
+          </p>
+        </div>
+
+        <form id="chatbot-kontakt-form" onSubmit={handleSubmit} className={styles.form}>
           <div className={styles.grid}>
             {/* Name */}
             <div className={styles.field}>
-              <label htmlFor="name" className={styles.label}>
+              <label htmlFor="chatbot-name" className={styles.label}>
                 Navn *
               </label>
               <input
-                id="name"
+                id="chatbot-name"
                 type="text"
                 name="name"
                 value={formData.name}
@@ -80,11 +79,11 @@ export default function ContactForm() {
 
             {/* Email */}
             <div className={styles.field}>
-              <label htmlFor="email" className={styles.label}>
+              <label htmlFor="chatbot-email" className={styles.label}>
                 E-post *
               </label>
               <input
-                id="email"
+                id="chatbot-email"
                 type="email"
                 name="email"
                 value={formData.email}
@@ -97,11 +96,11 @@ export default function ContactForm() {
 
             {/* Phone */}
             <div className={styles.field}>
-              <label htmlFor="phone" className={styles.label}>
+              <label htmlFor="chatbot-phone" className={styles.label}>
                 Telefon
               </label>
               <input
-                id="phone"
+                id="chatbot-phone"
                 type="tel"
                 name="phone"
                 value={formData.phone}
@@ -113,11 +112,11 @@ export default function ContactForm() {
 
             {/* Company */}
             <div className={styles.field}>
-              <label htmlFor="company" className={styles.label}>
+              <label htmlFor="chatbot-company" className={styles.label}>
                 Bedrift
               </label>
               <input
-                id="company"
+                id="chatbot-company"
                 type="text"
                 name="company"
                 value={formData.company}
@@ -128,52 +127,42 @@ export default function ContactForm() {
             </div>
           </div>
 
-          {/* Service */}
+          {/* Website */}
           <div className={styles.field}>
-            <label htmlFor="service" className={styles.label}>
-              Hva trenger du hjelp med? *
+            <label htmlFor="chatbot-website" className={styles.label}>
+              Nettside
             </label>
-            <select
-              id="service"
-              name="service"
-              value={formData.service}
+            <input
+              id="chatbot-website"
+              type="url"
+              name="website"
+              value={formData.website}
               onChange={handleChange}
-              required
-              className={styles.select}
-            >
-              <option value="">Velg en tjeneste...</option>
-              <option value="meeting">Ønsker møte</option>
-              <option value="ai-automation">AI & Automatisering</option>
-              <option value="web-development">Web & App</option>
-              <option value="digital-marketing">Digital markedsføring</option>
-              <option value="video-photo">Video & Foto</option>
-              <option value="branding-design">Grafisk design & Branding</option>
-              <option value="3d-scanning">3D-scanning</option>
-              <option value="other">Noe annet</option>
-            </select>
+              className={styles.input}
+              placeholder="https://dinbedrift.no"
+            />
           </div>
 
           {/* Message */}
           <div className={styles.field}>
-            <label htmlFor="message" className={styles.label}>
-              Melding *
+            <label htmlFor="chatbot-message" className={styles.label}>
+              Melding
             </label>
             <textarea
-              id="message"
+              id="chatbot-message"
               name="message"
               value={formData.message}
               onChange={handleChange}
-              required
               className={styles.textarea}
-              placeholder="Fortell oss om prosjektet ditt..."
-              rows={6}
+              placeholder="Fortell oss litt om hva du ønsker..."
+              rows={4}
             />
           </div>
 
           {/* Submit */}
           <div className={styles.actions}>
             <Button type="submit" variant="primary" disabled={loading}>
-              {loading ? 'Sender...' : 'Send melding'}
+              {loading ? 'Sender...' : 'Book demo'}
             </Button>
             {success && (
               <div className={styles.successMessage}>

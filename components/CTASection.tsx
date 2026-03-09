@@ -30,7 +30,7 @@ export default function CTASection({
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
           </Button>
-          <Button href="tel:+4748194007" variant="outline">
+          <Button href="tel:+4748194007" variant="outline" id="phone-contact">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
               <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5 19.79 19.79 0 01.01 2.87 2 2 0 012 .7h3a2 2 0 012 1.72c.13.966.36 1.916.69 2.839a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.923.33 1.873.553 2.839.69A2 2 0 0122 16.92z" />
             </svg>

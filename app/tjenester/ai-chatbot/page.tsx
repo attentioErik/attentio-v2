@@ -6,6 +6,7 @@ import BenefitsList from '@/components/BenefitsList'
 import FAQ from '@/components/FAQ'
 import CTASection from '@/components/CTASection'
 import PricingSection from '@/components/PricingSection'
+import ChatbotContactForm from '@/components/ChatbotContactForm'
 import ChatbotDemoSection from '@/components/ChatbotDemoSection'
 import SchemaMarkup from '@/components/SchemaMarkup'
 
@@ -163,7 +164,7 @@ export default function AiChatbotPage() {
         h1="En AI-chatbot som <em>selger for deg</em> – 24/7"
         intro="Chatboten svarer på spørsmål og kvalifiserer leads automatisk. Når en samtale er varm, kan du ta over selv – slik at du aldri mister en potensiell kunde."
         slug="ai-chatbot"
-        ctaPrimary={{ label: 'Book demo', href: 'mailto:post@attentio.no' }}
+        ctaPrimary={{ label: 'Book demo', href: '#chatbot-kontakt' }}
         ctaSecondary={{ label: 'Se hvordan det fungerer', href: '#demo' }}
       />
 
@@ -190,6 +191,8 @@ export default function AiChatbotPage() {
       <ChatbotDemoSection />
 
       <FAQ title="Vanlige spørsmål om AI-chatbot" items={faqItems} />
+
+      <ChatbotContactForm />
 
       <CTASection
         titleHtml="Klar for en AI-selger<br />på <em>nettsiden din</em>?"

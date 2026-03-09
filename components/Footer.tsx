@@ -18,7 +18,7 @@ const selskap = [
 ]
 
 const kontakt = [
-  { href: 'tel:+4748194007', label: '+47 481 94 007' },
+  { href: 'tel:+4748194007', label: '+47 481 94 007', id: 'phone-contact' },
   { href: 'mailto:post@attentio.no', label: 'post@attentio.no' },
   { href: '#', label: 'Bergen / Øygarden' },
 ]
@@ -65,8 +65,8 @@ export default function Footer() {
         {/* Kontakt */}
         <div className={styles.col}>
           <h4 className={styles.colHead}>Kontakt</h4>
-          {kontakt.map(({ href, label }) => (
-            <Link key={label} href={href} className={styles.colLink}>
+          {kontakt.map(({ href, label, id }) => (
+            <Link key={label} href={href} className={styles.colLink} id={id}>
               {label}
             </Link>
           ))}
