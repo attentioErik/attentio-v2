@@ -27,6 +27,33 @@ const localBusinessSchema = {
   description: 'AI-drevet digitalbyrå i Bergen. Vi leverer AI-chatbots, nettsider, markedsføring, video, design og 3D-scanning.',
   priceRange: '$$',
   areaServed: { '@type': 'Country', name: 'Norway' },
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '5',
+    bestRating: '5',
+    ratingCount: '3',
+    reviewCount: '3',
+  },
+  review: [
+    {
+      '@type': 'Review',
+      author: { '@type': 'Person', name: 'Daniel Opitz' },
+      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      reviewBody: 'attentio har revolusjonert måten vi håndterer logistikken på. De bygget et skreddersydd Call-system som har effektivisert pasientkommunikasjonen og redusert administrativt arbeid betydelig.',
+    },
+    {
+      '@type': 'Review',
+      author: { '@type': 'Organization', name: 'Straume Rør' },
+      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      reviewBody: 'Den nye nettsiden og annonsekampanjene har gitt oss en ROI vi ikke hadde forventet. Vi ser konkrete resultater – flere henvendelser, bedre kvalitet på leadene, og en betydelig økning i omsetningen.',
+    },
+    {
+      '@type': 'Review',
+      author: { '@type': 'Organization', name: 'Norsk Skadekontroll' },
+      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      reviewBody: 'Vi trengte en komplett digital løsning, og de leverte langt over forventningene. Nettsiden er profesjonell, brukervennlig og chatboten har redusert kundeforespørsler drastisk.',
+    },
+  ],
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
     name: 'Digitale tjenester',

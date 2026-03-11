@@ -24,7 +24,7 @@ export default function Hero() {
       {/* Badge */}
       <div className={styles.badge}>
         <div className={styles.badgeDot} aria-hidden="true" />
-        Bergens ledende AI-byrå · 2026
+        Ledende AI-byrå i Bergen · 2026
       </div>
 
       {/* Headline */}

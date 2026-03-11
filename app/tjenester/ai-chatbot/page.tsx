@@ -155,10 +155,32 @@ const faqSchema = {
   })),
 }
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Hjem', item: 'https://attentio.no' },
+    { '@type': 'ListItem', position: 2, name: 'Tjenester', item: 'https://attentio.no/tjenester' },
+    { '@type': 'ListItem', position: 3, name: 'AI Chatbot', item: 'https://attentio.no/tjenester/ai-chatbot' },
+  ],
+}
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'AI Chatbot & Salgsagent',
+  description: 'En AI-chatbot som svarer kunder og kvalifiserer leads – 24/7. Ta over varme samtaler manuelt når det teller.',
+  url: 'https://attentio.no/tjenester/ai-chatbot',
+  provider: { '@type': 'Organization', name: 'attentio', url: 'https://attentio.no' },
+  areaServed: { '@type': 'Country', name: 'Norway' },
+}
+
 export default function AiChatbotPage() {
   return (
     <>
       <SchemaMarkup schema={faqSchema} />
+      <SchemaMarkup schema={breadcrumbSchema} />
+      <SchemaMarkup schema={serviceSchema} />
       <ServiceHero
         tag="AI Chatbot & Salgsagent"
         h1="En AI-chatbot som <em>selger for deg</em> – 24/7"

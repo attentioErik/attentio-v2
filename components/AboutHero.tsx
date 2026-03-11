@@ -31,7 +31,7 @@ export default function AboutHero() {
           </h1>
 
           <p className={styles.intro}>
-            Attentio er Bergens ledende AI-byrå. Vi hjelper bedrifter å vokse med intelligente
+            attentio er et av Bergens ledende AI-byrå. Vi hjelper bedrifter å vokse med intelligente
             nettsider, AI-løsninger, målrettet markedsføring og kreativ produksjon – alt under ett tak.
           </p>
 
