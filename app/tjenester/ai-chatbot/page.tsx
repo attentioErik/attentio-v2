@@ -57,7 +57,7 @@ const features = [
   {
     icon: '🔗',
     title: 'Integrasjon med CRM',
-    text: 'Kobles til HubSpot, Pipedrive, Salesforce og andre systemer. Alle leads strukturert der du jobber – klart til oppfølging.',
+    text: 'Kan kobles til HubSpot, Pipedrive, Salesforce og andre systemer. Alle leads strukturert der du jobber – klart til oppfølging. Ta kontakt for integrasjon.',
   },
   {
     icon: '📱',
