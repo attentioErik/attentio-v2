@@ -123,7 +123,7 @@ const faqItems = [
   },
   {
     q: 'Hvor lang tid tar det å sette opp chatboten?',
-    a: 'En standard chatbot er klar innen 1–2 uker. Vi gjennomfører et oppstartsmøte, trener chatboten på dine data og integrerer den på nettsiden. Du er live raskt og får resultater fra dag én.',
+    a: 'En standard chatbot er klar på én dag. Vi gjennomfører et oppstartsmøte, trener chatboten på dine data og integrerer den på nettsiden. Du er live raskt og får resultater fra dag én.',
   },
   {
     q: 'Kan vi ta over en samtale manuelt?',
@@ -131,7 +131,7 @@ const faqItems = [
   },
   {
     q: 'Integrerer chatboten med CRM-systemet vårt?',
-    a: 'Vi støtter de fleste populære CRM-systemer inkludert HubSpot, Pipedrive, Salesforce og Zoho. Leads og kontaktinfo sendes automatisk dit du vil ha dem, strukturert og klart for oppfølging.',
+    a: 'Vi støtter de fleste populære CRM-systemer inkludert HubSpot, Pipedrive, Salesforce og Zoho. Leads og kontaktinfo sendes automatisk dit du vil ha dem, strukturert og klart for oppfølging. Ta kontakt for integrasjon.',
   },
   {
     q: 'Kan chatboten svare på norsk?',
@@ -139,7 +139,7 @@ const faqItems = [
   },
   {
     q: 'Hva koster en AI-chatbot?',
-    a: 'Prisen avhenger av kompleksitet og integrasjoner. Vi tilbyr både engangsoppsett og månedlige abonnementer med løpende videreutvikling og support. Kontakt oss for et uforpliktende tilbud.',
+    a: 'Chatbotten koster 600,- per måned ved årlig betaling eller 800,- per måned ved månedlig betaling. Etablering og oppstart koster 10 000,-. Dette inkluderer oppstartsmøte, trening av chatboten på dine data og integrasjon på nettsiden. Ta kontakt for en skreddersydd løsning og eventuelle tilpasninger.',
   },
 ]
 

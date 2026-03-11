@@ -99,7 +99,7 @@ export default function ChatbotDemoSection() {
 
               <div className={`${styles.msg} ${styles.bot} ${styles.d5}`}>
                 <div className={styles.bubble}>
-                  Det fikser vi! 🚀 En AI-chatbot kan øke leadgenereringen din med 40 % automatisk. Vil du ha en gratis demo? Gi meg e-posten din så setter vi opp et møte!
+                  Det fikser vi! 🚀 En AI-chatbot kan øke leadgenereringen din med opp til 40 % automatisk. Vil du ha en gratis demo? Gi meg e-posten din så setter vi opp et møte!
                 </div>
               </div>
             </div>
@@ -125,13 +125,13 @@ export default function ChatbotDemoSection() {
         <div className={`${styles.testimonial} reveal`}>
           <div className={styles.quoteIcon} aria-hidden="true">"</div>
           <blockquote className={styles.quote}>
-            Etter vi lanserte AI-chatboten økte antall innkomne leads med over 40 % på bare én måned – uten at vi trengte å gjøre noe ekstra.
+            Etter vi lanserte AI-chatboten økte antall innkomne leads med over 30% på bare én måned – uten at vi trengte å gjøre noe ekstra. Vi har også fått verdifull innsikt i hva kundene våre lurer på, og kan følge opp de mest varme leadsene manuelt. Det har virkelig vært en game-changer for oss.
           </blockquote>
           <div className={styles.author}>
             <div className={styles.authorAvatar} aria-hidden="true">KN</div>
             <div>
-              <div className={styles.authorName}>Kari Nordmann</div>
-              <div className={styles.authorRole}>Daglig leder, Eksempel AS</div>
+              <div className={styles.authorName}>Gjermund</div>
+              <div className={styles.authorRole}>Daglig leder, Norsk Skadekontroll</div>
             </div>
           </div>
         </div>
