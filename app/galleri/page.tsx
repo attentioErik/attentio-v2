@@ -4,18 +4,18 @@ import { galleryImages } from '@/lib/content/data/gallery'
 import styles from './page.module.css'
 
 export const metadata: Metadata = {
-  title: 'Galleri | attentio',
+  title: 'Galleri',
   description:
     'Se bilder fra attentio – kreativt innhold, foto, dronebilder og prosjekter fra Bergen.',
   openGraph: {
-    title: 'Galleri | attentio',
+    title: 'Galleri',
     description: 'Se bilder fra attentio – kreativt innhold, foto, dronebilder og prosjekter fra Bergen.',
     locale: 'nb_NO',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Galleri | attentio',
+    title: 'Galleri',
     description: 'Se bilder fra attentio – kreativt innhold, foto, dronebilder og prosjekter fra Bergen.',
   },
   alternates: { canonical: '/galleri' },

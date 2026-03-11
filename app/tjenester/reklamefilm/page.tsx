@@ -3,11 +3,11 @@ import SubServicePage from '@/components/SubServicePage'
 import CTASection from '@/components/CTASection'
 
 export const metadata: Metadata = {
-  title: 'Reklamefilm | Profesjonell filmproduksjon | attentio',
+  title: 'Reklamefilm | Profesjonell filmproduksjon',
   description:
     'Vi produserer reklamefilm som selger. Fra konsept til ferdig film – tilpasset TV, nett og sosiale medier. attentio i Bergen.',
   openGraph: {
-    title: 'Reklamefilm | Profesjonell filmproduksjon | attentio',
+    title: 'Reklamefilm | Profesjonell filmproduksjon',
     description:
       'Vi produserer reklamefilm som selger. Fra konsept til ferdig film – tilpasset TV, nett og sosiale medier. attentio i Bergen.',
     locale: 'nb_NO',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Reklamefilm | Profesjonell filmproduksjon | attentio',
+    title: 'Reklamefilm | Profesjonell filmproduksjon',
     description:
       'Vi produserer reklamefilm som selger. Fra konsept til ferdig film – tilpasset TV, nett og sosiale medier. attentio i Bergen.',
   },

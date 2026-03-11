@@ -3,11 +3,11 @@ import SubServicePage from '@/components/SubServicePage'
 import CTASection from '@/components/CTASection'
 
 export const metadata: Metadata = {
-  title: 'Branding & logodesign | Merkevarebygging | attentio',
+  title: 'Branding & logodesign | Merkevarebygging',
   description:
     'Vi designer logoer og bygger merkevarer som skiller seg ut. Visuell profil, brandbook og rebrand. attentio – designbyrå i Bergen.',
   openGraph: {
-    title: 'Branding & logodesign | Merkevarebygging | attentio',
+    title: 'Branding & logodesign | Merkevarebygging',
     description:
       'Vi designer logoer og bygger merkevarer som skiller seg ut. Visuell profil, brandbook og rebrand. attentio – designbyrå i Bergen.',
     locale: 'nb_NO',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Branding & logodesign | Merkevarebygging | attentio',
+    title: 'Branding & logodesign | Merkevarebygging',
     description:
       'Vi designer logoer og bygger merkevarer som skiller seg ut. Visuell profil, brandbook og rebrand. attentio – designbyrå i Bergen.',
   },

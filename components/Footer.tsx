@@ -3,11 +3,11 @@ import Link from 'next/link'
 import styles from './Footer.module.css'
 
 const tjenester = [
-  { href: '#ai', label: 'AI & Chatbot' },
-  { href: '#tjenester', label: 'Web & App' },
-  { href: '#tjenester', label: 'Markedsføring' },
-  { href: '#tjenester', label: 'Video & Foto' },
-  { href: '#tjenester', label: '3D-Scanning' },
+  { href: '/tjenester/ai-chatbot', label: 'AI & Chatbot' },
+  { href: '/tjenester/web-app-nettside', label: 'Web & App' },
+  { href: '/tjenester/digital-markedsforing', label: 'Markedsføring' },
+  { href: '/tjenester/video-foto', label: 'Video & Foto' },
+  { href: '/tjenester/3d-scanning', label: '3D-Scanning' },
 ]
 
 const selskap = [

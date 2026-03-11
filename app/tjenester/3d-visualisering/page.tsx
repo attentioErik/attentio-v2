@@ -3,11 +3,11 @@ import SubServicePage from '@/components/SubServicePage'
 import CTASection from '@/components/CTASection'
 
 export const metadata: Metadata = {
-  title: '3D-visualisering | Fotorealistisk rendering | attentio',
+  title: '3D-visualisering | Fotorealistisk rendering',
   description:
     'Vi lager fotorealistiske 3D-visualiseringer for arkitektur, eiendom og industri. Animasjoner, stillbilder og interaktive modeller.',
   openGraph: {
-    title: '3D-visualisering | Fotorealistisk rendering | attentio',
+    title: '3D-visualisering | Fotorealistisk rendering',
     description:
       'Vi lager fotorealistiske 3D-visualiseringer for arkitektur, eiendom og industri. Animasjoner, stillbilder og interaktive modeller.',
     locale: 'nb_NO',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '3D-visualisering | Fotorealistisk rendering | attentio',
+    title: '3D-visualisering | Fotorealistisk rendering',
     description:
       'Vi lager fotorealistiske 3D-visualiseringer for arkitektur, eiendom og industri. Animasjoner, stillbilder og interaktive modeller.',
   },

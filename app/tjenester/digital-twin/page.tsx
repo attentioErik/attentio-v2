@@ -3,11 +3,11 @@ import SubServicePage from '@/components/SubServicePage'
 import CTASection from '@/components/CTASection'
 
 export const metadata: Metadata = {
-  title: 'Digital tvilling | 3D-modell av eiendom | attentio',
+  title: 'Digital tvilling | 3D-modell av eiendom',
   description:
     'Vi skaper digitale tvillinger – nøyaktige 3D-kopier av fysiske rom og bygg. Perfekt for eiendom, fasilitetsstyring og dokumentasjon.',
   openGraph: {
-    title: 'Digital tvilling | 3D-modell av eiendom | attentio',
+    title: 'Digital tvilling | 3D-modell av eiendom',
     description:
       'Vi skaper digitale tvillinger – nøyaktige 3D-kopier av fysiske rom og bygg. Perfekt for eiendom, fasilitetsstyring og dokumentasjon.',
     locale: 'nb_NO',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Digital tvilling | 3D-modell av eiendom | attentio',
+    title: 'Digital tvilling | 3D-modell av eiendom',
     description:
       'Vi skaper digitale tvillinger – nøyaktige 3D-kopier av fysiske rom og bygg. Perfekt for eiendom, fasilitetsstyring og dokumentasjon.',
   },

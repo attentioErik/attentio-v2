@@ -26,12 +26,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }))
 
-  // Sub-service pages
+  // Sub-service pages (excludes slugs that now 301 redirect)
   const subServiceSlugs = [
     'seo', 'google-ads', 'sosiale-medier', 'innholdsproduksjon',
-    'apputvikling', 'nettbutikk', 'ui-ux-design',
-    'videograf', 'fotograf', 'dronefilm', 'reklamefilm',
-    'grafisk-design', 'branding-logodesign', 'firmabil-design',
+    'nettbutikk',
+    'videograf', 'dronefilm',
+    'grafisk-design', 'branding-logodesign',
     '3d-visualisering', 'digital-twin', 'eiendom-3d', 'bygg-anlegg-3d',
   ]
   const subServicePages: MetadataRoute.Sitemap = subServiceSlugs.map((slug) => ({

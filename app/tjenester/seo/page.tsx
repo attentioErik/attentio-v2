@@ -3,11 +3,11 @@ import SubServicePage from '@/components/SubServicePage'
 import CTASection from '@/components/CTASection'
 
 export const metadata: Metadata = {
-  title: 'SEO | Søkemotoroptimalisering | attentio',
+  title: 'SEO | Søkemotoroptimalisering',
   description:
     'Profesjonell SEO som gir resultater. Teknisk optimalisering, innholdsstrategi og linkbygging. Vi hjelper deg til toppen av Google.',
   openGraph: {
-    title: 'SEO | Søkemotoroptimalisering | attentio',
+    title: 'SEO | Søkemotoroptimalisering',
     description:
       'Profesjonell SEO som gir resultater. Teknisk optimalisering, innholdsstrategi og linkbygging. Vi hjelper deg til toppen av Google.',
     locale: 'nb_NO',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'SEO | Søkemotoroptimalisering | attentio',
+    title: 'SEO | Søkemotoroptimalisering',
     description:
       'Profesjonell SEO som gir resultater. Teknisk optimalisering, innholdsstrategi og linkbygging. Vi hjelper deg til toppen av Google.',
   },

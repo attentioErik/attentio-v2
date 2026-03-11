@@ -7,7 +7,7 @@ const SERVICE_LABELS: Record<string, string> = {
   nettside: 'Nettside',
   markedsforing: 'Markedsføring',
   medieproduksjon: 'Medieproduksjon',
-  'ai-automatisering': 'AI & Auto',
+  'ai-automation': 'AI & Auto',
   'branding-design': 'Branding',
   '3d-skanning': '3D-skanning',
 }

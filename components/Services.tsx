@@ -5,7 +5,7 @@ const services = [
   {
     num: '01',
     emoji: '🤖',
-    slug: 'ai-automatisering',
+    slug: 'ai-automation',
     title: 'AI & Automatisering',
     text: 'Prosesskartlegging, automatisering og AI-løsninger som frigjør tid og fjerner manuelt arbeid.',
     hero: true,
@@ -13,7 +13,7 @@ const services = [
   {
     num: '02',
     emoji: '🌐',
-    slug: 'web-app-nettsid',
+    slug: 'web-app-nettside',
     title: 'Web & App',
     text: 'Raske, konverteringsdrevne nettsider og skreddersydde apper – bygget for å vokse.',
   },

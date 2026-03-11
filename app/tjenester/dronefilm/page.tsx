@@ -3,11 +3,11 @@ import SubServicePage from '@/components/SubServicePage'
 import CTASection from '@/components/CTASection'
 
 export const metadata: Metadata = {
-  title: 'Dronefilm | Luftfoto og dronefotografering | attentio',
+  title: 'Dronefilm | Luftfoto og dronefotografering',
   description:
     'Profesjonell dronefilm og luftfoto i Bergen. 4K droneopptak, byggedokumentasjon og eiendomsfoto. Sertifiserte dronepiloter.',
   openGraph: {
-    title: 'Dronefilm | Luftfoto og dronefotografering | attentio',
+    title: 'Dronefilm | Luftfoto og dronefotografering',
     description:
       'Profesjonell dronefilm og luftfoto i Bergen. 4K droneopptak, byggedokumentasjon og eiendomsfoto. Sertifiserte dronepiloter.',
     locale: 'nb_NO',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Dronefilm | Luftfoto og dronefotografering | attentio',
+    title: 'Dronefilm | Luftfoto og dronefotografering',
     description:
       'Profesjonell dronefilm og luftfoto i Bergen. 4K droneopptak, byggedokumentasjon og eiendomsfoto. Sertifiserte dronepiloter.',
   },

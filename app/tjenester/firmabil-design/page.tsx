@@ -3,11 +3,11 @@ import SubServicePage from '@/components/SubServicePage'
 import CTASection from '@/components/CTASection'
 
 export const metadata: Metadata = {
-  title: 'Firmabil-design | Bildekor og foliering | attentio',
+  title: 'Firmabil-design | Bildekor og foliering',
   description:
     'Vi designer firmabildekor som gjør deg synlig. Helfoliering, delvis dekor og bilflåtedesign. Kontakt attentio for et designforslag.',
   openGraph: {
-    title: 'Firmabil-design | Bildekor og foliering | attentio',
+    title: 'Firmabil-design | Bildekor og foliering',
     description:
       'Vi designer firmabildekor som gjør deg synlig. Helfoliering, delvis dekor og bilflåtedesign. Kontakt attentio for et designforslag.',
     locale: 'nb_NO',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Firmabil-design | Bildekor og foliering | attentio',
+    title: 'Firmabil-design | Bildekor og foliering',
     description:
       'Vi designer firmabildekor som gjør deg synlig. Helfoliering, delvis dekor og bilflåtedesign. Kontakt attentio for et designforslag.',
   },

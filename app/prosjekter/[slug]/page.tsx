@@ -19,10 +19,10 @@ export async function generateMetadata({
   const project = getProject(slug)
   if (!project) return {}
   return {
-    title: `${project.name} | attentio`,
+    title: project.name,
     description: project.description,
     openGraph: {
-      title: `${project.name} | attentio`,
+      title: project.name,
       description: project.description,
       images: project.coverImage ? [project.coverImage] : [],
       locale: 'nb_NO',
@@ -36,7 +36,7 @@ const SERVICE_LABELS: Record<string, string> = {
   nettside: 'Nettside',
   markedsforing: 'Markedsføring',
   medieproduksjon: 'Medieproduksjon',
-  'ai-automatisering': 'AI & Automatisering',
+  'ai-automation': 'AI & Automatisering',
   'branding-design': 'Branding & Design',
   '3d-skanning': '3D-skanning',
 }

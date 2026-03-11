@@ -3,11 +3,11 @@ import SubServicePage from '@/components/SubServicePage'
 import CTASection from '@/components/CTASection'
 
 export const metadata: Metadata = {
-  title: 'UI/UX-design | Brukeropplevelser som konverterer | attentio',
+  title: 'UI/UX-design | Brukeropplevelser som konverterer',
   description:
     'Vi designer digitale brukeropplevelser som engasjerer og konverterer. UX-research, prototyping og UI-design. Bergen-basert designbyrå.',
   openGraph: {
-    title: 'UI/UX-design | Brukeropplevelser som konverterer | attentio',
+    title: 'UI/UX-design | Brukeropplevelser som konverterer',
     description:
       'Vi designer digitale brukeropplevelser som engasjerer og konverterer. UX-research, prototyping og UI-design. Bergen-basert designbyrå.',
     locale: 'nb_NO',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'UI/UX-design | Brukeropplevelser som konverterer | attentio',
+    title: 'UI/UX-design | Brukeropplevelser som konverterer',
     description:
       'Vi designer digitale brukeropplevelser som engasjerer og konverterer. UX-research, prototyping og UI-design. Bergen-basert designbyrå.',
   },
@@ -31,7 +31,7 @@ export default function UiUxDesignPage() {
         tag="UI/UX-design"
         h1="Brukeropplevelser som <em>engasjerer</em>"
         intro="God design handler om mer enn utseende. Vi designer digitale opplevelser som er intuitive, tilgjengelige og konverterer besøkende til kunder."
-        parentHref="/tjenester/web-app-nettsid"
+        parentHref="/tjenester/web-app-nettside"
         parentLabel="Tilbake til Web & App"
         bulletTitle="Våre <em>designtjenester</em>"
         bullets={[

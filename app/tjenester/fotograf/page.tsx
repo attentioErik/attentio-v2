@@ -3,11 +3,11 @@ import SubServicePage from '@/components/SubServicePage'
 import CTASection from '@/components/CTASection'
 
 export const metadata: Metadata = {
-  title: 'Fotograf i Bergen | Bedriftsfoto og produktfoto | attentio',
+  title: 'Fotograf i Bergen | Bedriftsfoto og produktfoto',
   description:
     'Profesjonell fotograf for bedrifter i Bergen. Produkt-, bedrifts- og eventfotografering. Bilder som styrker merkevaren din.',
   openGraph: {
-    title: 'Fotograf i Bergen | Bedriftsfoto og produktfoto | attentio',
+    title: 'Fotograf i Bergen | Bedriftsfoto og produktfoto',
     description:
       'Profesjonell fotograf for bedrifter i Bergen. Produkt-, bedrifts- og eventfotografering. Bilder som styrker merkevaren din.',
     locale: 'nb_NO',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Fotograf i Bergen | Bedriftsfoto og produktfoto | attentio',
+    title: 'Fotograf i Bergen | Bedriftsfoto og produktfoto',
     description:
       'Profesjonell fotograf for bedrifter i Bergen. Produkt-, bedrifts- og eventfotografering. Bilder som styrker merkevaren din.',
   },

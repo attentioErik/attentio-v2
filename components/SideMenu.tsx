@@ -16,7 +16,7 @@ const pages = [
 const services = [
   { href: '/tjenester/ai-chatbot',         label: 'AI Chatbot',        icon: '🤖' },
   { href: '/tjenester/ai-automation',     label: 'AI Automatisering', icon: '⚡' },
-  { href: '/tjenester/web-app-nettsid',    label: 'Nettsider',         icon: '🌐' },
+  { href: '/tjenester/web-app-nettside',    label: 'Nettsider',         icon: '🌐' },
   { href: '/tjenester/digital-markedsforing', label: 'Markedsføring',  icon: '📣' },
   { href: '/tjenester/video-foto',        label: 'Video & Foto',      icon: '🎬' },
   { href: '/tjenester/3d-scanning',       label: '3D-scanning',       icon: '📐' },

@@ -64,10 +64,10 @@ export interface ServiceData {
 const services: ServiceData[] = [
   // ── 1. AI & Automatisering ──────────────────
   {
-    slug: 'ai-automatisering',
+    slug: 'ai-automation',
     emoji: '🤖',
     meta: {
-      title: 'AI & Automatisering | Effektiviser bedriften | attentio',
+      title: 'AI & Automatisering | Effektiviser bedriften',
       description:
         'Vi hjelper bedrifter med å ta i bruk AI og automatisering – fra prosesskartlegging til implementering. Finn flaskehalsene, fjern det manuelle, og jobb smartere.',
     },
@@ -198,10 +198,10 @@ const services: ServiceData[] = [
 
   // ── 2. Web & App ────────────────────────────
   {
-    slug: 'web-app-nettsid',
+    slug: 'web-app-nettside',
     emoji: '🌐',
     meta: {
-      title: 'Web & App | Konverteringsdrevne nettsider | attentio',
+      title: 'Web & App | Konverteringsdrevne nettsider',
       description:
         'Vi designer og bygger raske, SEO-optimaliserte nettsider og skreddersydde apper. Ingen maler – alt bygget for konvertering fra dag én. Bergen-basert tech-byrå.',
     },
@@ -335,7 +335,7 @@ const services: ServiceData[] = [
     slug: 'digital-markedsforing',
     emoji: '📈',
     meta: {
-      title: 'Digital markedsføring | SEO, Google Ads & Meta Ads | attentio',
+      title: 'Digital markedsføring | SEO, Google Ads & Meta Ads',
       description:
         'AI-drevet SEO, Google Ads og Meta-annonsering med tydelig ROI. Vi gir deg kunder, ikke klikk. Transparent rapportering og datadrevne beslutninger.',
     },
@@ -469,7 +469,7 @@ const services: ServiceData[] = [
     slug: 'video-foto',
     emoji: '🎬',
     meta: {
-      title: 'Video & Foto | Promo, Reels & Dronefilm | attentio',
+      title: 'Video & Foto | Promo, Reels & Dronefilm',
       description:
         'Profesjonell videoproduksjon, reels, dronefilm og produktfoto som konverterer på sosiale medier. Vi produserer innhold som stopper scrollingen og bygger merkevaren din.',
     },
@@ -603,7 +603,7 @@ const services: ServiceData[] = [
     slug: 'branding-design',
     emoji: '🎨',
     meta: {
-      title: 'Branding & Grafisk Design | Visuell identitet | attentio',
+      title: 'Branding & Grafisk Design | Visuell identitet',
       description:
         'Logo, visuell profil og brandstrategi som gjør bedriften din uforglemmelig. Vi bygger merkevarer med mening – fra strategisk fundament til komplett design system.',
     },
@@ -737,7 +737,7 @@ const services: ServiceData[] = [
     slug: '3d-scanning',
     emoji: '📐',
     meta: {
-      title: '3D-scanning | Digitale tvillinger for eiendom | attentio',
+      title: '3D-scanning | Digitale tvillinger for eiendom',
       description:
         'attentioExplore leverer fotorealistiske 3D-turer for eiendommer, hoteller og næringslokaler. La kunder og gjester utforske lokalet ditt fra sofaen – 24/7.',
     },

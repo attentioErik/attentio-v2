@@ -3,11 +3,11 @@ import SubServicePage from '@/components/SubServicePage'
 import CTASection from '@/components/CTASection'
 
 export const metadata: Metadata = {
-  title: '3D-scanning for bygg og anlegg | Dokumentasjon | attentio',
+  title: '3D-scanning for bygg og anlegg | Dokumentasjon',
   description:
     'Profesjonell 3D-scanning for byggebransjen. Fremdriftsdokumentasjon, as-built modeller og avvikskontroll. attentio i Bergen.',
   openGraph: {
-    title: '3D-scanning for bygg og anlegg | Dokumentasjon | attentio',
+    title: '3D-scanning for bygg og anlegg | Dokumentasjon',
     description:
       'Profesjonell 3D-scanning for byggebransjen. Fremdriftsdokumentasjon, as-built modeller og avvikskontroll. attentio i Bergen.',
     locale: 'nb_NO',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '3D-scanning for bygg og anlegg | Dokumentasjon | attentio',
+    title: '3D-scanning for bygg og anlegg | Dokumentasjon',
     description:
       'Profesjonell 3D-scanning for byggebransjen. Fremdriftsdokumentasjon, as-built modeller og avvikskontroll. attentio i Bergen.',
   },

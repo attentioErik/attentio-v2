@@ -3,11 +3,11 @@ import SubServicePage from '@/components/SubServicePage'
 import CTASection from '@/components/CTASection'
 
 export const metadata: Metadata = {
-  title: 'Eiendom 3D | Matterport og virtuelle visninger | attentio',
+  title: 'Eiendom 3D | Matterport og virtuelle visninger',
   description:
     '3D-scanning og virtuelle visninger for eiendom. Matterport, digitale plantegninger og 360-foto. attentio – 3D-partner i Bergen.',
   openGraph: {
-    title: 'Eiendom 3D | Matterport og virtuelle visninger | attentio',
+    title: 'Eiendom 3D | Matterport og virtuelle visninger',
     description:
       '3D-scanning og virtuelle visninger for eiendom. Matterport, digitale plantegninger og 360-foto. attentio – 3D-partner i Bergen.',
     locale: 'nb_NO',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Eiendom 3D | Matterport og virtuelle visninger | attentio',
+    title: 'Eiendom 3D | Matterport og virtuelle visninger',
     description:
       '3D-scanning og virtuelle visninger for eiendom. Matterport, digitale plantegninger og 360-foto. attentio – 3D-partner i Bergen.',
   },

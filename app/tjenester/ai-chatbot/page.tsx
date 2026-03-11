@@ -11,11 +11,11 @@ import ChatbotDemoSection from '@/components/ChatbotDemoSection'
 import SchemaMarkup from '@/components/SchemaMarkup'
 
 export const metadata: Metadata = {
-  title: 'AI Chatbot & Salgsagent | Automatisk leadgenerering 24/7 | attentio',
+  title: 'AI Chatbot & Salgsagent | Automatisk leadgenerering 24/7',
   description:
     'En AI-chatbot som svarer kunder og kvalifiserer leads – 24/7. Ta over varme samtaler manuelt når det teller. Bergen-basert AI-byrå.',
   openGraph: {
-    title: 'AI Chatbot & Salgsagent | Automatisk leadgenerering 24/7 | attentio',
+    title: 'AI Chatbot & Salgsagent | Automatisk leadgenerering 24/7',
     description:
       'En AI-chatbot som svarer kunder og kvalifiserer leads – 24/7. Manuell overtakelse når det teller.',
     locale: 'nb_NO',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'AI Chatbot & Salgsagent | attentio',
+    title: 'AI Chatbot & Salgsagent',
     description: 'En AI-chatbot som selger for deg – 24/7.',
   },
   alternates: {

@@ -21,10 +21,10 @@ export async function generateMetadata({
   const article = getArticle(slug)
   if (!article) return {}
   return {
-    title: `${article.title} | attentio`,
+    title: article.title,
     description: article.excerpt,
     openGraph: {
-      title: `${article.title} | attentio`,
+      title: article.title,
       description: article.excerpt,
       images: article.coverImage ? [article.coverImage] : [],
       locale: 'nb_NO',

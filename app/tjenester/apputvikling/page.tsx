@@ -3,11 +3,11 @@ import SubServicePage from '@/components/SubServicePage'
 import CTASection from '@/components/CTASection'
 
 export const metadata: Metadata = {
-  title: 'Apputvikling | iOS & Android apper | attentio',
+  title: 'Apputvikling | iOS & Android apper',
   description:
     'Vi utvikler skreddersydde apper for iOS og Android. Fra idé til lansering med moderne teknologi. Bergen-basert tech-byrå.',
   openGraph: {
-    title: 'Apputvikling | iOS & Android apper | attentio',
+    title: 'Apputvikling | iOS & Android apper',
     description:
       'Vi utvikler skreddersydde apper for iOS og Android. Fra idé til lansering med moderne teknologi. Bergen-basert tech-byrå.',
     locale: 'nb_NO',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Apputvikling | iOS & Android apper | attentio',
+    title: 'Apputvikling | iOS & Android apper',
     description:
       'Vi utvikler skreddersydde apper for iOS og Android. Fra idé til lansering med moderne teknologi. Bergen-basert tech-byrå.',
   },
@@ -31,7 +31,7 @@ export default function ApputviklingPage() {
         tag="Apputvikling"
         h1="Skreddersydd <em>apputvikling</em> for din bedrift"
         intro="Vi utvikler brukervennlige apper for iOS og Android – fra idé til lansering. Moderne teknologi, intuitiv design og skalerbar arkitektur."
-        parentHref="/tjenester/web-app-nettsid"
+        parentHref="/tjenester/web-app-nettside"
         parentLabel="Tilbake til Web & App"
         bulletTitle="Hva vi tilbyr innen <em>apputvikling</em>"
         bullets={[

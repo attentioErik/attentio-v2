@@ -3,11 +3,11 @@ import SubServicePage from '@/components/SubServicePage'
 import CTASection from '@/components/CTASection'
 
 export const metadata: Metadata = {
-  title: 'Nettbutikk | E-handel som selger | attentio',
+  title: 'Nettbutikk | E-handel som selger',
   description:
     'Vi bygger nettbutikker som konverterer. Shopify, WooCommerce eller egenutviklet. Komplett oppsett med betaling, frakt og SEO.',
   openGraph: {
-    title: 'Nettbutikk | E-handel som selger | attentio',
+    title: 'Nettbutikk | E-handel som selger',
     description:
       'Vi bygger nettbutikker som konverterer. Shopify, WooCommerce eller egenutviklet. Komplett oppsett med betaling, frakt og SEO.',
     locale: 'nb_NO',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Nettbutikk | E-handel som selger | attentio',
+    title: 'Nettbutikk | E-handel som selger',
     description:
       'Vi bygger nettbutikker som konverterer. Shopify, WooCommerce eller egenutviklet. Komplett oppsett med betaling, frakt og SEO.',
   },
@@ -31,7 +31,7 @@ export default function NettbutikkPage() {
         tag="Nettbutikk"
         h1="Nettbutikk som <em>konverterer</em>"
         intro="Vi bygger nettbutikker som ser profesjonelle ut og er optimalisert for salg. Fra produktoppsett til betalingsløsning – alt på plass."
-        parentHref="/tjenester/web-app-nettsid"
+        parentHref="/tjenester/web-app-nettside"
         parentLabel="Tilbake til Web & App"
         bulletTitle="Slik bygger vi din <em>nettbutikk</em>"
         bullets={[

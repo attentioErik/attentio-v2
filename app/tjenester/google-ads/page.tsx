@@ -3,11 +3,11 @@ import SubServicePage from '@/components/SubServicePage'
 import CTASection from '@/components/CTASection'
 
 export const metadata: Metadata = {
-  title: 'Google Ads | Betalt søk som gir resultater | attentio',
+  title: 'Google Ads | Betalt søk som gir resultater',
   description:
     'Vi setter opp og optimaliserer Google Ads-kampanjer. Søkeannonser, Shopping og Display – med fokus på avkastning. Bergen-basert byrå.',
   openGraph: {
-    title: 'Google Ads | Betalt søk som gir resultater | attentio',
+    title: 'Google Ads | Betalt søk som gir resultater',
     description:
       'Vi setter opp og optimaliserer Google Ads-kampanjer. Søkeannonser, Shopping og Display – med fokus på avkastning. Bergen-basert byrå.',
     locale: 'nb_NO',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Google Ads | Betalt søk som gir resultater | attentio',
+    title: 'Google Ads | Betalt søk som gir resultater',
     description:
       'Vi setter opp og optimaliserer Google Ads-kampanjer. Søkeannonser, Shopping og Display – med fokus på avkastning. Bergen-basert byrå.',
   },

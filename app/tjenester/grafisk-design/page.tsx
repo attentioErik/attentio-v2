@@ -3,11 +3,11 @@ import SubServicePage from '@/components/SubServicePage'
 import CTASection from '@/components/CTASection'
 
 export const metadata: Metadata = {
-  title: 'Grafisk design | Visuell kommunikasjon | attentio',
+  title: 'Grafisk design | Visuell kommunikasjon',
   description:
     'Profesjonelt grafisk design for bedrifter. Visuell identitet, trykksaker, digitalt design og emballasje. attentio – designbyrå i Bergen.',
   openGraph: {
-    title: 'Grafisk design | Visuell kommunikasjon | attentio',
+    title: 'Grafisk design | Visuell kommunikasjon',
     description:
       'Profesjonelt grafisk design for bedrifter. Visuell identitet, trykksaker, digitalt design og emballasje. attentio – designbyrå i Bergen.',
     locale: 'nb_NO',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Grafisk design | Visuell kommunikasjon | attentio',
+    title: 'Grafisk design | Visuell kommunikasjon',
     description:
       'Profesjonelt grafisk design for bedrifter. Visuell identitet, trykksaker, digitalt design og emballasje. attentio – designbyrå i Bergen.',
   },

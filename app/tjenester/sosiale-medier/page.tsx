@@ -3,11 +3,11 @@ import SubServicePage from '@/components/SubServicePage'
 import CTASection from '@/components/CTASection'
 
 export const metadata: Metadata = {
-  title: 'Sosiale medier | Strategi og annonsering | attentio',
+  title: 'Sosiale medier | Strategi og annonsering',
   description:
     'Profesjonell håndtering av sosiale medier. Strategi, innhold og betalt annonsering på Facebook, Instagram og LinkedIn. attentio i Bergen.',
   openGraph: {
-    title: 'Sosiale medier | Strategi og annonsering | attentio',
+    title: 'Sosiale medier | Strategi og annonsering',
     description:
       'Profesjonell håndtering av sosiale medier. Strategi, innhold og betalt annonsering på Facebook, Instagram og LinkedIn. attentio i Bergen.',
     locale: 'nb_NO',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Sosiale medier | Strategi og annonsering | attentio',
+    title: 'Sosiale medier | Strategi og annonsering',
     description:
       'Profesjonell håndtering av sosiale medier. Strategi, innhold og betalt annonsering på Facebook, Instagram og LinkedIn. attentio i Bergen.',
   },
