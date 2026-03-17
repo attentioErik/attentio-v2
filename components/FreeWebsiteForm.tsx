@@ -190,7 +190,7 @@ export default function FreeWebsiteForm() {
           </div>
 
           <div className={styles.actions}>
-            <Button type="submit" variant="primary" disabled={loading}>
+            <Button type="submit" variant="primary" disabled={loading} data-bb-track="accept">
               {loading ? 'Sender...' : 'Send inn – helt gratis'}
             </Button>
             {success && (

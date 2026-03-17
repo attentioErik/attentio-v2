@@ -11,6 +11,7 @@ type ButtonProps = {
   type?: 'button' | 'submit'
   disabled?: boolean
   id?: string
+  'data-bb-track'?: string
 }
 
 export default function Button({
@@ -23,6 +24,7 @@ export default function Button({
   type = 'button',
   disabled = false,
   id,
+  'data-bb-track': dataBbTrack,
 }: ButtonProps) {
   const cls = [styles.btn, styles[variant], styles[`size${size.toUpperCase()}`], className]
     .filter(Boolean)
@@ -37,7 +39,7 @@ export default function Button({
   }
 
   return (
-    <button type={type} className={cls} onClick={onClick} disabled={disabled} id={id}>
+    <button type={type} className={cls} onClick={onClick} disabled={disabled} id={id} data-bb-track={dataBbTrack}>
       {children}
     </button>
   )
