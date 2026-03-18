@@ -23,8 +23,8 @@ export const metadata: Metadata = {
   },
 }
 
-export default function ProsjekterPage() {
-  const projects = getProjects()
+export default async function ProsjekterPage() {
+  const projects = await getProjects()
   return (
     <>
       <ProjectGrid projects={projects} />

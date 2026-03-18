@@ -1,9 +1,9 @@
 import type { MetadataRoute } from 'next'
-import { getAllServiceSlugs } from '@/lib/services-data'
+import { getAllServiceSlugs } from '@/lib/services-data-sanity'
 import { getArticles } from '@/lib/content/getArticles'
 import { getProjects } from '@/lib/content/getProjects'
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://attentio.no'
 
   const staticPages: MetadataRoute.Sitemap = [
@@ -18,8 +18,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/galleri`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5 },
   ]
 
-  // Dynamic service pages from services-data
-  const servicePages: MetadataRoute.Sitemap = getAllServiceSlugs().map((slug) => ({
+  // Dynamic service pages
+  const serviceSlugs = await getAllServiceSlugs()
+  const servicePages: MetadataRoute.Sitemap = serviceSlugs.map((slug) => ({
     url: `${baseUrl}/tjenester/${slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
@@ -42,7 +43,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }))
 
   // Article pages
-  const articlePages: MetadataRoute.Sitemap = getArticles().map((article) => ({
+  const articles = await getArticles()
+  const articlePages: MetadataRoute.Sitemap = articles.map((article) => ({
     url: `${baseUrl}/artikler/${article.slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
@@ -50,7 +52,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }))
 
   // Project pages
-  const projectPages: MetadataRoute.Sitemap = getProjects().map((project) => ({
+  const projects = await getProjects()
+  const projectPages: MetadataRoute.Sitemap = projects.map((project) => ({
     url: `${baseUrl}/prosjekter/${project.slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,

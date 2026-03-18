@@ -1,10 +1,13 @@
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type RichContent = string | any[]
+
 export interface Project {
   name: string
   slug: string
   heading: string
   description: string
   cardDescription: string
-  body: string
+  body: RichContent
   coverImage: string
   images: string[]
   services: string[]
@@ -29,7 +32,7 @@ export interface Article {
   name: string
   slug: string
   title: string
-  body: string
+  body: RichContent
   excerpt: string
   coverImage: string
   authorSlug: string

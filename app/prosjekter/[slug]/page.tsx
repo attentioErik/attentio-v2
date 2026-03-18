@@ -3,11 +3,13 @@ import Link from 'next/link'
 import Image from 'next/image'
 import type { Metadata } from 'next'
 import { getProject, getAllProjectSlugs } from '@/lib/content/getProjects'
+import RichText from '@/components/RichText'
 import CTASection from '@/components/CTASection'
 import styles from './page.module.css'
 
-export function generateStaticParams() {
-  return getAllProjectSlugs().map((slug) => ({ slug }))
+export async function generateStaticParams() {
+  const slugs = await getAllProjectSlugs()
+  return slugs.map((slug) => ({ slug }))
 }
 
 export async function generateMetadata({
@@ -16,7 +18,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>
 }): Promise<Metadata> {
   const { slug } = await params
-  const project = getProject(slug)
+  const project = await getProject(slug)
   if (!project) return {}
   return {
     title: project.name,
@@ -63,7 +65,7 @@ export default async function ProjectPage({
   params: Promise<{ slug: string }>
 }) {
   const { slug } = await params
-  const project = getProject(slug)
+  const project = await getProject(slug)
   if (!project) notFound()
 
   const embedUrl = project.promoVideo ? getEmbedUrl(project.promoVideo) : null
@@ -112,10 +114,7 @@ export default async function ProjectPage({
         <div className="container">
           <div className={styles.layout}>
             {/* Content */}
-            <div
-              className={styles.content}
-              dangerouslySetInnerHTML={{ __html: project.body }}
-            />
+            <RichText value={project.body} className={styles.content} />
 
             {/* Sidebar */}
             <aside className={styles.sidebar}>
@@ -171,7 +170,7 @@ export default async function ProjectPage({
       )}
 
       {/* ── Gallery ──────────────────────────────────── */}
-      {project.images.length > 0 && (
+      {project.images && project.images.length > 0 && (
         <section className={styles.gallery}>
           <div className="container">
             <div className="tag reveal">Galleri</div>

@@ -2,8 +2,8 @@ import Image from 'next/image'
 import { getTeam } from '@/lib/content/getTeam'
 import styles from './TeamGrid.module.css'
 
-export default function TeamGrid() {
-  const team = getTeam()
+export default async function TeamGrid() {
+  const team = await getTeam()
 
   return (
     <section className={styles.section} id="team">

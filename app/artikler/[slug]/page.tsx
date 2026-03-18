@@ -5,11 +5,13 @@ import type { Metadata } from 'next'
 import { getArticle, getAllArticleSlugs, getRelatedArticles } from '@/lib/content/getArticles'
 import { getTeamMember } from '@/lib/content/getTeam'
 import ArticleCard from '@/components/articles/ArticleCard'
+import RichText from '@/components/RichText'
 import CTASection from '@/components/CTASection'
 import styles from './page.module.css'
 
-export function generateStaticParams() {
-  return getAllArticleSlugs().map((slug) => ({ slug }))
+export async function generateStaticParams() {
+  const slugs = await getAllArticleSlugs()
+  return slugs.map((slug) => ({ slug }))
 }
 
 export async function generateMetadata({
@@ -18,7 +20,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>
 }): Promise<Metadata> {
   const { slug } = await params
-  const article = getArticle(slug)
+  const article = await getArticle(slug)
   if (!article) return {}
   return {
     title: article.title,
@@ -48,11 +50,11 @@ export default async function ArticlePage({
   params: Promise<{ slug: string }>
 }) {
   const { slug } = await params
-  const article = getArticle(slug)
+  const article = await getArticle(slug)
   if (!article) notFound()
 
-  const author = getTeamMember(article.authorSlug)
-  const related = getRelatedArticles(slug, 3)
+  const author = await getTeamMember(article.authorSlug)
+  const related = await getRelatedArticles(slug, 3)
 
   return (
     <>
@@ -98,10 +100,7 @@ export default async function ArticlePage({
         <div className="container">
           <div className={styles.articleLayout}>
             {/* Body */}
-            <div
-              className={styles.content}
-              dangerouslySetInnerHTML={{ __html: article.body }}
-            />
+            <RichText value={article.body} className={styles.content} />
 
             {/* Sidebar */}
             <aside className={styles.sidebar}>

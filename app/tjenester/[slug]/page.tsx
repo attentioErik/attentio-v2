@@ -1,12 +1,13 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
-import { getServiceBySlug, getAllServiceSlugs } from '@/lib/services-data'
+import { getServiceBySlug, getAllServiceSlugs } from '@/lib/services-data-sanity'
 import ServicePage from '@/components/ServicePage'
 import SchemaMarkup from '@/components/SchemaMarkup'
 
 // Generate static paths for all 6 service slugs at build time
-export function generateStaticParams() {
-  return getAllServiceSlugs().map((slug) => ({ slug }))
+export async function generateStaticParams() {
+  const slugs = await getAllServiceSlugs()
+  return slugs.map((slug) => ({ slug }))
 }
 
 // Per-page SEO metadata
@@ -16,7 +17,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>
 }): Promise<Metadata> {
   const { slug } = await params
-  const service = getServiceBySlug(slug)
+  const service = await getServiceBySlug(slug)
 
   if (!service) return {}
 
@@ -46,7 +47,7 @@ export default async function ServiceRoute({
   params: Promise<{ slug: string }>
 }) {
   const { slug } = await params
-  const service = getServiceBySlug(slug)
+  const service = await getServiceBySlug(slug)
 
   if (!service) notFound()
 

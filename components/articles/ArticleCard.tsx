@@ -75,7 +75,7 @@ export default function ArticleCard({ article, index = 0 }: Props) {
         <h3 className={styles.title}>{article.title}</h3>
         <p className={styles.excerpt}>
           {article.excerpt ||
-            (article.body
+            (typeof article.body === 'string' && article.body
               ? stripHtml(article.body).slice(0, 180).trim() + '…'
               : '')}
         </p>

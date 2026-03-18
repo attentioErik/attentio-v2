@@ -23,8 +23,8 @@ export const metadata: Metadata = {
   },
 }
 
-export default function ArtiklerPage() {
-  const articles = getArticles()
+export default async function ArtiklerPage() {
+  const articles = await getArticles()
   return (
     <>
       <ArticleList articles={articles} />
