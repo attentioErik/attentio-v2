@@ -87,6 +87,21 @@ const nextConfig: NextConfig = {
       // Legacy Attentio Explore 3D scanning redirects
       { source: '/attentioexplore-3dscanning', destination: '/tjenester/3d-scanning', permanent: true },
       { source: '/attentioexplore-3dscanning/:path*', destination: '/tjenester/3d-scanning', permanent: true },
+      { source: '/attentioexplore', destination: '/tjenester/3d-scanning', permanent: true },
+      { source: '/attentioexplore/:path*', destination: '/tjenester/3d-scanning', permanent: true },
+
+      // Old gallery sub-pages
+      { source: '/galleri/:path*', destination: '/galleri', permanent: true },
+
+      // Old service slugs
+      { source: '/tjenester/nettbutikk-e-handel', destination: '/tjenester/nettbutikk', permanent: true },
+      { source: '/tjenester/drift-av-nettside', destination: '/tjenester/web-app-nettside', permanent: true },
+
+      // Old project slugs
+      { source: '/prosjekter/panorama-hotell-resort', destination: '/prosjekter', permanent: true },
+
+      // Old misc pages
+      { source: '/jobb', destination: '/om-oss', permanent: true },
     ]
   },
 }

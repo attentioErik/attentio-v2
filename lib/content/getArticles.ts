@@ -1,4 +1,4 @@
-import { client } from '@/lib/sanity/client'
+import { sanityFetch } from '@/lib/sanity/client'
 import { ARTICLES_ALL_QUERY, ARTICLE_BY_SLUG_QUERY, ARTICLE_SLUGS_QUERY } from '@/lib/sanity/queries'
 import { articlesData } from './data/articles'
 import type { Article } from './types'
@@ -20,8 +20,8 @@ function withExcerpt(articles: Article[]): Article[] {
 
 export async function getArticles(): Promise<Article[]> {
   try {
-    const sanity = await client.fetch(ARTICLES_ALL_QUERY)
-    if (sanity && sanity.length > 0) return withExcerpt(sanity as unknown as Article[])
+    const sanity = await sanityFetch<Article[]>(ARTICLES_ALL_QUERY, {}, ['sanity', 'article'])
+    if (sanity && sanity.length > 0) return withExcerpt(sanity)
   } catch {}
   return withExcerpt(
     [...articlesData].sort(
@@ -32,16 +32,16 @@ export async function getArticles(): Promise<Article[]> {
 
 export async function getArticle(slug: string): Promise<Article | undefined> {
   try {
-    const sanity = await client.fetch(ARTICLE_BY_SLUG_QUERY, { slug })
-    if (sanity) return sanity as unknown as Article
+    const sanity = await sanityFetch<Article | null>(ARTICLE_BY_SLUG_QUERY, { slug }, ['sanity', 'article'])
+    if (sanity) return sanity
   } catch {}
   return articlesData.find((a) => a.slug === slug)
 }
 
 export async function getAllArticleSlugs(): Promise<string[]> {
   try {
-    const sanity = await client.fetch(ARTICLE_SLUGS_QUERY)
-    if (sanity && sanity.length > 0) return sanity.map((a: { slug: string }) => a.slug)
+    const sanity = await sanityFetch<{ slug: string }[]>(ARTICLE_SLUGS_QUERY, {}, ['sanity', 'article'])
+    if (sanity && sanity.length > 0) return sanity.map((a) => a.slug)
   } catch {}
   return articlesData.map((a) => a.slug)
 }
