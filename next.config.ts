@@ -91,7 +91,7 @@ const nextConfig: NextConfig = {
       { source: '/attentioexplore/:path*', destination: '/tjenester/3d-scanning', permanent: true },
 
       // Old gallery sub-pages
-      { source: '/galleri/:path*', destination: '/galleri', permanent: true },
+      { source: '/galleri/:path+', destination: '/galleri', permanent: true },
 
       // Old service slugs
       { source: '/tjenester/nettbutikk-e-handel', destination: '/tjenester/nettbutikk', permanent: true },
