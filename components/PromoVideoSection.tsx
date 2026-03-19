@@ -11,7 +11,7 @@ export default function PromoVideoSection() {
 
   return (
     <>
-      <section className={styles.section}>
+      <section id="promo" className={styles.section}>
         <div className="container">
 
           {/* Heading */}

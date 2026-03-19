@@ -67,7 +67,7 @@ export default function AboutHero() {
             </div>
             <div className={styles.badge}>
               <span className={styles.badgeStar}>★</span>
-              AI-first siden 2022
+              Eksperter med AI-verktøy
             </div>
           </div>
         </div>

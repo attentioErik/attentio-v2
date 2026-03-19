@@ -80,7 +80,7 @@ export default function Services() {
               className={`${styles.card} ${s.hero ? styles.heroCard : ''}`}
               data-cursor="hover"
             >
-              {s.hero && <span className={styles.aiBadge}>★ AI-first</span>}
+              {s.hero && <span className={styles.aiBadge}>★ AI-drevet</span>}
               <div className={styles.num}>{s.num}</div>
               <span className={styles.emoji}>{s.emoji}</span>
               <h3 className={styles.cardTitle}>{s.title}</h3>

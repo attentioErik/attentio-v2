@@ -2,9 +2,9 @@ import styles from './WhyAttentio.module.css'
 
 const cards = [
   {
-    icon: '🤖',
-    title: 'AI-first mindset',
-    body: 'Vi bygger ikke bare nettsider – vi bygger intelligente systemer. AI er integrert i alt vi lager, fra innholdsgenerering til automatiserte arbeidsflyter.',
+    icon: '🧠',
+    title: 'Mennesker først, AI som verktøy',
+    body: 'Ekte ekspertise og erfaring driver alt vi gjør. Vi bruker AI for å jobbe smartere og raskere, men det er fagfolkene bak som sikrer kvalitet og strategi.',
   },
   {
     icon: '🎯',

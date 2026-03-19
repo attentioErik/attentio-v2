@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Button from './Button'
 import styles from './Hero.module.css'
 
@@ -46,28 +47,25 @@ export default function Hero() {
           Start et prosjekt
           <IconArrow />
         </Button>
-        <Button href="#ai" variant="outline">
+        <Button href="/om-oss#promo" variant="outline">
           <IconPlay />
-          Se AI-demo
+          Se Promo
         </Button>
       </div>
 
-      {/* Floating stat pills — desktop only */}
-      <div className={styles.stats} aria-hidden="true">
-        {[
-          { num: '50+', label: 'fornøyde\nkunder' },
-          { num: '24/7', label: 'AI-chatbot\ntilgjengelig' },
-          { num: '3×', label: 'raskere\nlevering med AI' },
-        ].map(({ num, label }) => (
-          <div key={num} className={styles.statPill}>
-            <div className={styles.statNum}>{num}</div>
-            <div className={styles.statLabel}>
-              {label.split('\n').map((l, i) => (
-                <span key={i}>{l}<br /></span>
-              ))}
-            </div>
-          </div>
-        ))}
+      {/* Team image — desktop only */}
+      <div className={styles.heroImage}>
+        <div className={styles.heroImageInner}>
+          <Image
+            src="https://ucarecdn.com/d82a0722-e9d3-431b-8937-cd9bddbfbff7/attentioteam10.avif"
+            alt="Attentio-teamet"
+            width={600}
+            height={400}
+            className={styles.heroImg}
+            priority
+            unoptimized
+          />
+        </div>
       </div>
 
       {/* Scroll hint */}
