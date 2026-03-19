@@ -1,5 +1,4 @@
 import Nav from '@/components/Nav'
-import PromoBanner from '@/components/PromoBanner'
 import Hero from '@/components/Hero'
 import Clients from '@/components/Clients'
 import AISection from '@/components/AISection'
@@ -74,7 +73,6 @@ export default function Home() {
   return (
     <>
       <SchemaMarkup schema={localBusinessSchema} />
-      <PromoBanner />
       <Nav />
       <main>
         <Hero />

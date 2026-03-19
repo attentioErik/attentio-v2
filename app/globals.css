@@ -54,9 +54,10 @@ html {
   --type-small: clamp(0.75rem, 0.2vw + 0.72rem, 0.875rem);
 
   /* Space / Layout */
+  --banner-h: 2.25rem;
   --space-container-x: clamp(1.5rem, 3vw, 3.25rem);
   --space-section-y:   clamp(5rem, 7vw, 7.5rem);
-  --space-hero-top:    clamp(5.5rem, 6vw, 6.25rem);
+  --space-hero-top:    calc(var(--banner-h) + clamp(5.5rem, 6vw, 6.25rem));
   --space-hero-bottom: clamp(5rem, 5vw, 5.5rem);
 
   /* Space / Gaps */

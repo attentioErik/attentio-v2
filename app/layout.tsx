@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Bricolage_Grotesque, Instrument_Serif, DM_Mono } from 'next/font/google'
 import './globals.css'
 import ClientSetup from '@/components/ClientSetup'
+import PromoBanner from '@/components/PromoBanner'
 import SchemaMarkup from '@/components/SchemaMarkup'
 
 const organizationSchema = {
@@ -146,6 +147,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <SchemaMarkup schema={organizationSchema} />
         <SchemaMarkup schema={websiteSchema} />
         <ClientSetup />
+        <PromoBanner />
         {children}
       </body>
     </html>

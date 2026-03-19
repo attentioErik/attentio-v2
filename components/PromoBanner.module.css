@@ -1,7 +1,10 @@
 .banner {
-  position: relative;
-  z-index: 100;
-  background: linear-gradient(90deg, var(--color-purple) 0%, var(--color-teal) 100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 600;
+  background: linear-gradient(90deg, var(--color-brand-purple) 0%, var(--color-brand-teal) 100%);
   text-align: center;
 }
 
@@ -9,11 +12,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: var(--space-xs);
-  padding: var(--space-xs) var(--space-md);
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
   color: var(--color-ui-bg);
   text-decoration: none;
-  font-size: var(--type-sm);
+  font-size: var(--type-small);
   font-weight: 600;
   letter-spacing: 0.01em;
   transition: opacity 0.2s;
@@ -28,9 +31,9 @@
   align-items: center;
   padding: 0.15em 0.55em;
   background: var(--color-ui-bg);
-  color: var(--color-purple);
-  border-radius: var(--radius-full);
-  font-size: var(--type-xs);
+  color: var(--color-brand-purple);
+  border-radius: var(--radius-pill);
+  font-size: 0.6875rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -51,9 +54,9 @@
 
 @media (max-width: 600px) {
   .link {
-    font-size: var(--type-xs);
-    gap: var(--space-2xs);
-    padding: var(--space-2xs) var(--space-sm);
+    font-size: 0.6875rem;
+    gap: 0.25rem;
+    padding: 0.25rem 0.75rem;
   }
 
   .badge {

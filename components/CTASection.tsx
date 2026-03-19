@@ -7,7 +7,7 @@ interface CTASectionProps {
 }
 
 export default function CTASection({
-  titleHtml = 'Klar for å vokse<br />med <em>AI</em>?',
+  titleHtml = 'Klar for å vokse<br />med <em>attentio</em>?',
   sub = 'Book et gratis 30-minutters møte. Vi analyserer situasjonen din og gir konkrete anbefalinger – uten forpliktelser.',
 }: CTASectionProps = {}) {
   return (
