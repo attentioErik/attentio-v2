@@ -3,6 +3,8 @@ import { getArticles } from '@/lib/content/getArticles'
 import ArticleList from '@/components/articles/ArticleList'
 import CTASection from '@/components/CTASection'
 
+export const revalidate = 60
+
 export const metadata: Metadata = {
   title: 'Blogg – digital markedsføring og AI i Bergen',
   description:

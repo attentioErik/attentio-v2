@@ -9,6 +9,8 @@ import RichText from '@/components/RichText'
 import CTASection from '@/components/CTASection'
 import styles from './page.module.css'
 
+export const revalidate = 60
+
 export async function generateStaticParams() {
   const slugs = await getAllArticleSlugs()
   return slugs.map((slug) => ({ slug }))

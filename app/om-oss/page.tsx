@@ -6,6 +6,8 @@ import TeamGrid from '@/components/TeamGrid'
 import WhyAttentio from '@/components/WhyAttentio'
 import CTASection from '@/components/CTASection'
 
+export const revalidate = 60
+
 export const metadata: Metadata = {
   title: 'Om oss | Attentio – AI-drevet digitalbyrå i Bergen',
   description:

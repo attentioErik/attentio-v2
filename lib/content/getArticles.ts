@@ -22,7 +22,9 @@ export async function getArticles(): Promise<Article[]> {
   try {
     const sanity = await sanityFetch<Article[]>(ARTICLES_ALL_QUERY, {}, ['sanity', 'article'])
     if (sanity && sanity.length > 0) return withExcerpt(sanity)
-  } catch {}
+  } catch (e) {
+    console.error('[Sanity] Failed to fetch articles:', e)
+  }
   return withExcerpt(
     [...articlesData].sort(
       (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
@@ -34,7 +36,9 @@ export async function getArticle(slug: string): Promise<Article | undefined> {
   try {
     const sanity = await sanityFetch<Article | null>(ARTICLE_BY_SLUG_QUERY, { slug }, ['sanity', 'article'])
     if (sanity) return sanity
-  } catch {}
+  } catch (e) {
+    console.error('[Sanity] Failed to fetch article:', slug, e)
+  }
   return articlesData.find((a) => a.slug === slug)
 }
 
@@ -42,7 +46,9 @@ export async function getAllArticleSlugs(): Promise<string[]> {
   try {
     const sanity = await sanityFetch<{ slug: string }[]>(ARTICLE_SLUGS_QUERY, {}, ['sanity', 'article'])
     if (sanity && sanity.length > 0) return sanity.map((a) => a.slug)
-  } catch {}
+  } catch (e) {
+    console.error('[Sanity] Failed to fetch article slugs:', e)
+  }
   return articlesData.map((a) => a.slug)
 }
 

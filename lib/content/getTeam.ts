@@ -7,7 +7,9 @@ export async function getTeam(): Promise<TeamMember[]> {
   try {
     const sanity = await sanityFetch<TeamMember[]>(TEAM_ALL_QUERY, {}, ['sanity', 'teamMember'])
     if (sanity && sanity.length > 0) return sanity
-  } catch {}
+  } catch (e) {
+    console.error('[Sanity] Failed to fetch team:', e)
+  }
   return [...teamData].sort((a, b) => a.sortering - b.sortering)
 }
 

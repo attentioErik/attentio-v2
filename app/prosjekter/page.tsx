@@ -3,6 +3,8 @@ import { getProjects } from '@/lib/content/getProjects'
 import ProjectGrid from '@/components/projects/ProjectGrid'
 import CTASection from '@/components/CTASection'
 
+export const revalidate = 60
+
 export const metadata: Metadata = {
   title: 'Prosjekter – AI-drevet digitalbyrå i Bergen',
   description:
