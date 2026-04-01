@@ -1,6 +1,7 @@
 import type { ServiceData } from '@/lib/services-data'
 import ServiceHero from './ServiceHero'
 import FeatureGrid from './FeatureGrid'
+import MatterportEmbed from './MatterportEmbed'
 import ServiceProcess from './ServiceProcess'
 import BenefitsList from './BenefitsList'
 import FAQ from './FAQ'
@@ -25,6 +26,8 @@ export default function ServicePage({ data }: ServicePageProps) {
         title={data.features.title}
         items={data.features.items}
       />
+
+      {data.matterportId && <MatterportEmbed id={data.matterportId} />}
 
       <ServiceProcess
         tag={data.process.tag}

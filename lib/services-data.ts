@@ -24,6 +24,7 @@ export interface FAQItem {
 export interface ServiceData {
   slug: string
   emoji: string
+  matterportId?: string
   meta: {
     title: string
     description: string
@@ -736,6 +737,7 @@ const services: ServiceData[] = [
   {
     slug: '3d-scanning',
     emoji: '📐',
+    matterportId: '216bGz7zQcJ',
     meta: {
       title: '3D-scanning | Digitale tvillinger for eiendom',
       description:
