@@ -102,6 +102,13 @@ const nextConfig: NextConfig = {
 
       // Old misc pages
       { source: '/jobb', destination: '/om-oss', permanent: true },
+      { source: '/old-home', destination: '/', permanent: true },
+
+      // Missing tjenester slugs (Google-indexed)
+      { source: '/tjenester/portrettfotografi', destination: '/tjenester/video-foto', permanent: true },
+      { source: '/tjenester/produktfotografering', destination: '/tjenester/video-foto', permanent: true },
+      { source: '/tjenester/seo-kurs-i-bergen-fa-flere-kunder-gjennom-google', destination: '/tjenester/seo', permanent: true },
+      { source: '/tjenester/systemintegrasjoner', destination: '/tjenester/ai-automation', permanent: true },
     ]
   },
 }
