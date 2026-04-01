@@ -9,5 +9,6 @@ export default function robots(): MetadataRoute.Robots {
       },
     ],
     sitemap: 'https://attentio.no/sitemap.xml',
+    host: 'https://attentio.no',
   }
 }

@@ -5,22 +5,53 @@ import ClientSetup from '@/components/ClientSetup'
 import PromoBanner from '@/components/PromoBanner'
 import SchemaMarkup from '@/components/SchemaMarkup'
 
-const organizationSchema = {
+const localBusinessSchema = {
   '@context': 'https://schema.org',
-  '@type': 'Organization',
-  name: 'attentio',
+  '@type': ['LocalBusiness', 'ProfessionalService'],
+  name: 'Attentio',
+  legalName: 'Attentio AS',
   url: 'https://attentio.no',
   logo: 'https://attentio.no/logo.png',
-  description: 'AI-drevet digitalbyrå i Bergen. Vi bygger chatbots, nettsider, markedsføring og video.',
+  image: 'https://attentio.no/logo.png',
+  description: 'Digitalbyrå i Øygarden/Bergen – nettsider, digital markedsføring, AI-løsninger, video og branding. Vi betjener bedrifter i Bergen og hele Norge.',
+  telephone: '+4748194007',
+  email: 'post@attentio.no',
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'Austefjordsvegen 194',
     addressLocality: 'Steinsland',
+    postalCode: '5379',
+    addressRegion: 'Vestland',
     addressCountry: 'NO',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 60.5502,
+    longitude: 4.9218,
+  },
+  areaServed: [
+    { '@type': 'City', name: 'Bergen' },
+    { '@type': 'AdministrativeArea', name: 'Vestland' },
+    { '@type': 'AdministrativeArea', name: 'Øygarden' },
+    { '@type': 'Country', name: 'Norge' },
+  ],
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Digitale tjenester',
+    itemListElement: [
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Nettside & Web-app', url: 'https://attentio.no/tjenester/web-app-nettside' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'AI-chatbot', url: 'https://attentio.no/tjenester/ai-chatbot' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'AI-automatisering', url: 'https://attentio.no/tjenester/ai-automation' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Digital markedsføring', url: 'https://attentio.no/tjenester/digital-markedsforing' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Video & Foto', url: 'https://attentio.no/tjenester/video-foto' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Branding & Design', url: 'https://attentio.no/tjenester/branding-design' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: '3D-scanning', url: 'https://attentio.no/tjenester/3d-scanning' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'SEO', url: 'https://attentio.no/tjenester/seo' } },
+    ],
   },
   contactPoint: {
     '@type': 'ContactPoint',
-    telephone: '+47-481-94-007',
+    telephone: '+4748194007',
     email: 'post@attentio.no',
     contactType: 'customer service',
     availableLanguage: ['Norwegian', 'English'],
@@ -31,10 +62,15 @@ const organizationSchema = {
 const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  name: 'attentio',
+  name: 'Attentio',
   url: 'https://attentio.no',
-  publisher: { '@type': 'Organization', name: 'attentio' },
+  publisher: { '@type': 'Organization', name: 'Attentio' },
   inLanguage: 'nb-NO',
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: { '@type': 'EntryPoint', urlTemplate: 'https://attentio.no/artikler?q={search_term_string}' },
+    'query-input': 'required name=search_term_string',
+  },
 }
 
 const bricolage = Bricolage_Grotesque({
@@ -63,28 +99,33 @@ const dmMono = DM_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL('https://attentio.no'),
   title: {
-    default: 'attentio | AI-drevet Digitalbyrå i Bergen',
-    template: '%s | attentio',
+    default: 'Attentio | Digitalbyrå Bergen – Nettsider, AI & Markedsføring',
+    template: '%s | Attentio',
   },
   description:
-    'Attentio er Bergens ledende AI-byrå. Vi bygger chatbots, nettsider, markedsføring og video – alt drevet av kunstig intelligens.',
+    'Attentio er et digitalbyrå i Bergen-regionen. Vi lager nettsider, driver digital markedsføring, utvikler AI-løsninger og produserer video og foto. Kunder over hele Norge.',
+  keywords: [
+    'digitalbyrå Bergen', 'nettsider Bergen', 'nettside Bergen', 'webbyrå Bergen',
+    'digital markedsføring Bergen', 'SEO Bergen', 'AI-løsninger Bergen',
+    'chatbot utvikling', 'webdesign Bergen', 'Øygarden', 'Vestland',
+  ],
   robots: {
     index: true,
     follow: true,
     googleBot: { index: true, follow: true },
   },
   openGraph: {
-    title: 'attentio | AI-drevet Digitalbyrå i Bergen',
-    description: 'Chatbots, nettsider, markedsføring og video. Tech-byrået som faktisk leverer vekst.',
+    title: 'Attentio | Digitalbyrå Bergen – Nettsider, AI & Markedsføring',
+    description: 'Nettsider, digital markedsføring, AI-chatbots og video. Digitalbyrå i Bergen som leverer vekst for norske bedrifter.',
     locale: 'nb_NO',
     type: 'website',
-    siteName: 'attentio',
+    siteName: 'Attentio',
     url: 'https://attentio.no',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'attentio | AI-drevet Digitalbyrå i Bergen',
-    description: 'Chatbots, nettsider, markedsføring og video. Tech-byrået som faktisk leverer vekst.',
+    title: 'Attentio | Digitalbyrå Bergen – Nettsider, AI & Markedsføring',
+    description: 'Nettsider, digital markedsføring, AI-chatbots og video. Digitalbyrå i Bergen.',
   },
   alternates: {
     canonical: '/',
@@ -144,7 +185,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           }}
         />
         <script src="https://booster-engine.vercel.app/api/widget" async />
-        <SchemaMarkup schema={organizationSchema} />
+        <SchemaMarkup schema={localBusinessSchema} />
         <SchemaMarkup schema={websiteSchema} />
         <ClientSetup />
         <PromoBanner />

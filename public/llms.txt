@@ -1,0 +1,39 @@
+# Attentio
+
+> Attentio er et digitalbyrå lokalisert i Øygarden, Vestland, og betjener bedrifter i Bergen og hele Norge. Vi spesialiserer oss på nettsider, digital markedsføring, AI-løsninger, video- og fotoproduksjon, branding og 3D-scanning.
+
+## Om oss
+
+Attentio ble grunnlagt med mål om å hjelpe norske bedrifter å vokse digitalt. Vi kombinerer menneskelig ekspertise med AI som verktøy for å levere bedre resultater raskere. Teamet er basert på Austefjordsvegen 194, 5379 Steinsland i Øygarden kommune, Vestland – med kunder over hele Norge, med særlig fokus på Bergen-regionen.
+
+Kontakt: post@attentio.no · +47 481 94 007
+
+## Tjenester
+
+- [Nettside & Web-app](https://attentio.no/tjenester/web-app-nettside): Design og utvikling av nettsider og webapplikasjoner. Spesialister på nettsider Bergen.
+- [AI-chatbot](https://attentio.no/tjenester/ai-chatbot): Utvikling og implementering av AI-drevne chatboter og kundeserviceløsninger.
+- [AI-automatisering](https://attentio.no/tjenester/ai-automation): Automatisering av forretningsprosesser med kunstig intelligens.
+- [Digital markedsføring](https://attentio.no/tjenester/digital-markedsforing): SEO, Google Ads, sosiale medier og innholdsproduksjon.
+- [Video & Foto](https://attentio.no/tjenester/video-foto): Profesjonell video- og fotoproduksjon, reklamefilm, dronefilm og portrettfoto.
+- [Branding & Design](https://attentio.no/tjenester/branding-design): Merkevarebygging, logo, grafisk design og firmaprofil.
+- [3D-scanning](https://attentio.no/tjenester/3d-scanning): 3D-visualisering, digital twin, eiendom og bygg/anlegg.
+- [SEO](https://attentio.no/tjenester/seo): Søkemotoroptimalisering for norske bedrifter.
+- [Nettbutikk](https://attentio.no/tjenester/nettbutikk): E-handelsløsninger og nettbutikk-utvikling.
+
+## Nøkkelsider
+
+- [Forsiden](https://attentio.no): Oversikt over Attentio og alle tjenester.
+- [Prosjekter](https://attentio.no/prosjekter): Referanseprosjekter og portefølje.
+- [Om oss](https://attentio.no/om-oss): Team, historie og tilnærming.
+- [Blogg / Artikler](https://attentio.no/artikler): Fagartikler om digital markedsføring, AI og nettside-utvikling.
+- [Kontakt](https://attentio.no/kontakt): Kontaktskjema og kontaktinformasjon.
+
+## Geografisk dekning
+
+Primærmarked: Bergen, Øygarden, Vestland
+Sekundærmarked: Hele Norge (fjernleveranse)
+Adresse: Austefjordsvegen 194, 5379 Steinsland, Øygarden, Vestland, Norge
+
+## Sitemap
+
+https://attentio.no/sitemap.xml
