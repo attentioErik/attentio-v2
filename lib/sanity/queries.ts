@@ -92,7 +92,8 @@ export const PROJECTS_ALL_QUERY = defineQuery(`
     website,
     promoVideo,
     isFeatured,
-    "showOnHomepage": coalesce(showOnHomepage, false)
+    "showOnHomepage": coalesce(showOnHomepage, false),
+    "homepageOrder": coalesce(homepageOrder, 999)
   }
 `)
 
@@ -110,7 +111,8 @@ export const PROJECT_BY_SLUG_QUERY = defineQuery(`
     website,
     promoVideo,
     isFeatured,
-    "showOnHomepage": coalesce(showOnHomepage, false)
+    "showOnHomepage": coalesce(showOnHomepage, false),
+    "homepageOrder": coalesce(homepageOrder, 999)
   }
 `)
 

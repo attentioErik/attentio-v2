@@ -15,6 +15,7 @@ export interface Project {
   promoVideo: string
   isFeatured: boolean
   showOnHomepage?: boolean
+  homepageOrder?: number
 }
 
 export interface TeamMember {

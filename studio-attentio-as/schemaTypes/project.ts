@@ -122,15 +122,24 @@ export const project = defineType({
     defineField({
       name: 'isFeatured',
       title: 'Fremhevet',
+      description: 'Vis øverst i prosjektlisten på /prosjekter-siden',
       type: 'boolean',
       initialValue: false,
     }),
     defineField({
       name: 'showOnHomepage',
       title: 'Vis på forside',
-      description: 'Vis dette prosjektet i prosjektgalleriet på forsiden',
+      description: 'Inkluder dette prosjektet i prosjektgalleriet på forsiden (maks 6)',
       type: 'boolean',
       initialValue: false,
+    }),
+    defineField({
+      name: 'homepageOrder',
+      title: 'Rekkefølge på forside',
+      description: 'Lavere tall = vises først. La stå tom for å sortere etter dato.',
+      type: 'number',
+      validation: (Rule) => Rule.integer().min(0).max(999),
+      hidden: ({ parent }) => !parent?.showOnHomepage,
     }),
     defineField({
       name: 'seo',

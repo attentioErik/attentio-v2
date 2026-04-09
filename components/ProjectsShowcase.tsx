@@ -9,7 +9,10 @@ export default async function ProjectsShowcase() {
   const all = await getProjects()
   // Filter by showOnHomepage flag (set in Sanity Studio)
   // Fallback chain: showOnHomepage → isFeatured → first N projects
-  const homepagePicks = all.filter((p) => p.showOnHomepage)
+  const homepagePicks = all
+    .filter((p) => p.showOnHomepage)
+    // Sort by homepageOrder (lower = first); 999 is the default for unset
+    .sort((a, b) => (a.homepageOrder ?? 999) - (b.homepageOrder ?? 999))
   const featured = all.filter((p) => p.isFeatured)
   const projects = (
     homepagePicks.length > 0 ? homepagePicks :
