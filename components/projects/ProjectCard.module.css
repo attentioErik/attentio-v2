@@ -103,12 +103,10 @@
   font-size: 0.8125rem;
   font-weight: 500;
   color: var(--color-brand-purple-light);
-  opacity: 0;
-  transform: translateX(-0.25rem);
-  transition: opacity 0.25s, transform 0.25s;
+  transition: gap 0.25s, color 0.25s;
 }
 
 .card:hover .arrow {
-  opacity: 1;
-  transform: translateX(0);
+  gap: 0.625rem;
+  color: var(--color-brand-purple);
 }
