@@ -37,3 +37,7 @@ Adresse: Austefjordsvegen 194, 5379 Steinsland, Øygarden, Vestland, Norge
 ## Sitemap
 
 https://attentio.no/sitemap.xml
+
+## Fullstendig innhold
+
+https://attentio.no/llms-full.txt

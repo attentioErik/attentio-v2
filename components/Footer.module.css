@@ -35,6 +35,31 @@
   font-weight: 300;
 }
 
+.socials {
+  display: flex;
+  gap: 0.625rem;
+  margin-top: 1.25rem;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: var(--radius-card, 0.75rem);
+  border: var(--border-1) solid var(--color-ui-border);
+  color: var(--color-ui-text-3);
+  text-decoration: none;
+  transition: color 0.2s, border-color 0.2s, background-color 0.2s;
+}
+
+.socialLink:hover {
+  color: var(--color-brand-purple-light);
+  border-color: var(--color-ui-border-2);
+  background-color: var(--color-brand-purple-dim);
+}
+
 /* Columns */
 .col {
   display: flex;

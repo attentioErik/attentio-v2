@@ -7,6 +7,7 @@ import { getTeamMember } from '@/lib/content/getTeam'
 import ArticleCard from '@/components/articles/ArticleCard'
 import RichText from '@/components/RichText'
 import CTASection from '@/components/CTASection'
+import SchemaMarkup from '@/components/SchemaMarkup'
 import styles from './page.module.css'
 
 export const revalidate = 60
@@ -58,8 +59,33 @@ export default async function ArticlePage({
   const author = await getTeamMember(article.authorSlug)
   const related = await getRelatedArticles(slug, 3)
 
+  const blogPostingSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: article.title,
+    description: article.excerpt,
+    url: `https://attentio.no/artikler/${slug}`,
+    datePublished: article.publishedAt,
+    dateModified: article.publishedAt,
+    inLanguage: 'nb-NO',
+    author: {
+      '@type': 'Person',
+      name: article.authorName,
+      url: 'https://attentio.no/om-oss',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Attentio',
+      url: 'https://attentio.no',
+      logo: { '@type': 'ImageObject', url: 'https://attentio.no/logo.png' },
+    },
+    ...(article.coverImage && { image: { '@type': 'ImageObject', url: article.coverImage } }),
+    mainEntityOfPage: { '@type': 'WebPage', '@id': `https://attentio.no/artikler/${slug}` },
+  }
+
   return (
     <>
+      <SchemaMarkup schema={blogPostingSchema} />
       {/* ── Hero ─────────────────────────────────────── */}
       <section className={styles.hero}>
         <div className={styles.heroBg} aria-hidden="true" />

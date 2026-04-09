@@ -49,6 +49,34 @@ const localBusinessSchema = {
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'SEO', url: 'https://attentio.no/tjenester/seo' } },
     ],
   },
+  priceRange: '$$',
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '5',
+    bestRating: '5',
+    ratingCount: '3',
+    reviewCount: '3',
+  },
+  review: [
+    {
+      '@type': 'Review',
+      author: { '@type': 'Person', name: 'Daniel Opitz' },
+      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      reviewBody: 'attentio har revolusjonert måten vi håndterer logistikken på. De bygget et skreddersydd Call-system som har effektivisert pasientkommunikasjonen og redusert administrativt arbeid betydelig.',
+    },
+    {
+      '@type': 'Review',
+      author: { '@type': 'Organization', name: 'Straume Rør' },
+      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      reviewBody: 'Den nye nettsiden og annonsekampanjene har gitt oss en ROI vi ikke hadde forventet. Vi ser konkrete resultater – flere henvendelser, bedre kvalitet på leadene, og en betydelig økning i omsetningen.',
+    },
+    {
+      '@type': 'Review',
+      author: { '@type': 'Organization', name: 'Norsk Skadekontroll' },
+      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      reviewBody: 'Vi trengte en komplett digital løsning, og de leverte langt over forventningene. Nettsiden er profesjonell, brukervennlig og chatboten har redusert kundeforespørsler drastisk.',
+    },
+  ],
   contactPoint: {
     '@type': 'ContactPoint',
     telephone: '+4748194007',
@@ -56,7 +84,11 @@ const localBusinessSchema = {
     contactType: 'customer service',
     availableLanguage: ['Norwegian', 'English'],
   },
-  sameAs: [],
+  sameAs: [
+    'https://www.instagram.com/attentio.no/',
+    'https://www.facebook.com/attentio.no',
+    'https://www.linkedin.com/company/100035195/',
+  ],
 }
 
 const websiteSchema = {

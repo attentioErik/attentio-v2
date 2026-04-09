@@ -18,14 +18,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/galleri`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5 },
   ]
 
-  // Dynamic service pages
+  // Dynamic service pages — exclude slugs already listed in staticPages above
+  const staticServiceSlugs = new Set(['ai-chatbot', 'ai-automation'])
   const serviceSlugs = await getAllServiceSlugs()
-  const servicePages: MetadataRoute.Sitemap = serviceSlugs.map((slug) => ({
-    url: `${baseUrl}/tjenester/${slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.8,
-  }))
+  const servicePages: MetadataRoute.Sitemap = serviceSlugs
+    .filter((slug) => !staticServiceSlugs.has(slug))
+    .map((slug) => ({
+      url: `${baseUrl}/tjenester/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    }))
 
   // Sub-service pages (excludes slugs that now 301 redirect)
   const subServiceSlugs = [
