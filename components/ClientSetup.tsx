@@ -46,35 +46,42 @@ export default function ClientSetup() {
 
   useEffect(() => {
     // ── Custom Cursor ──────────────────────────
-    const cr = document.getElementById('cursor-dot')
-    const crr = document.getElementById('cursor-ring')
+    // Use transform translate3d (compositor-only) instead of left/top
+    // to avoid layout recalc + repaint of underlying backdrop-filter elements
+    const cr = document.getElementById('cursor-dot') as HTMLElement | null
+    const crr = document.getElementById('cursor-ring') as HTMLElement | null
 
     let mx = 0,
       my = 0,
       rx = 0,
       ry = 0
     let rafId: number
+    let dotNeedsUpdate = false
+
+    const updateDot = () => {
+      if (cr && dotNeedsUpdate) {
+        cr.style.transform = `translate3d(${mx}px, ${my}px, 0) translate(-50%, -50%)`
+        dotNeedsUpdate = false
+      }
+    }
 
     const onMove = (e: MouseEvent) => {
       mx = e.clientX
       my = e.clientY
-      if (cr) {
-        cr.style.left = mx + 'px'
-        cr.style.top = my + 'px'
-      }
+      dotNeedsUpdate = true
     }
 
     const loop = () => {
       rx += (mx - rx) * 0.11
       ry += (my - ry) * 0.11
       if (crr) {
-        crr.style.left = rx + 'px'
-        crr.style.top = ry + 'px'
+        crr.style.transform = `translate3d(${rx}px, ${ry}px, 0) translate(-50%, -50%)`
       }
+      updateDot()
       rafId = requestAnimationFrame(loop)
     }
 
-    document.addEventListener('mousemove', onMove)
+    document.addEventListener('mousemove', onMove, { passive: true })
     loop()
 
     // Hover effect on interactive elements

@@ -226,26 +226,30 @@ h2 em {
 /* ── Custom Cursor (global) ─────────────── */
 .cursor {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 0.5rem;
   height: 0.5rem;
   background-color: var(--color-brand-purple);
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
-  transform: translate(-50%, -50%);
-  transition: transform 0.1s;
+  /* JS sets transform: translate3d(x, y, 0) translate(-50%, -50%) */
+  will-change: transform;
 }
 
 .cursor-ring {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 2.25rem;
   height: 2.25rem;
   border: var(--border-1-5) solid rgba(119, 82, 233, 0.4);
   border-radius: 50%;
   pointer-events: none;
   z-index: 9998;
-  transform: translate(-50%, -50%);
   transition: width 0.3s, height 0.3s, border-color 0.3s;
+  will-change: transform;
 }
 
 .cursor-ring.hov {
