@@ -7,6 +7,7 @@ export default function ClientSetup() {
   const pathname = usePathname()
 
   // Scroll reveal — reinitialize on every route change
+  // Once an element is revealed, leave it visible (no flicker on scroll back)
   useEffect(() => {
     document.querySelectorAll('.reveal.in').forEach((el) => {
       el.classList.remove('in')
@@ -17,8 +18,7 @@ export default function ClientSetup() {
         entries.forEach((e) => {
           if (e.isIntersecting) {
             e.target.classList.add('in')
-          } else {
-            e.target.classList.remove('in')
+            observer.unobserve(e.target)
           }
         })
       },
@@ -28,11 +28,12 @@ export default function ClientSetup() {
     const raf = requestAnimationFrame(() => {
       const reveals = document.querySelectorAll('.reveal')
       reveals.forEach((el) => {
-        observer.observe(el)
-        // Immediately check if element is in viewport
+        // Immediately mark in-viewport elements as revealed
         const rect = el.getBoundingClientRect()
         if (rect.top < window.innerHeight && rect.bottom > 0) {
           el.classList.add('in')
+        } else {
+          observer.observe(el)
         }
       })
     })
@@ -86,15 +87,20 @@ export default function ClientSetup() {
     })
 
     // ── Nav scroll enhancement ─────────────────
+    // Toggle a data attribute (CSS handles styles) and only when state changes
+    // to avoid style recalculation on every scroll tick
     const nav = document.querySelector('nav')
+    let isScrolled = false
     const onScroll = () => {
       if (!nav) return
-      nav.style.backdropFilter =
-        window.scrollY > 40 ? 'blur(28px) saturate(2)' : 'blur(20px) saturate(1.5)'
-      ;(nav.style as CSSStyleDeclaration & { webkitBackdropFilter: string }).webkitBackdropFilter =
-        nav.style.backdropFilter
+      const shouldBeScrolled = window.scrollY > 40
+      if (shouldBeScrolled !== isScrolled) {
+        isScrolled = shouldBeScrolled
+        nav.setAttribute('data-scrolled', shouldBeScrolled ? 'true' : 'false')
+      }
     }
     window.addEventListener('scroll', onScroll, { passive: true })
+    onScroll()
 
     return () => {
       document.removeEventListener('mousemove', onMove)
