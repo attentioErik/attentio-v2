@@ -28,16 +28,10 @@
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .grid > :nth-child(3) {
-    grid-column: span 2;
-  }
 }
 
 @media (max-width: 40rem) {
   .grid {
     grid-template-columns: 1fr;
-  }
-  .grid > :nth-child(3) {
-    grid-column: auto;
   }
 }

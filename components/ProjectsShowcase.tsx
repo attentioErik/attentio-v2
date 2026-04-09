@@ -3,17 +3,19 @@ import ProjectCard from './projects/ProjectCard'
 import { getProjects } from '@/lib/content/getProjects'
 import styles from './ProjectsShowcase.module.css'
 
+const HOMEPAGE_PROJECT_LIMIT = 6
+
 export default async function ProjectsShowcase() {
   const all = await getProjects()
   // Filter by showOnHomepage flag (set in Sanity Studio)
-  // Fallback chain: showOnHomepage → isFeatured → first 3 projects
+  // Fallback chain: showOnHomepage → isFeatured → first N projects
   const homepagePicks = all.filter((p) => p.showOnHomepage)
   const featured = all.filter((p) => p.isFeatured)
   const projects = (
     homepagePicks.length > 0 ? homepagePicks :
-    featured.length >= 3 ? featured :
+    featured.length >= HOMEPAGE_PROJECT_LIMIT ? featured :
     all
-  ).slice(0, 3)
+  ).slice(0, HOMEPAGE_PROJECT_LIMIT)
 
   return (
     <section className={styles.section} id="prosjekter-showcase">
