@@ -1,0 +1,94 @@
+.section {
+  padding-top: var(--space-section-y);
+  padding-bottom: var(--space-section-y);
+  background-color: var(--color-ui-bg);
+}
+
+.card {
+  position: relative;
+  border-radius: var(--radius-card-lg, 1.5rem);
+  border: var(--border-1) solid var(--color-ui-border-2);
+  background:
+    linear-gradient(135deg, rgba(119, 82, 233, 0.12) 0%, rgba(0, 212, 200, 0.06) 100%),
+    var(--color-ui-bg-2);
+  padding: clamp(2.5rem, 5vw, 4.5rem) clamp(1.75rem, 4vw, 3.5rem);
+  overflow: hidden;
+}
+
+.glow {
+  position: absolute;
+  top: -20%;
+  right: -10%;
+  width: 50%;
+  height: 140%;
+  background: radial-gradient(ellipse 60% 60% at center, rgba(119, 82, 233, 0.22) 0%, transparent 70%);
+  pointer-events: none;
+  filter: blur(2.5rem);
+}
+
+.content {
+  position: relative;
+  max-width: 42rem;
+}
+
+.title {
+  margin-top: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.sub {
+  font-size: var(--type-body);
+  color: var(--color-ui-text-2);
+  line-height: 1.7;
+  font-weight: 300;
+  max-width: 36rem;
+  margin-bottom: 2rem;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2.25rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.875rem 1.5rem;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  font-size: 0.9375rem;
+  color: var(--color-ui-text);
+  font-weight: 400;
+}
+
+.featureIcon {
+  font-size: 1.125rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  background: var(--color-brand-purple-dim);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.small {
+  font-size: 0.75rem;
+  color: var(--color-ui-text-3);
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 40rem) {
+  .features {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,43 @@
+.section {
+  padding-top: var(--space-section-y);
+  padding-bottom: var(--space-section-y);
+  background-color: var(--color-ui-bg);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: clamp(2.5rem, 4vw, 3.5rem);
+}
+
+.header h2 {
+  margin-top: 1rem;
+  max-width: 24rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap-24);
+}
+
+@media (max-width: 60rem) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid > :nth-child(3) {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 40rem) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .grid > :nth-child(3) {
+    grid-column: auto;
+  }
+}

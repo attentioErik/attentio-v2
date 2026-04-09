@@ -126,6 +126,13 @@ export const project = defineType({
       initialValue: false,
     }),
     defineField({
+      name: 'showOnHomepage',
+      title: 'Vis på forside',
+      description: 'Vis dette prosjektet i prosjektgalleriet på forsiden',
+      type: 'boolean',
+      initialValue: false,
+    }),
+    defineField({
       name: 'seo',
       title: 'SEO',
       type: 'seo',

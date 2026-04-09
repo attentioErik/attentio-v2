@@ -14,6 +14,7 @@ export interface Project {
   website: string
   promoVideo: string
   isFeatured: boolean
+  showOnHomepage?: boolean
 }
 
 export interface TeamMember {

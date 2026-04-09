@@ -9,20 +9,20 @@ import CTASection from '@/components/CTASection'
 export const revalidate = 60
 
 export const metadata: Metadata = {
-  title: 'Om oss | Attentio – AI-drevet digitalbyrå i Bergen',
+  title: 'Om oss – Digitalbyrå i Bergen',
   description:
-    'Møt teamet bak Attentio. Vi er et AI-drevet digitalbyrå som kombinerer teknologi, kreativitet og markedsføring for å hjelpe bedrifter å vokse.',
+    'Møt teamet bak Attentio. Vi er et digitalbyrå i Bergen som kombinerer menneskelig ekspertise med AI-verktøy for å hjelpe norske bedrifter å vokse.',
   openGraph: {
-    title: 'Om oss | Attentio – AI-drevet digitalbyrå i Bergen',
+    title: 'Om oss | Attentio – Digitalbyrå i Bergen',
     description:
-      'Møt teamet bak Attentio. Teknologi, kreativitet og AI – samlet i ett team i Bergen.',
+      'Møt teamet bak Attentio. Ekte mennesker med ekspertise, styrket av AI-verktøy – samlet i ett team i Bergen.',
     locale: 'nb_NO',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Om oss | Attentio',
-    description: 'AI-drevet digitalbyrå i Bergen.',
+    title: 'Om oss | Attentio – Digitalbyrå i Bergen',
+    description: 'Ekte mennesker med ekspertise, styrket av AI-verktøy – digitalbyrå i Bergen.',
   },
   alternates: {
     canonical: '/om-oss',

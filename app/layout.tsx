@@ -131,15 +131,16 @@ const dmMono = DM_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL('https://attentio.no'),
   title: {
-    default: 'Attentio | Digitalbyrå Bergen – Nettsider, AI & Markedsføring',
+    default: 'Nettside Bergen | Webutvikling, AI & Markedsføring | Attentio',
     template: '%s | Attentio',
   },
   description:
-    'Attentio er et digitalbyrå i Bergen-regionen. Vi lager nettsider, driver digital markedsføring, utvikler AI-løsninger og produserer video og foto. Kunder over hele Norge.',
+    'Attentio lager nettsider som gir deg flere kunder. Skreddersydde nettsider for bedrifter i Bergen – med innebygd AI, SEO og konverteringsoptimalisering fra dag én.',
   keywords: [
-    'digitalbyrå Bergen', 'nettsider Bergen', 'nettside Bergen', 'webbyrå Bergen',
-    'digital markedsføring Bergen', 'SEO Bergen', 'AI-løsninger Bergen',
-    'chatbot utvikling', 'webdesign Bergen', 'Øygarden', 'Vestland',
+    'nettside Bergen', 'nettsider Bergen', 'webdesign Bergen', 'webbyrå Bergen',
+    'digitalbyrå Bergen', 'ny nettside Bergen', 'webutvikling Bergen',
+    'digital markedsføring Bergen', 'SEO Bergen', 'AI-chatbot Bergen',
+    'nettsider med AI', 'Øygarden', 'Vestland',
   ],
   robots: {
     index: true,
@@ -147,8 +148,8 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true },
   },
   openGraph: {
-    title: 'Attentio | Digitalbyrå Bergen – Nettsider, AI & Markedsføring',
-    description: 'Nettsider, digital markedsføring, AI-chatbots og video. Digitalbyrå i Bergen som leverer vekst for norske bedrifter.',
+    title: 'Nettside Bergen | Webutvikling, AI & Markedsføring | Attentio',
+    description: 'Skreddersydde nettsider for bedrifter i Bergen – med innebygd AI, SEO og konverteringsoptimalisering fra dag én.',
     locale: 'nb_NO',
     type: 'website',
     siteName: 'Attentio',
@@ -158,14 +159,14 @@ export const metadata: Metadata = {
         url: 'https://ucarecdn.com/6d16757a-7952-4744-8b1a-84cdbe7547eb/MacBookmedattentionettside.png',
         width: 1200,
         height: 630,
-        alt: 'Attentio – Digitalbyrå Bergen',
+        alt: 'Attentio – Nettside Bergen',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Attentio | Digitalbyrå Bergen – Nettsider, AI & Markedsføring',
-    description: 'Nettsider, digital markedsføring, AI-chatbots og video. Digitalbyrå i Bergen.',
+    title: 'Nettside Bergen | Webutvikling, AI & Markedsføring | Attentio',
+    description: 'Skreddersydde nettsider for bedrifter i Bergen – med innebygd AI og SEO.',
     images: ['https://ucarecdn.com/6d16757a-7952-4744-8b1a-84cdbe7547eb/MacBookmedattentionettside.png'],
   },
   alternates: {

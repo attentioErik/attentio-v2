@@ -90,7 +90,8 @@ export const PROJECTS_ALL_QUERY = defineQuery(`
     "services": coalesce(serviceTags, services[]->slug.current),
     website,
     promoVideo,
-    isFeatured
+    isFeatured,
+    "showOnHomepage": coalesce(showOnHomepage, false)
   }
 `)
 
@@ -107,7 +108,8 @@ export const PROJECT_BY_SLUG_QUERY = defineQuery(`
     "services": coalesce(serviceTags, services[]->slug.current),
     website,
     promoVideo,
-    isFeatured
+    isFeatured,
+    "showOnHomepage": coalesce(showOnHomepage, false)
   }
 `)
 

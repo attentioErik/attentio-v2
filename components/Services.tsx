@@ -4,18 +4,18 @@ import styles from './Services.module.css'
 const services = [
   {
     num: '01',
-    emoji: '🤖',
-    slug: 'ai-automation',
-    title: 'AI & Automatisering',
-    text: 'Prosesskartlegging, automatisering og AI-løsninger som frigjør tid og fjerner manuelt arbeid.',
+    emoji: '🌐',
+    slug: 'web-app-nettside',
+    title: 'Nettsider & Apper',
+    text: 'Skreddersydde nettsider og apper bygget for hastighet, SEO og konvertering – med AI integrert fra dag én.',
     hero: true,
   },
   {
     num: '02',
-    emoji: '🌐',
-    slug: 'web-app-nettside',
-    title: 'Web & App',
-    text: 'Raske, konverteringsdrevne nettsider og skreddersydde apper – bygget for å vokse.',
+    emoji: '🤖',
+    slug: 'ai-automation',
+    title: 'AI & Automatisering',
+    text: 'AI-chatbots, prosessautomatisering og integrasjoner som frigjør tid og fjerner manuelt arbeid.',
   },
   {
     num: '03',

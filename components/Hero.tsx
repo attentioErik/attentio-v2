@@ -25,31 +25,30 @@ export default function Hero() {
       {/* Badge */}
       <div className={styles.badge}>
         <div className={styles.badgeDot} aria-hidden="true" />
-        Ledende AI-byrå i Bergen · 2026
+        Digitalbyrå i Bergen · Nettsider som leverer resultater
       </div>
 
       {/* Headline */}
       <h1 className={styles.headline}>
-        Vi bygger<br />
-        <em>intelligente</em><br />
-        digitale løsninger
+        Nettsider som<br />
+        gir deg <em>flere kunder</em>
       </h1>
 
       {/* Sub */}
       <p className={styles.sub}>
-        Chatbots, nettsider, markedsføring og video.
-        Vi er tech-byrået som faktisk leverer vekst.
+        Skreddersydde nettsider for bedrifter i Bergen – med innebygd AI,
+        SEO og konverteringsoptimalisering fra dag én.
       </p>
 
       {/* CTAs */}
       <div className={styles.actions}>
-        <Button href="#kontakt" variant="primary">
-          Start et prosjekt
+        <Button href="/gratis-nettside" variant="primary">
+          Få gratis nettside-utkast
           <IconArrow />
         </Button>
-        <Button href="/om-oss#promo" variant="outline">
+        <Button href="/prosjekter" variant="outline">
           <IconPlay />
-          Se Promo
+          Se våre prosjekter
         </Button>
       </div>
 
