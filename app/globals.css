@@ -277,11 +277,6 @@ h2 em {
   50%       { transform: scale(0.6); opacity: 0.5; }
 }
 
-@keyframes mesh-drift {
-  from { transform: scale(1) translate(0, 0); }
-  to   { transform: scale(1.04) translate(-1%, 1%); }
-}
-
 @keyframes blink {
   0%, 100% { opacity: 1; }
   50%       { opacity: 0.3; }

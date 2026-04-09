@@ -14,7 +14,6 @@
   background:
     radial-gradient(ellipse 55% 60% at 70% 25%, rgba(119, 82, 233, 0.12) 0%, transparent 65%),
     radial-gradient(ellipse 40% 45% at 15% 75%, rgba(0, 212, 200, 0.06) 0%, transparent 60%);
-  animation: mesh-drift 12s ease-in-out infinite alternate;
 }
 
 .grid {
