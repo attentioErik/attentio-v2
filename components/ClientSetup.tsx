@@ -46,51 +46,57 @@ export default function ClientSetup() {
 
   useEffect(() => {
     // ── Custom Cursor ──────────────────────────
-    // Use transform translate3d (compositor-only) instead of left/top
-    // to avoid layout recalc + repaint of underlying backdrop-filter elements
+    // Skip on touch devices entirely (no benefit, only cost)
+    if (window.matchMedia('(hover: none)').matches) return
+
     const cr = document.getElementById('cursor-dot') as HTMLElement | null
     const crr = document.getElementById('cursor-ring') as HTMLElement | null
 
+    // Centered using margin in CSS, so JS only owns translate3d + scale.
+    // This keeps transforms compositor-only and avoids repainting any
+    // backdrop-filter elements the cursor passes over.
     let mx = 0,
       my = 0,
       rx = 0,
-      ry = 0
+      ry = 0,
+      targetScale = 1,
+      currentScale = 1
     let rafId: number
-    let dotNeedsUpdate = false
-
-    const updateDot = () => {
-      if (cr && dotNeedsUpdate) {
-        cr.style.transform = `translate3d(${mx}px, ${my}px, 0) translate(-50%, -50%)`
-        dotNeedsUpdate = false
-      }
-    }
 
     const onMove = (e: MouseEvent) => {
       mx = e.clientX
       my = e.clientY
-      dotNeedsUpdate = true
     }
 
     const loop = () => {
-      rx += (mx - rx) * 0.11
-      ry += (my - ry) * 0.11
-      if (crr) {
-        crr.style.transform = `translate3d(${rx}px, ${ry}px, 0) translate(-50%, -50%)`
+      rx += (mx - rx) * 0.18
+      ry += (my - ry) * 0.18
+      currentScale += (targetScale - currentScale) * 0.18
+      if (cr) {
+        cr.style.transform = `translate3d(${mx}px, ${my}px, 0)`
       }
-      updateDot()
+      if (crr) {
+        crr.style.transform = `translate3d(${rx}px, ${ry}px, 0) scale(${currentScale.toFixed(3)})`
+      }
       rafId = requestAnimationFrame(loop)
     }
 
     document.addEventListener('mousemove', onMove, { passive: true })
     loop()
 
-    // Hover effect on interactive elements
-    const addHov = () => crr?.classList.add('hov')
-    const removeHov = () => crr?.classList.remove('hov')
+    // Hover effect — JS owns the scale (no CSS transitions on size)
+    const addHov = () => {
+      targetScale = 1.45
+      crr?.classList.add('hov')
+    }
+    const removeHov = () => {
+      targetScale = 1
+      crr?.classList.remove('hov')
+    }
     const hovEls = document.querySelectorAll('a, button, [data-cursor="hover"]')
     hovEls.forEach((el) => {
-      el.addEventListener('mouseenter', addHov)
-      el.addEventListener('mouseleave', removeHov)
+      el.addEventListener('mouseenter', addHov, { passive: true })
+      el.addEventListener('mouseleave', removeHov, { passive: true })
     })
 
     // ── Nav scroll enhancement ─────────────────
