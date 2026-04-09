@@ -153,11 +153,20 @@ export const metadata: Metadata = {
     type: 'website',
     siteName: 'Attentio',
     url: 'https://attentio.no',
+    images: [
+      {
+        url: 'https://ucarecdn.com/6d16757a-7952-4744-8b1a-84cdbe7547eb/MacBookmedattentionettside.png',
+        width: 1200,
+        height: 630,
+        alt: 'Attentio – Digitalbyrå Bergen',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Attentio | Digitalbyrå Bergen – Nettsider, AI & Markedsføring',
     description: 'Nettsider, digital markedsføring, AI-chatbots og video. Digitalbyrå i Bergen.',
+    images: ['https://ucarecdn.com/6d16757a-7952-4744-8b1a-84cdbe7547eb/MacBookmedattentionettside.png'],
   },
   alternates: {
     canonical: '/',
