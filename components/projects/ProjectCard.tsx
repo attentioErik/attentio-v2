@@ -35,7 +35,6 @@ export default function ProjectCard({ project, index = 0 }: Props) {
             fill
             className={styles.image}
             sizes="(max-width: 40rem) 100vw, (max-width: 60rem) 50vw, 33vw"
-            unoptimized
           />
         )}
         <div className={styles.imageOverlay} aria-hidden="true" />

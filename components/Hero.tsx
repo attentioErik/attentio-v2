@@ -56,13 +56,13 @@ export default function Hero() {
       <div className={styles.heroImage}>
         <div className={styles.heroImageInner}>
           <Image
-            src="https://ucarecdn.com/d82a0722-e9d3-431b-8937-cd9bddbfbff7/attentioteam10.avif"
+            src="https://ucarecdn.com/d82a0722-e9d3-431b-8937-cd9bddbfbff7/-/preview/1600x1200/-/format/auto/-/quality/smart/"
             alt="Attentio-teamet"
             width={600}
             height={400}
             className={styles.heroImg}
             priority
-            unoptimized
+            sizes="(max-width: 60rem) 0px, 40rem"
           />
         </div>
       </div>

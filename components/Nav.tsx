@@ -69,7 +69,6 @@ export default function Nav() {
               height={28}
               className={styles.logoImg}
               priority
-              unoptimized
             />
           </Link>
 

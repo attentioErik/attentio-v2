@@ -16,7 +16,6 @@ export default function GalleryGrid({ images }: Props) {
             alt={img.alt}
             width={1600}
             height={1200}
-            unoptimized
             className={styles.image}
             sizes="(max-width: 32rem) 100vw, (max-width: 56rem) 50vw, 33vw"
           />

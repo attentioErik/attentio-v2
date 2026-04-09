@@ -69,7 +69,6 @@ export default function Footer() {
             width={110}
             height={110}
             className={styles.logo}
-            unoptimized
           />
           <p className={styles.tagline}>
             Bergen-basert AI-byrå. Teknologi, kreativitet og strategi – for bedrifter som vil vokse.

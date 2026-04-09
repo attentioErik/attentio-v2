@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from './AboutIntro.module.css'
 
-const TEAM_IMAGE = 'https://ucarecdn.com/d82a0722-e9d3-431b-8937-cd9bddbfbff7/attentioteam10.avif'
+const TEAM_IMAGE = 'https://ucarecdn.com/d82a0722-e9d3-431b-8937-cd9bddbfbff7/-/preview/1600x1200/-/format/auto/-/quality/smart/'
 
 const metrics = [
   { num: '50+', label: 'Fornøyde kunder' },
@@ -47,7 +47,6 @@ export default function AboutIntro() {
               fill
               className={styles.image}
               sizes="(max-width: 60rem) 100vw, 50vw"
-              unoptimized
             />
             {/* Gradient overlay */}
             <div className={styles.imageOverlay} aria-hidden="true" />

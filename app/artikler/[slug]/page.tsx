@@ -116,7 +116,7 @@ export default async function ArticlePage({
                 fill
                 className={styles.heroCoverImg}
                 priority
-                unoptimized
+                sizes="(max-width: 60rem) 100vw, 64rem"
               />
             </div>
           )}

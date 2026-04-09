@@ -43,6 +43,7 @@ export const SERVICE_SLUGS_QUERY = defineQuery(`
 
 // ── Artikler (Blogg) ────────────────────────────
 // Projects to match Article interface
+// Image URLs get ?auto=format&q=80&w=1600&fit=max for AVIF/WebP + compression
 export const ARTICLES_ALL_QUERY = defineQuery(`
   *[_type == "article"] | order(publishedAt desc) {
     "name": title,
@@ -50,7 +51,7 @@ export const ARTICLES_ALL_QUERY = defineQuery(`
     title,
     "body": "",
     excerpt,
-    "coverImage": coverImage.asset->url,
+    "coverImage": coverImage.asset->url + "?auto=format&q=80&w=1600&fit=max",
     "authorSlug": author->slug.current,
     "authorName": author->name,
     "publishedAt": publishedAt
@@ -64,7 +65,7 @@ export const ARTICLE_BY_SLUG_QUERY = defineQuery(`
     title,
     body,
     excerpt,
-    "coverImage": coverImage.asset->url,
+    "coverImage": coverImage.asset->url + "?auto=format&q=80&w=1600&fit=max",
     "authorSlug": author->slug.current,
     "authorName": author->name,
     "publishedAt": publishedAt
@@ -85,8 +86,8 @@ export const PROJECTS_ALL_QUERY = defineQuery(`
     description,
     cardDescription,
     "body": "",
-    "coverImage": coverImage.asset->url,
-    "images": images[].asset->url,
+    "coverImage": coverImage.asset->url + "?auto=format&q=80&w=1600&fit=max",
+    "images": images[].asset->url + "?auto=format&q=80&w=1600&fit=max",
     "services": coalesce(serviceTags, services[]->slug.current),
     website,
     promoVideo,
@@ -103,8 +104,8 @@ export const PROJECT_BY_SLUG_QUERY = defineQuery(`
     description,
     cardDescription,
     body,
-    "coverImage": coverImage.asset->url,
-    "images": images[].asset->url,
+    "coverImage": coverImage.asset->url + "?auto=format&q=80&w=1600&fit=max",
+    "images": images[].asset->url + "?auto=format&q=80&w=1600&fit=max",
     "services": coalesce(serviceTags, services[]->slug.current),
     website,
     promoVideo,
@@ -124,7 +125,7 @@ export const TEAM_ALL_QUERY = defineQuery(`
     name,
     "slug": slug.current,
     role,
-    "image": image.asset->url,
+    "image": image.asset->url + "?auto=format&q=85&w=800&fit=max",
     "altText": name,
     email,
     phone,

@@ -34,7 +34,6 @@ export default async function TeamGrid() {
                   fill
                   className={styles.photo}
                   sizes="(max-width: 40rem) 100vw, (max-width: 60rem) 50vw, 33vw"
-                  unoptimized
                 />
                 <div className={styles.photoOverlay} aria-hidden="true" />
                 <div className={styles.rolePill}>{member.role}</div>

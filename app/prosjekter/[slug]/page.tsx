@@ -104,7 +104,7 @@ export default async function ProjectPage({
                 fill
                 className={styles.heroCoverImg}
                 priority
-                unoptimized
+                sizes="(max-width: 60rem) 100vw, 64rem"
               />
             </div>
           )}
@@ -188,7 +188,6 @@ export default async function ProjectPage({
                     fill
                     className={styles.galleryImg}
                     sizes="(max-width: 40rem) 100vw, (max-width: 60rem) 50vw, 33vw"
-                    unoptimized
                   />
                 </div>
               ))}
