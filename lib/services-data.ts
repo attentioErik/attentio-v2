@@ -202,15 +202,15 @@ const services: ServiceData[] = [
     slug: 'web-app-nettside',
     emoji: '🌐',
     meta: {
-      title: 'Web & App | Konverteringsdrevne nettsider',
+      title: 'Nettside Bergen | 55% kampanjerabatt – Webutvikling | Attentio',
       description:
-        'Vi designer og bygger raske, SEO-optimaliserte nettsider og skreddersydde apper. Ingen maler – alt bygget for konvertering fra dag én. Bergen-basert tech-byrå.',
+        'Kampanje: 55% rabatt på ny nettside. Skreddersydde, raske og SEO-optimaliserte nettsider for bedrifter i Bergen. Har du en utdatert nettside eller starter du ny bedrift? Ta kontakt.',
     },
     hero: {
-      tag: 'Web & App',
-      h1: 'Nettsider og apper som <em>faktisk konverterer</em>',
+      tag: 'Kampanje · 55% rabatt',
+      h1: 'Nå får du <em>55% rabatt</em> på ny nettside',
       intro:
-        'En nettside er ikke et visittkort – den er din beste selger. Vi bygger digitale løsninger med én hensikt: å gjøre besøkende til betalende kunder.',
+        'Har du en utdatert og gammel nettside, eller trenger du en nettside til din nye bedrift? Ta kontakt med oss – vi lager skreddersydde nettsider for bedrifter i Bergen, med innebygd AI, SEO og konverteringsoptimalisering fra dag én.',
     },
     features: {
       tag: 'Hva vi leverer',

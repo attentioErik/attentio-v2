@@ -44,12 +44,39 @@
   display: inline;
 }
 
+.textShort {
+  display: none;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2em 0.7em;
+  background: rgba(8, 8, 12, 0.22);
+  color: var(--color-ui-bg);
+  border: 1px solid rgba(8, 8, 12, 0.35);
+  border-radius: var(--radius-pill);
+  font-size: 0.75rem;
+  font-weight: 700;
+  white-space: nowrap;
+  line-height: 1.4;
+}
+
 .arrow {
   transition: transform 0.2s;
 }
 
 .link:hover .arrow {
   transform: translateX(3px);
+}
+
+@media (max-width: 780px) {
+  .textFull {
+    display: none;
+  }
+  .textShort {
+    display: inline;
+  }
 }
 
 @media (max-width: 600px) {
@@ -61,5 +88,17 @@
 
   .badge {
     font-size: 0.65rem;
+  }
+
+  .cta {
+    font-size: 0.6875rem;
+    padding: 0.15em 0.55em;
+  }
+}
+
+@media (max-width: 440px) {
+  .cta,
+  .arrow {
+    display: none;
   }
 }
