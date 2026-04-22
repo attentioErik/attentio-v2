@@ -11,7 +11,7 @@ const features = [
   { icon: '🎨', label: 'Visuelt design-utkast' },
   { icon: '📱', label: 'Mobiltilpasset layout' },
   { icon: '⚡', label: 'Hastighets- og SEO-vurdering' },
-  { icon: '🤖', label: 'AI-integrasjon inkludert' },
+  { icon: '📝', label: 'Forslag til innholdsstruktur' },
 ]
 
 export default function GratisNettsideCTA() {

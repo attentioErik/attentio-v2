@@ -55,11 +55,6 @@ const features = [
     text: 'Forslag til sidestruktur, navigasjon og informasjonsarkitektur.',
   },
   {
-    icon: '🤖',
-    title: 'AI-integrasjon',
-    text: 'Vi viser hvordan en AI-chatbot kan integreres for automatisk kundehåndtering.',
-  },
-  {
     icon: '💬',
     title: 'Personlig gjennomgang',
     text: 'Etter utkastet booker vi et kort møte for å gå gjennom forslaget sammen.',
@@ -100,14 +95,14 @@ const benefits = [
     text: 'Vi designer nettsider som gjør besøkende til kunder, ikke bare fine å se på.',
   },
   {
-    icon: '🤖',
-    title: 'AI-drevet teknologi',
-    text: 'Chatbots, automatisering og smart innhold som jobber for deg 24/7.',
-  },
-  {
     icon: '📈',
     title: 'SEO fra dag én',
     text: 'Teknisk optimalisert for Google, med riktig struktur, hastighet og innhold.',
+  },
+  {
+    icon: '⚡',
+    title: 'Lynrask ytelse',
+    text: 'Core Web Vitals-optimalisert for høy rangering og lav avvisningsrate.',
   },
   {
     icon: '🎯',
